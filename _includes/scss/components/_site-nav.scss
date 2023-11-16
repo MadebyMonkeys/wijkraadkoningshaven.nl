@@ -5,6 +5,7 @@
   
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,8 +14,12 @@
 
   &__item {
     max-width: unset;
-    width: auto;
+    width: 100%;
     padding: var(--size-xs) var(--size-s);
+
+    @media screen and (min-width: 40em) {
+      width: auto;
+    }
   }
 
   &__link {
