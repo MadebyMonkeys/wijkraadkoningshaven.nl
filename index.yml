@@ -1,0 +1,38 @@
+layout: layouts/landing.vto
+title: Welkom op Wijkraad Koningshaven
+description: Een goede beschrijving
+hasAdmin: true
+sort_by: date
+menu:
+  visible: true
+  title: Home
+  order: 1
+
+hero:
+  title: Wijkraad Koningshaven
+  image: /img/hero-img.svg 
+  description: >
+    Vestibulum interdum suscipit egestas. Maecenas porta erat et maximus consectetur.
+    Vestibulum fermentum metus malesuada, finibus felis a, maximus enim.
+
+features:
+  - title: Verrijk je wijk
+    icon: /icons/vjw.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /verrijk-je-wijk
+  - title: Evenementen
+    icon: /icons/events.svg 
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /events
+  - title: Vergaderingen
+    icon: /icons/calendar.svg 
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /over-ons/#vergadering
+
+about:
+  title: Wat doen wij als wijkraad?
+  image: /img/city-life.svg
+  content: >
+    Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    Vivamus lobortis, lorem vitae mo lestie hendrerit, nisi nibh ultricies nunc, ac pharetra justo augue rhoncus nulla.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.

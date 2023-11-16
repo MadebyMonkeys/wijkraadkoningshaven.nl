@@ -1,0 +1,20 @@
+<footer class="[ site-footer ] [ content-grid ] [ region ]">
+
+  <div class="text-center">
+    <p class="fs-300">&copy; Copyright 2024 {{ site.title }}</p>
+  </div>
+</footer>
+
+{{ if hasAdmin == true }}
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+{{ /if }}

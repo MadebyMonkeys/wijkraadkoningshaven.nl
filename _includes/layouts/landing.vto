@@ -1,0 +1,50 @@
+---
+layout: layouts/base.vto
+---
+<section class="[ hero ] [ content-grid ] [ region ]">
+  <div class="grid" data-layout="50-50">
+   <div class="[ hero__content ] [ flow ]">
+    <h1 class="title">{{ hero.title }}</h1>
+    <div class="flow">
+      {{ hero.description }}
+    </div>
+   </div>
+   <div class="hero__image">
+    <img src="{{ hero.image }}" alt="hero image" />
+   </div>
+  </div>
+</section>
+<section class="[ features ] [ content-grid ] [ region ]">
+  <div class="grid" data-layout="thirds">
+  {{ for feature of features }}
+    <div class="box [ flow ]">
+      <div class="icon">
+        <span class="circle">
+          <img src="{{ feature.icon }}" alt="{{ feature.title }}" inline />
+        </span>
+      </div>
+      <h3 class="[ title ] [ fs-500 ]">{{ feature.title }}<h3>
+      <p class="[ fs-400 ]">{{ feature.description }}</p>
+      <a class="button" href="{{ feature.url }}">Lees meer</a>
+    </div>
+  {{ /for }}
+  </div>
+</section>
+<section class="[ about ] [ content-grid fullwidth ] [ region bg-secondary-300 ]">
+  <div class="grid" data-layout="50-50">
+    <div class="about__content [ flow ]">
+      <h2 class="[ title ]">{{ about.title }}</h2>
+      <p>{{ about.content |> safe }}<p>
+    </div>
+    <div class="about__image">
+      <img src="{{ about.image }}" alt="Over ons" />
+    </div>
+  </div>
+</section>
+<section class="[ postslist ] [ content-grid ] [ region flow ]">
+  <h2 class="title">Nieuws</h2>
+  <div class="grid" data-layout="thirds">
+    {{ set posts = search.pages("type=post", sort_by + "=desc", 3) }}
+    {{ include "templates/postsList.vto" }}
+  </div>
+</section>

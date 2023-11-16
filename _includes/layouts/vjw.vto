@@ -1,0 +1,15 @@
+---
+layout: layouts/base.vto
+hasAdmin: false
+---
+<section class="[ verrijkwijk ] [ content-grid ] [ region ]">
+  <div class="[ grid ]" data-layout="50-50">
+    <div class="flow">
+      <h1 class="title">{{ vjw.title }}</h1>
+      {{ vjw.description |> md }} 
+    </div>
+    <div>
+      <img src="{{ vjw.image |> url }}" />
+    </div>
+  </div>
+</section>

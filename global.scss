@@ -1,0 +1,175 @@
+@use "scss/abstracts" as *;
+
+@forward "scss/base";
+@forward "scss/components";
+@forward "scss/layouts";
+@forward "scss/utilities";
+
+
+
+// -----------------------------------------------------------------------------
+// Globals
+// -----------------------------------------------------------------------------
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.top-text {
+  width:100%;
+  max-width:60rem;
+  padding:3rem 10vmin
+}
+
+.title {
+  color: var(--title-color, var(--primary-500));
+  font-family: var(--ff-accent);
+  font-size: var(--title-size ,var(--fs-700));
+  font-weight: var(--fw-bold);
+  line-height: 1.1;
+}
+
+
+
+
+// -----------------------------------------------------------------------------
+// Compositions
+// -----------------------------------------------------------------------------
+
+.site-header {
+
+  &__inner {
+    max-width: 64em;
+    padding-inline: var(--size-s-l);
+    margin-inline: auto;
+  }
+}
+
+.site-header .logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: var(--size-s);
+
+  svg {
+    width: 48px;
+  }
+
+  span {
+    font-weight: 700;
+    color: var(--primary-500);
+  }
+}
+
+
+
+.features {
+    --grid-placement: auto-fill;
+    --grid-min-item-size: clamp(18rem, 33%, 22rem);
+
+  .box {
+    background-color: white;
+    padding: var(--size-s-l);
+    box-shadow: $box-shadow-small;
+    border-radius: $border-radius-small;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > span svg {
+        --icon-color: var(--accent-500);
+        width: var(--size-xl);
+      }
+    }
+
+    .circle {
+      border-radius: 999em;
+      background-color: #ebecf6;
+      padding: var(--size-s);
+    }
+
+    .title {
+      --title-size: var(--fs-500);
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+  }
+}
+
+
+
+.about {
+  display: grid;
+  align-items: center;
+
+  &__image { padding: var(--size-s-l); }
+
+  @media screen and (min-width: 54em) {
+    &__content {
+      order: 2;
+    }
+
+    &__image {
+      order: 1;
+    }
+  }
+}
+
+
+
+.post {
+  --content-max-width: 40em;
+  
+  &__image {
+    max-height: 80dvh;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+    }
+  }
+}
+
+
+.postslist {
+  .card {
+    background-color: white;
+    box-shadow: $box-shadow-small;
+    overflow: hidden;
+
+    &__image {
+      overflow: hidden;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow-large;
+    }
+  }
+}
+
+
+
+.site-footer {
+  --region-space: 1rem;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.region {
+  padding-block: var(--region-space, 6.6vmax);
+}
+
+

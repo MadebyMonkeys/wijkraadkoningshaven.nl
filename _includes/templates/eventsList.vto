@@ -1,0 +1,16 @@
+{{ for event of events }}
+<div class="card">
+  <a class="" href="{{ event.data.url |> url }}" style="text-decoration: none;">
+    <div class="card__image">
+      <img src="{{ event.data.image }}"/>
+    </div>
+    <div class="card__content [ flow ]">
+      <h3 class="[ fs-400 fw-bold ]">{{ event.data.title }}</h3>
+      <ul>
+        <li><time datetime="{{ event.data.event_date |> date }}">{{ event.data.event_date |> date('PPP', "nl") }}</time></li>
+        <li>{{ event.data.price }}</li>
+      </ul>
+    </div>
+  </a>
+</div>
+{{ /for }}

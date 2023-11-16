@@ -1,0 +1,18 @@
+---
+layout: layouts/base.vto
+hasAdmin: false
+---
+<section class="[ overons ] [ content-grid ] [ region flow ]">
+  <div class="grid" data-layout="50-50">
+    <div class="flow">
+      <h1 class="title">{{ about.title }}</h1>
+      {{ about.description |> md  }}
+    </div>
+    <div>
+      <img src="{{ about.image |> url }}" />
+    </div>
+  </div>
+</section>
+<section class="[ team ] [ content-grid ] [ region bg-secondary-500 ]">
+  <h1 class="title">Ons Team</h1>
+</section>

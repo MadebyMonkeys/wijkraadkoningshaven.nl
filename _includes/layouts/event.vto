@@ -1,0 +1,12 @@
+---
+layout: layouts/base.vto
+hasAdmin: false
+---
+<article class="[ event ] [ content-grid ] [ region flow ]">
+  <header class="breakout">
+    <img src="{{ image |> url }}" alt="thumbnail" />
+  </header>
+  <h1 class="title">{{ title }}</h1>
+  <span class="fs-300">Gepubliceerd op <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
+  {{ content }}
+</article>

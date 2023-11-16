@@ -1,0 +1,44 @@
+@use "font-faces" as *;
+
+//
+// Font Family
+//
+
+$-ff-sans: sans-serif;
+$-ff-serif: serif;
+
+$font-family-base: $-ff-sans;
+$font-family-accent: $-ff-serif;
+
+
+
+//
+// Font Size(s)
+//
+
+$type-scale: (
+  "200": clamp(0.625rem, 0.7185rem + -0.1207vw, 0.6944rem),
+  "300": clamp(0.8331rem, 0.8155rem + 0.088vw, 0.8838rem),
+  "400": clamp(1rem, 0.913rem + 0.4348vw, 1.25rem),
+  "500": clamp(1.2rem, 1.0026rem + 0.987vw, 1.7675rem),
+  "600": clamp(1.44rem, 1.0715rem + 1.8424vw, 2.4994rem),
+  "700": clamp(1.7281rem, 1.1001rem + 3.1402vw, 3.5338rem),
+  "800": clamp(2.0738rem, 1.057rem + 5.0837vw, 4.9969rem),
+  "900": clamp(2.4881rem, 0.896rem + 7.9609vw, 7.0656rem),
+);
+
+
+
+//
+// Font Weight
+//
+
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extrabold": 800,
+  "black": 900,
+);

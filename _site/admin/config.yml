@@ -1,0 +1,104 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: 'Upload “{{path}}”'
+    deleteMedia: 'Delete “{{path}}”'
+publish_mode: editorial_workflow
+media_folder: /static/uploads
+public_folder: /uploads
+collections:
+  - name: settings
+    label: Settings
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: general
+        label: Site Settings
+        file: _data/site.yml
+        description: General Site Settings
+        fields:
+          - label: Global title
+            name: title
+            widget: string
+          - label: Global description
+            name: description
+            widget: text
+          - label: Logo
+            name: logo
+            widget: image
+            default: /img/logo.svg
+  - name: news
+    label: News post
+    folder: /nieuws/
+    public_folder: /uploads/
+    description: Create or edit news post
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/nieuws-post.vto
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+      - label: Title
+        name: title
+        widget: string
+        tagname: h1
+      - label: Publish date
+        name: date
+        widget: datetime
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        hint: Plaats nieuws bericht hier
+  - name: event
+    label: Event
+    folder: /events/
+    public_folder: /uploads/
+    description: Create or edit an event
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/event-post.vto
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: false
+      - label: Title
+        name: title
+        widget: string
+        tagname: h1
+      - label: Publish date
+        name: date
+        widget: datetime
+      - label: Image
+        name: image
+        widget: image
+        required: false
+      - label: Event Date
+        name: event_date
+        widget: datetime
+      - label: Event Price
+        name: price
+        widget: string
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+site_url: 'http://localhost:3000/'
+local_backend: true

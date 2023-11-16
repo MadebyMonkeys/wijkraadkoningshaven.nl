@@ -1,0 +1,14 @@
+{{ for post of posts }}
+<div class="card">
+  <a class="card__link" href="{{ post.data.url |> url }}" style="text-decoration: none;">
+  <picture class="card__image"><img src="{{ post.data.image }}" alt="" /></picture>
+  <div class="card__content">
+    <h3 class="[ fs-400 fw-bold ]">{{ post.data.title }}</h3>
+    <ul class="meta-info">
+      <li>{{ post.data.user }}</li>
+      <li><time class="fs-300" datetime="{{ post.data.date |> date }}">{{ post.data.date |> date('PPP') }}</time></li>
+    </ul>
+  </div>
+  </a>
+</div>
+{{ /for }}
