@@ -8,7 +8,7 @@ menu:
 
 about:
   title: Over ons 
-  image: /img/about-img.svg
+  image: /img/logo.svg
   description: >
     Donec auctor erat id eros cursus, id cursus dui lacinia. Nam ultricies enim ligula, in volutpat lorem tempus et.
     Vivamus placerat dolor at tempor tempus. Proin vulputate at turpis sit amet accumsan.
@@ -16,12 +16,12 @@ about:
     Curabitur iaculis ante non efficitur accumsan.
 
 members:
-  - name: Jos Doe
-    function: Hoofdmeester
-    photo: /img/no-picture.png
-  - name: Anja Remst
-    function: Secretaris
-    photo: /img/no-picture.png
-  - name: Ruud Remst
-    function: Penningmeester
-    photo: /img/no-picture.png
+  - name: John Do
+    function: functie
+    photo:
+  - name: Jane Doe
+    function: functie
+    photo: 
+  - name: Gina Joe
+    function: functie
+    photo:

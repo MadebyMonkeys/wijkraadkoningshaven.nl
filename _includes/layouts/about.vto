@@ -3,7 +3,7 @@ layout: layouts/base.vto
 hasAdmin: false
 ---
 <section class="[ about ] [ content-grid ] [ region flow ]">
-  <div class="grid" data-layout="50-50">
+  <div class="grid ai-center" data-layout="50-50">
     <div class="about__content [ flow ]">
       <h1 class="title">{{ about.title }}</h1>
       {{ about.description |> md  }}
@@ -18,12 +18,16 @@ hasAdmin: false
   <div class="grid" data-layout="thirds"> 
    {{ for member of members }} 
     <div class="profile">
-      <div>
-        <img src="{{ member.photo }}" />
+      <div class="profile__image">
+        {{ if member.photo }}
+          <img src="{{ member.photo |> url }}" />
+        {{ else }}
+          <img src="/icons/no-avatar.svg" inline />
+        {{ /if }}
       </div>
-      <div>
-        <h4>{{ member.name }}</h4>
-        <p>{{ member.function }}</p>
+      <div class="profile__content">
+        <h4 class="[ fs-500 fw-bold text-primary-500 ]">{{ member.name }}</h4>
+        <small class="text-primary-300">{{ member.function }}</small>
       </div>
     </div>
    {{ /for  }}

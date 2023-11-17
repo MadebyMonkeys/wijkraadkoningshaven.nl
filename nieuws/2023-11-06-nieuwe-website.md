@@ -3,7 +3,7 @@ layout: layouts/nieuws-post.vto
 draft: false
 title: Nieuwe website
 date: 2023-10-07T02:38:27.028Z
-image: https://images.unsplash.com/photo-1562426772-f7b1d159764b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis odio, faucibus et semper id, finibus tempor ipsum. Quisque non dui at ante sollicitudin molestie id nec nibh. Fusce pharetra eros sit amet diam tempor vehicula. Curabitur porta turpis id diam consectetur, id mattis purus tincidunt. Ut molestie ante sit amet ullamcorper commodo. Duis eu eros vel tortor rhoncus ullamcorper eu sit amet eros. Sed tempus auctor nisl, a facilisis ex porttitor porta. Aliquam facilisis at arcu a ultricies. Nullam aliquam est nunc, congue ultricies libero luctus non. Nam feugiat, metus ac facilisis accumsan, magna libero malesuada felis, eu tincidunt est ante id metus. Maecenas at faucibus turpis. Duis vitae neque bibendum, feugiat erat molestie, malesuada leo. Duis vulputate, nibh vel interdum placerat, ante mauris suscipit mi, sed porttitor libero odio non urna. Nulla imperdiet orci quis mi fringilla, quis hendrerit nulla egestas.
 

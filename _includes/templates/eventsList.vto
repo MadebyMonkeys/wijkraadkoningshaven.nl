@@ -5,10 +5,10 @@
       <img src="{{ event.data.image }}"/>
     </div>
     <div class="card__content [ flow ]">
-      <h3 class="[ fs-400 fw-bold ]">{{ event.data.title }}</h3>
-      <ul>
-        <li><time datetime="{{ event.data.event_date |> date }}">{{ event.data.event_date |> date('PPP', "nl") }}</time></li>
-        <li>{{ event.data.price }}</li>
+      <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ event.data.title }}</h3>
+      <ul class="meta-info">
+        <li><img src="/icons/post-calendar.svg" inline /><time datetime="{{ event.data.event_date |> date }}">{{ event.data.event_date |> date('PPP', "nl") }}</time></li>
+        <li><img src="/icons/tickets.svg" inline /> {{ event.data.price }}</li>
       </ul>
     </div>
   </a>
