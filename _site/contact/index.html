@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="UTF-8">
-  <title>Nieuws - Wijkraad Koningshaven</title>
+  <title>Contact - Wijkraad Koningshaven</title>
   <meta name="description" content="0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@wijkraadkoningshaven">
   <meta name="twitter:creator" content="@wijkraadkoningshaven">
   <meta property="og:url" content="0">
-  <meta property="og:title" content="Nieuws">
+  <meta property="og:title" content="Contact">
   <meta property="og:description" content="0">
   <meta property="og:image" content="0">
 
   <link href="/global.css" rel="stylesheet">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:3000/nieuws/">
+<meta property="og:url" content="http://localhost:3000/contact/">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -54,7 +54,7 @@
       </li>
       
       <li class="site-nav__item">
-        <a href="/nieuws/" class="site-nav__link" aria-current="page">Nieuws</a>
+        <a href="/nieuws/" class="site-nav__link">Nieuws</a>
       </li>
       
       <li class="site-nav__item">
@@ -62,7 +62,7 @@
       </li>
       
       <li class="site-nav__item">
-        <a href="/contact/" class="site-nav__link">Contact</a>
+        <a href="/contact/" class="site-nav__link" aria-current="page">Contact</a>
       </li>
       
     </ul>
@@ -71,42 +71,17 @@
 </header>
 
     <main>
-      <section class="[ nieuws ] [ content-grid ] [ region flow ]">
-  <div class="section-title">
-  <h1 class="title">Nieuws</h1>
-  <p>Blijf op de hoogte van het laatste nieuws</p>
-  </div>
-  <div class="[ grid ] [ postList ]" data-layout="thirds">
-    
-    
-<div class="card">
-  <a class="card__link" href="/nieuws/This%20is%20a%20test%20post/" style="text-decoration: none;">
-  <picture class="card__image"><img src="https://images.unsplash.com/photo-1699183977963-242cb79d4bc2?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></picture>
-  <div class="card__content">
-    <h3 class="[ fs-400 fw-bold ]">This is a test post</h3>
-    <ul class="meta-info">
-      <li></li>
-      <li><time class="fs-300" datetime="2023-11-13">13 november 2023</time></li>
-    </ul>
-  </div>
-  </a>
-</div>
+      <section class="[ contact ] [ content-grid ] [ region ]">
+  <h1 class="title">Contact</h1>
+  <form name="contact" netlify="">
+      <label>name</label>
+      <input type="text" name="name">
 
-<div class="card">
-  <a class="card__link" href="/nieuws/Nieuwe%20website/" style="text-decoration: none;">
-  <picture class="card__image"><img src="https://images.unsplash.com/photo-1562426772-f7b1d159764b?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></picture>
-  <div class="card__content">
-    <h3 class="[ fs-400 fw-bold ]">Nieuwe website</h3>
-    <ul class="meta-info">
-      <li></li>
-      <li><time class="fs-300" datetime="2023-10-07">7 oktober 2023</time></li>
-    </ul>
-  </div>
-  </a>
-</div>
+      <label>Email</label>
+      <input type="email" name="email">
 
-
-  </div>
+      <button type="submit">Send</button>
+  </form>
 </section>
 
     </main>

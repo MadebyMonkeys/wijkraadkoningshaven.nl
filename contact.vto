@@ -1,0 +1,22 @@
+---
+layout: layouts/base.vto
+title: Contact
+description: Kom in contact
+hasAdmin: false
+menu:
+  visible: true
+  title: Contact
+  order: 9
+---
+<section class="[ contact ] [ content-grid ] [ region ]">
+  <h1 class="title">{{ title }}</h1>
+  <form name="contact" netlify>
+      <label>name</label>
+      <input type="text" name="name" />
+
+      <label>Email</label>
+      <input type="email" name="email" />
+
+      <button type="submit">Send</button>
+  </form>
+</section>

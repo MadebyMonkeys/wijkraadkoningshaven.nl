@@ -11,6 +11,15 @@
 // Globals
 // -----------------------------------------------------------------------------
 
+input,
+select,
+textarea {
+  width: 100%;
+  padding: var(--size-xs) var(--size-s);
+  border-radius: var(--size-3xs);
+  border: 1px solid rgba(0,0,0,.3);
+  background-color: white;
+}
 
 .text-center {
   text-align: center;
@@ -111,15 +120,6 @@
 
   &__image { padding: var(--size-s-l); }
 
-  @media screen and (min-width: 54em) {
-    &__content {
-      order: 2;
-    }
-
-    &__image {
-      order: 1;
-    }
-  }
 }
 
 

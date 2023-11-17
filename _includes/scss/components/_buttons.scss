@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 
+button,
 .button {
   display: inline-flex;
   text-decoration: none;
@@ -11,6 +12,7 @@
   color: white;
   background: var(--button-bgcolor, var(--accent-500));
   border-radius: .5em;
+  cursor: pointer;
 
   &:is(:hover, :focus) {
     background: var(--accent-300);
