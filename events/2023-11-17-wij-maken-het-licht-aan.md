@@ -9,4 +9,4 @@ price: gratis
 ---
 In het atrium van Wijkcentrum Koningshavenm, onder het genot van gratis warme dranken, soep en lekkernijnen, ontsteken we het vredeslicht, de lampjes in de boom.
 
-Natturlijk hebben we ook voor de kinderen leuke gratis activiteiten.
+Natuurlijk hebben we ook voor de kinderen leuke gratis activiteiten.

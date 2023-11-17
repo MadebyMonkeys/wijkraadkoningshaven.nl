@@ -8,7 +8,7 @@ hasAdmin: false
   </header>
   <h1 class="title">{{ title }}</h1>
   <span class="fs-300">Gepubliceerd op <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
-  <div class="content">
+  <div class="content [ flow ]">
     {{ content |> md }}
   </div>
 </article>

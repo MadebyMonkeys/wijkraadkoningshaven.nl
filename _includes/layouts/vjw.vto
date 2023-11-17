@@ -13,3 +13,53 @@ hasAdmin: false
     </div>
   </div>
 </section>
+<section class="[  ] [ content-grid ] [ region flow ]">
+  <h2 class="title">Aanvraag formulier</h2>
+
+  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST" class="[ flow ]"> 
+    <div class="">
+      <label class="[ fs-400 fw-semibold ]">Naam:</label>
+      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+    </div>
+
+    <div class="">
+      <label class="[ fs-400 fw-semibold ]">Telefoon:</label>
+      <input type="text" name="phone" class="form-control" placeholder="Full Name" required>
+    </div>
+
+    <div class=" [ flow ]">
+      <label class="[ fs-400 fw-semibold ]">Adress:</label>
+      <input type="text" name="name" class="form-control" placeholder="Straatnaam + huisnummer" required>
+      <div class="grid" data-layout="50-50">
+        <input type="text" placeholder="Postcode">
+        <input type="text" placeholder="Woonplaats">
+      </div>
+    </div>
+
+
+    <div>
+      <label class="[ fs-400 fw-semibold ]">Email:</label>
+      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+    </div>
+
+    <div>
+      <label class="[ fs-400 fw-semibold ]">Namens welke straat, buurt of vereniging vraagt u het aan?</label>
+      <input type="text" name="applicant" />
+    </div>
+
+    <div class="">
+      <label class="[ fs-400 fw-semibold ]">Wat wil je organiseren?</label>
+      <textarea name="event description" rows="5" placeholder="Typ in het kort wat u zou willen organiseren"></textarea>
+    </div>
+    
+    <div class="">
+      <label class="[ fs-400 fw-semibold ]">Datum:</label>
+      <input type="date" name="datum" class="form-control" placeholder="datum" required>
+    </div>
+
+    <div>
+      <label class="[ fs-400 fw-semibold ]">Bericht:</label>
+      <textarea placeholder="Your Message" name="message" rows="10" required></textarea>
+    </div>
+  </form>
+</section>
