@@ -5,23 +5,21 @@ menu:
   visible: true
   title: Over ons
   order: 2
-
 about:
   title: Over Wijkraad Koningshaven
   image: /img/logo.svg
-  description: >
-    Donec auctor erat id eros cursus, id cursus dui lacinia. Nam ultricies enim ligula, in volutpat lorem tempus et.
-    Vivamus placerat dolor at tempor tempus. Proin vulputate at turpis sit amet accumsan.
-    Morbi lacus nisi, mollis non nulla in, sagittis porttitor ex. Integer porttitor lacinia quam, sed mattis eros rhoncus at.
-    Curabitur iaculis ante non efficitur accumsan.
-
+  content: Donec auctor erat id eros cursus, id cursus dui lacinia. Nam ultricies
+    enim ligula, in volutpat lorem tempus et. Vivamus placerat dolor at tempor
+    tempus. Proin vulputate at turpis sit amet accumsan. Morbi lacus nisi,
+    mollis non nulla in, sagittis porttitor ex. Integer porttitor lacinia quam,
+    sed mattis eros rhoncus at. Curabitur iaculis ante non efficitur accumsan.
 members:
   - name: John Do
     function: functie
-    photo:
+    photo: null
   - name: Jane Doe
     function: functie
-    photo: 
+    photo: null
   - name: Gina Joe
     function: functie
-    photo:
+    photo: null

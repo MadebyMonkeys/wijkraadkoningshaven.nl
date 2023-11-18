@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
 
 .site-nav {
-  position: relative;
+  display: none;
+  order: 3;
   
   &__list {
     display: flex;
@@ -16,10 +17,6 @@
     max-width: unset;
     width: 100%;
     padding: var(--size-xs) var(--size-s);
-
-    @media screen and (min-width: 40em) {
-      width: auto;
-    }
   }
 
   &__link {
@@ -35,6 +32,24 @@
 
     &[aria-current="page"] {
       font-weight: var(--fw-semibold);
+    }
+  }
+}
+
+
+.site-nav.active {
+  display: block;
+}
+
+
+
+@media screen and (min-width: 54rem) {
+  .site-nav {
+    display: block;
+    
+
+    &__item {
+      width: auto;
     }
   }
 }

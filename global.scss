@@ -30,11 +30,23 @@
   }
 }
 
+form .grid {
+  --grid-gutter: 1rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-size: var(--fs-300);
+  display: block;
+  color: var(--primary-300);
+  margin-bottom: .5em;
+}
+
 input,
 select,
 textarea {
   width: 100%;
-  padding: var(--size-xs) var(--size-s);
+  padding: var(--size-xs);
   border-radius: var(--size-3xs);
   border: 1px solid rgba(0,0,0,.3);
   background-color: white;
@@ -168,6 +180,7 @@ textarea {
   --content-max-width: 40em;
   
   &__image {
+    --region-space: 3.3vmax;
     border-radius: var(--size-s-l);
     overflow: hidden;
     

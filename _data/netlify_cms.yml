@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  # repo:
+  # repo: MadebyMonkeys/wijkraadkoningshaven.nl
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
@@ -32,8 +32,65 @@ collections:
 
 
 
-  - name: "news"
-    label: "News post"
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "landing"
+        label: "Landing"
+        file: "/index.yml"
+        editor:
+          preview: false
+        fields:
+          - name: "hero"
+            label: "Hero"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "markdown" }
+
+          - name: "about"
+            label: "About"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string"}
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "content", label: "Content", widget: "markdown" }
+
+
+      - name: "over ons"
+        label: "Over ons"
+        file: "/over-ons.yml"
+        editor:
+          preview: false
+        fields:
+          - name: "about"
+            label: "About"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "content", label: "Content", widget: "markdown" }
+
+
+      - name: "verrijk je wijk"
+        label: "Verrijk je wijk"
+        file: "/verrijk-je-wijk.yml"
+        editor:
+          preview: false
+        fields:
+          - name: "vjw"
+            label: "Verrijk je wijk"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "content", label: "Content", widget: "markdown" }
+
+
+
+  - name: "post"
+    label: "Post"
     folder: "/nieuws/"
     public_folder: "/uploads/"
     description: "Create or edit news post"
@@ -50,7 +107,7 @@ collections:
 
 
 
-  - name: "event"
+  - name: "evenement"
     label: "Event"
     folder: "/events/"
     public_folder: "/uploads/"

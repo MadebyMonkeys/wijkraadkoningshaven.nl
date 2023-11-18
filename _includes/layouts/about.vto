@@ -6,7 +6,7 @@ hasAdmin: false
   <div class="grid ai-center" data-layout="50-50">
     <div class="about__content [ flow ]">
       <h1 class="title">{{ about.title }}</h1>
-      {{ about.description |> md  }}
+      {{ about.content |> md  }}
     </div>
     <div class="about__image">
       <img src="{{ about.image |> url }}" inline />
