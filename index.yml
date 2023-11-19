@@ -13,6 +13,7 @@ hero:
   image: /img/hero-img.svg
   content: Sinds vele jaren is Stichting Wijkraad Koninghaven al actief in de
     wijken Fatima, Hoogvenne en Broekhoven 1.
+
 features:
   - title: Verrijk je wijk
     icon: /icons/vjw.svg
@@ -29,6 +30,7 @@ features:
     description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
       erat, sed fermentum metus ultricies ac.
     url: /over-ons/#vergadering
+
 about:
   title: Wat doen wij als wijkraad?
   image: /img/city-life.svg
