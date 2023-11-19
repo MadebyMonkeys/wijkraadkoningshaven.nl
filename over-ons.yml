@@ -14,12 +14,16 @@ about:
     mollis non nulla in, sagittis porttitor ex. Integer porttitor lacinia quam,
     sed mattis eros rhoncus at. Curabitur iaculis ante non efficitur accumsan.
 members:
-  - name: John Do
-    function: functie
+  - name: Joost
+    function: Voorzitter
     photo: null
-  - name: Jane Doe
-    function: functie
+  - name: Anja
+    function: Secretaris
     photo: null
-  - name: Gina Joe
-    function: functie
+  - name: Ruud
+    function: Penningmeester
     photo: null
+  - function: Commissielid
+    name: Paul
+  - function: Commissielid
+    name: Carola

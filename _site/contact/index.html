@@ -58,7 +58,7 @@
         </li>
         
         <li class="site-nav__item">
-          <a href="/events/" class="site-nav__link">Agenda</a>
+          <a href="/events/" class="site-nav__link">Evenementen</a>
         </li>
         
         <li class="site-nav__item">
@@ -74,16 +74,25 @@
 </header>
 
     <main>
-      <section class="[ contact ] [ content-grid ] [ region ]">
+      <section class="[ contact ] [ content-grid ] [ region flow ]">
   <h1 class="title">Contact</h1>
-  <form name="contact" netlify="">
-      <label>name</label>
-      <input type="text" name="name">
+  <form name="contact" class="[ flow ]">
+    <div class="">
+      <label for="naam" class="[ fs-300 fw-semibold ]">Naam</label>
+      <input type="text" id="naam" name="naam">
+    </div>
+    
+    <div class="">
+      <label for="email" class="[ fs-300 fw-semibold ]">Email</label>
+      <input type="email" id="email" name="email">
+    </div>
 
-      <label>Email</label>
-      <input type="email" name="email">
-
-      <button type="submit">Send</button>
+    <div class="">
+      <label for="bericht" class="[ fs-300 fw-semibold ]">Uw bericht</label>
+      <textarea id="bericht" name="bericht" rows="10" class=""></textarea>
+    </div>
+    
+    <button type="submit">Verzend</button>
   </form>
 </section>
 

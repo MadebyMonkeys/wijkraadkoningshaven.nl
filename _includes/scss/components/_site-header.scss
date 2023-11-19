@@ -7,13 +7,36 @@
   padding: $site-header-padding;
 
   &__inner {
+    max-width: 64em;
     display: flex;
     flex-wrap: wrap;
     align-items: $site-header-justification-small-screens;
     gap: var(--size-s-l);
+    padding-inline: var(--size-s-l);
+    margin-inline: auto;
 
     @media screen and (max-width: 40rem) {
       justify-content: $site-header-justification-large-screens;
+    }
+  }
+}
+
+
+.site-header {
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: var(--size-s);
+
+    svg {
+      width: 48px;
+    }
+
+    span {
+      font-weight: 700;
+      color: var(--primary-500);
     }
   }
 }

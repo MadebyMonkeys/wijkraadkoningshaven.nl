@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: MadebyMonkeys/wijkraadkoningshaven.nl
   branch: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -51,6 +52,22 @@ collections:
               - name: description
                 label: Description
                 widget: markdown
+          - name: features
+            label: Features
+            widget: list
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: icon
+                label: Icon
+                widget: string
+              - name: description
+                label: Description
+                widget: markdown
+              - name: url
+                label: Url
+                widget: string
           - name: about
             label: About
             widget: object
@@ -64,7 +81,7 @@ collections:
               - name: content
                 label: Content
                 widget: markdown
-      - name: over ons
+      - name: over-ons
         label: Over ons
         file: /over-ons.yml
         editor:
@@ -83,14 +100,28 @@ collections:
               - name: content
                 label: Content
                 widget: markdown
-      - name: verrijk je wijk
+          - name: members
+            label: Members
+            widget: list
+            fields:
+              - name: image
+                label: Image
+                widget: image
+                required: false
+              - name: name
+                label: Name
+                widget: string
+              - name: function
+                label: Function
+                widget: string
+      - name: verrijk-je-wijk
         label: Verrijk je wijk
         file: /verrijk-je-wijk.yml
         editor:
           preview: false
         fields:
           - name: vjw
-            label: Verrijk je wijk
+            label: vjw
             widget: object
             fields:
               - name: title
