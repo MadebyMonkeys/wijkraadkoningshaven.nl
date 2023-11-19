@@ -29,6 +29,8 @@ collections:
           - { label: "Global title", name: "title", widget: "string" }
           - { label: "Global description", name: "description", widget: "text" }
           - { label: "Logo", name: "logo", widget: "image", default: "/img/logo.svg" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "whatsapp", label: "Whatsapp", widget: "string" }
 
 
 
@@ -47,7 +49,7 @@ collections:
             widget: "object"
             fields:
               - { name: "title", label: "Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "markdown" }
+              - { name: "content", label: "Content", widget: "markdown" }
 
           - name: "features"
             label: "Features"

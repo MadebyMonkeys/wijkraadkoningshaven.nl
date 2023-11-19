@@ -1,36 +1,40 @@
 layout: layouts/landing.vto
+hasAdmin: true
 title: Welkom op Wijkraad Koningshaven
 description: Een goede beschrijving
-hasAdmin: true
-sort_by: date
 menu:
   visible: true
   title: Home
-  order: 1
+  order: 0
+sort_by: date
 
 hero:
   title: Wijkraad Koningshaven
-  image: /img/hero-img.svg 
-  description: >
-    Vestibulum interdum suscipit egestas. Maecenas porta erat et maximus consectetur.
-    Vestibulum fermentum metus malesuada, finibus felis a, maximus enim.
-
+  image: /img/hero-img.svg
+  content: Sinds vele jaren is Stichting Wijkraad Koninghaven al actief in de
+    wijken Fatima, Hoogvenne en Broekhoven 1.
 features:
   - title: Verrijk je wijk
     icon: /icons/vjw.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
+      erat, sed fermentum metus ultricies ac.
     url: /verrijk-je-wijk
   - title: Evenementen
-    icon: /icons/events.svg 
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    icon: /icons/events.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
+      erat, sed fermentum metus ultricies ac.
     url: /events
   - title: Vergaderingen
-    icon: /icons/calendar.svg 
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    icon: /icons/calendar.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
+      erat, sed fermentum metus ultricies ac.
     url: /over-ons/#vergadering
-
 about:
   title: Wat doen wij als wijkraad?
   image: /img/city-life.svg
   content: >
-    Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de achtergrond ons werk doen. We proberen een fijne en veilige “wijk” te maken waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam voelen.
+    Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de
+    achtergrond ons werk doen.  We proberen een fijne en veilige “wijk” te maken
+    waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren
+    naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam
+    voelen.

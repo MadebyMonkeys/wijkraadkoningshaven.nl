@@ -33,6 +33,12 @@ collections:
             name: logo
             widget: image
             default: /img/logo.svg
+          - name: email
+            label: Email
+            widget: string
+          - name: whatsapp
+            label: Whatsapp
+            widget: string
   - name: pages
     label: Pages
     files:
@@ -49,8 +55,8 @@ collections:
               - name: title
                 label: Title
                 widget: string
-              - name: description
-                label: Description
+              - name: content
+                label: Content
                 widget: markdown
           - name: features
             label: Features
