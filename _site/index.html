@@ -79,7 +79,7 @@
    <div class="[ hero__content ] [ flow ]">
     <h1 class="title">Wijkraad Koningshaven</h1>
     <div class="flow">
-      Sinds vele jaren is Stichting Wijkraad Koninghaven al actief in de wijken Fatima, Hoogvenne en Broekhoven 1.
+      <p>Sinds vele jaren is Stichting Wijkraad Koninghaven al actief in de wijken Fatima, Hoogvenne en Broekhoven 1.</p>
     </div>
    </div>
    <div class="hero__image">
@@ -138,23 +138,23 @@
     </div>   
     <div class="about__content [ flow ]">
       <h2 class="[ title ]">Wat doen wij als wijkraad?</h2>
-      <p>Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de achtergrond ons werk doen.  We proberen een fijne en veilige “wijk” te maken waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam voelen.
-</p><p>
+      <p></p><p>Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de achtergrond ons werk doen.  We proberen een fijne en veilige “wijk” te maken waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam voelen.</p><p>
     </p></div>
   </div>
 </section>
 <section class="[ postslist ] [ content-grid ] [ region flow ]">
-  <h2 class="title">Nieuws</h2>
+  <h2 class="title [ mb-s-l ]">Nieuws</h2>
   <div class="grid" data-layout="thirds">
     
     
 <div class="card">
   <a class="card__link" href="/nieuws/Wensboom/" style="text-decoration: none;">
-  <picture class="card__image"><img src="https://images.unsplash.com/photo-1576326849958-33f0150d7736?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></picture>
+  
+  <div class="card__image"><img src="https://images.unsplash.com/photo-1545622783-b3e021430fee?q=80&amp;w=2068&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+  
   <div class="card__content">
-    <h3 class="[ fs-400 fw-bold ]">Wensboom</h3>
+    <h3 class="[ fs-400 fw-bold text-primary-500 ]">Wensboom</h3>
     <ul class="meta-info">
-      <li></li>
       <li><time class="fs-300" datetime="2023-11-17">17 november 2023</time></li>
     </ul>
   </div>
@@ -163,11 +163,12 @@
 
 <div class="card">
   <a class="card__link" href="/nieuws/Nieuwe%20website/" style="text-decoration: none;">
-  <picture class="card__image"><img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></picture>
+  
+  <div class="card__image"><img src="https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+  
   <div class="card__content">
-    <h3 class="[ fs-400 fw-bold ]">Nieuwe website</h3>
+    <h3 class="[ fs-400 fw-bold text-primary-500 ]">Nieuwe website</h3>
     <ul class="meta-info">
-      <li></li>
       <li><time class="fs-300" datetime="2023-10-07">7 oktober 2023</time></li>
     </ul>
   </div>
@@ -180,6 +181,23 @@
 
     </main>
     <footer class="[ site-footer ] [ content-grid ] [ region ]">
+  <div class="grid [ mb-3xl ]" data-layout="thirds">
+    <div class="flow">
+      <h4 class="title">Wijkraad Koningshaven</h4>
+      <p class="fs-300">Een wijkraad met een hart voor de wijk</p>
+    </div>
+    <div class="flow">
+      <h4 class="title">Externe Links</h4>
+      <ul class="" role="list">
+      
+        <li class="fs-300"><a href="[object Object]" target="_blank"></a></li>
+      
+      </ul>
+    </div>
+    <div>
+      <h4 class="title">Socialmedia</h4>
+    </div>
+  </div>
   <div class="text-center">
     <p class="fs-300">© Copyright 2023 - 2024 Wijkraad Koningshaven</p>
   </div>
@@ -189,15 +207,15 @@
 
 
 <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
-            }
-        });
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
     }
+  });
+}
 </script>
 
 

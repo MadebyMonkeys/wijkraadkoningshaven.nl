@@ -13,6 +13,7 @@ import nl from "npm:date-fns/locale/nl/index.js";
 
 const site = lume({
   location: new URL("https://wijkraadkoningshaven.nl"),
+  src: "./_src/",
 });
 
 site

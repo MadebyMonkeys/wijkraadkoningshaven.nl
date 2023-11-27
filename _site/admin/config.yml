@@ -9,7 +9,7 @@ backend:
     uploadMedia: 'Upload “{{path}}”'
     deleteMedia: 'Delete “{{path}}”'
 publish_mode: editorial_workflow
-media_folder: /static/uploads
+media_folder: /_src/static/uploads
 public_folder: /uploads
 collections:
   - name: settings
@@ -39,6 +39,21 @@ collections:
           - name: whatsapp
             label: Whatsapp
             widget: string
+      - name: links
+        label: External Links
+        file: _data/links.yml
+        description: External links
+        fields:
+          - name: link
+            label: Link
+            widget: list
+            fields:
+              - name: name
+                label: Title
+                widget: string
+              - name: link
+                label: Link
+                widget: string
   - name: pages
     label: Pages
     files:
@@ -162,6 +177,8 @@ collections:
       - label: Publish date
         name: date
         widget: datetime
+        date_format: DD.MM.YYYY
+        time_format: 'HH:mm'
       - label: Image
         name: image
         widget: image
@@ -197,15 +214,36 @@ collections:
         name: image
         widget: image
         required: false
-      - label: Event Date
-        name: event_date
-        widget: datetime
-      - label: Event Price
-        name: price
-        widget: string
-        required: false
       - label: Body
         name: body
         widget: markdown
+      - name: event
+        label: Event Data
+        widget: object
+        fields:
+          - name: date
+            label: Datum
+            widget: datetime
+            date_format: DD.MM.YYYY
+            time_format: false
+          - name: start_time
+            label: Start tijd
+            widget: datetime
+            date_format: false
+            time_format: 'HH:mm'
+          - name: end_time
+            label: Eind tijd
+            widget: datetime
+            date_format: false
+            time_format: 'HH:mm'
+            required: false
+          - name: price
+            label: Entree prijs
+            widget: string
+            required: false
+          - label: Lokatie
+            name: location
+            widget: string
+            required: false
 site_url: 'http://localhost:3000/'
 local_backend: true

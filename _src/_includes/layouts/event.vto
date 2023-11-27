@@ -1,0 +1,49 @@
+---
+layout: layouts/base.vto
+sort_by: =sort_by
+hasAdmin: false
+---
+<article class="[ event ] [ content-grid ] [ flow ]">
+  <header class="[ event__image ] [ fullwidth ]">
+    <img src="{{ image |> url }}" alt="thumbnail" />
+  </header>
+  <h1 class="title">{{ title }}</h1>
+  <span class="fs-300">Gepubliceerd op <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
+
+  <div class="[] [ p-s mv-m ] [ bg-secondary-500 ]">
+    <ul role="list"> 
+      <li>{{ event.date |> date('PPP') }}</li>
+      {{ if event.location }}
+      <li>{{ location }}</li>
+      {{ /if }}
+      {{ if event.start_time }}
+      <li>{{ event.start_time }} {{ if event.end_time }}- {{ event.end_time }}{{ /if }}</li>
+      {{ /if }}
+      {{ if event.price }}
+      <li>{{ event.price }}</li>
+      {{ /if }}
+    </ul>
+  </div>
+
+  <div class="content [ flow ]">
+    {{ content |> md }}
+  </div>
+</article>
+
+<section class="post__nav [ region ] [ flow ]">
+  {{ set previousItem = search.previousPage(url, "type=" + type, sort_by) }}
+  {{ if previousItem }}
+  <a data-animate="from-left" class="left" href="{{ previousItem.data.url |> url }}">
+    <div class="subtext [ fs-200 ]">&larr; Vorige</div>
+    <h3 class="headline [ fs-600 fw-bold color-neutral-800 ]">{{ previousItem.data.title }}</h3>
+  </a>
+  {{ /if }}
+
+  {{ set nextItem = search.nextPage(url, "type=" + type, sort_by) }}
+  {{ if nextItem }}
+  <a data-animate="from-right" class="right" href="{{ nextItem.data.url |> url }}">
+    <div class="subtext [ fs-200 ]">Volgende &rarr;</div>
+    <h3 class="headline [ fs-600 fw-bold color-neutral-800 ]">{{ nextItem.data.title }}</h3>
+  </a>
+  {{ /if }}
+</section>
