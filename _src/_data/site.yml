@@ -1,10 +1,16 @@
 title: Wijkraad Koningshaven
-description: Een wijkraad met een hart voor de wijk
+description: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 logo: /uploads/logo.svg
 image: /img/main-img.jpg
 email: info@wijkraadkoningshaven.nl
-whatsapp: 0643933867
 links:
-  - name: Wijkkrant Koningshaven
-    link: https://wijkkrant.koningshaven.eu/
+  - title: Wijkkrant Koningshaven
+    url: https://wijkkrant.koningshaven.eu/
 
+socials:
+  - title: whatsapp
+    link: whatsapp://0643933867
+  - title: facebook
+    link: https://www.facebook.com/Koningshaven.eu/

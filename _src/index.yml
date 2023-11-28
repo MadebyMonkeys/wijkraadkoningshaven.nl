@@ -10,9 +10,9 @@ sort_by: date
 
 hero:
   title: Wijkraad Koningshaven
+  subtitle: >
+    Sinds vele jaren is Stichting Wijkraad Koningshaven al actief in de wijken Fatima, Hoogvenne en Broekhoven 1.
   image: /img/hero-img.svg
-  content: Sinds vele jaren is Stichting Wijkraad Koninghaven al actief in de
-    wijken Fatima, Hoogvenne en Broekhoven 1.
 
 features:
   - title: Verrijk je wijk

@@ -1,0 +1,31 @@
+hero:
+  title: Wijkraad Koningshaven
+  subtitle: Sinds vele jaren is Stichting Wijkraad Koningshaven al actief in de
+    wijken Fatima, Hoogvenne en Broekhoven 1.
+features:
+  - title: Verrijk je wijk
+    icon: /icons/vjw.svg
+    description: Morbi aliquam sapien at quam maximus, sit amet congue turpis
+      ullamcorper. Vivamus lectus tortor, tincidunt eu turpis at, tincidunt
+      malesuada diam.
+    url: /verijk-je-wijk
+  - title: Evenementen
+    icon: /icons/events.svg
+    description: Morbi aliquam sapien at quam maximus, sit amet congue turpis
+      ullamcorper. Vivamus lectus tortor, tincidunt eu turpis at, tincidunt
+      malesuada diam.
+    url: /events
+  - title: Vergaderingen
+    icon: /icons/calendar.svg
+    description: Morbi aliquam sapien at quam maximus, sit amet congue turpis
+      ullamcorper. Vivamus lectus tortor, tincidunt eu turpis at, tincidunt
+      malesuada diam.
+    url: /over-ons/#vergadering
+about:
+  title: Wat doen wij als wijkraad?
+  content: Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de
+    achtergrond ons werk doen. We proberen een fijne en veilige “wijk” te maken
+    waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren
+    naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam
+    voelen.
+  image: /uploads/city-life.svg

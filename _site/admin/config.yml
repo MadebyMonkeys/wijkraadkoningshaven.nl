@@ -36,19 +36,21 @@ collections:
           - name: email
             label: Email
             widget: string
-          - name: whatsapp
-            label: Whatsapp
-            widget: string
-      - name: links
-        label: External Links
-        file: _data/links.yml
-        description: External links
-        fields:
-          - name: link
-            label: Link
+          - name: links
+            label: Links
             widget: list
             fields:
-              - name: name
+              - name: title
+                'label:"Title"': null
+                widget: string
+              - name: url
+                label: Url
+                widget: string
+          - name: socials
+            label: Socials
+            widget: list
+            fields:
+              - name: title
                 label: Title
                 widget: string
               - name: link
@@ -70,9 +72,9 @@ collections:
               - name: title
                 label: Title
                 widget: string
-              - name: content
+              - name: subtitle
                 label: Content
-                widget: markdown
+                widget: text
           - name: features
             label: Features
             widget: list

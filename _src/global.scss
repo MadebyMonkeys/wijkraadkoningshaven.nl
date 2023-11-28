@@ -160,13 +160,40 @@
 }
 
 
-
-.site-footer {
+.site-subfooter {
   background: var(--secondary-300);
 
   .title {
     --title-size: var(--fs-500);
   }
+
+  .grid {
+    --grid-gutter: var(--size-xl);
+  }
+}
+
+
+
+.social {
+
+  &__link {
+    text-decoration: none;
+    padding: var(--size-xs) var(--size-s);
+    border-radius: 9999em;
+    color: var(--primary-500);
+    background: var(--secondary-500);
+
+    &:hover {
+      color: white;
+      background: var(--primary-300);
+    }
+  }
+}
+
+
+
+.site-footer {
+  --region-space: 3.3vmax;
 }
 
 
