@@ -11,6 +11,8 @@ links:
 
 socials:
   - title: whatsapp
+    icon: fa-whatsapp
     link: whatsapp://0643933867
   - title: facebook
+    icon: fa-facebook
     link: https://www.facebook.com/Koningshaven.eu/

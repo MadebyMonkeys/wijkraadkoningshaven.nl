@@ -15,12 +15,12 @@ sort_by: =sort_by
   <div class="[] [ p-s mt-xl ] [ flow bg-secondary-500 ]">
     <h4 class="fw-semibold">Evenement informatie:</h4>
     <ul class="fs-300" role="list"> 
-      <li><span class="icofont-calendar"></span> <time datetime="{{ event.datum |> date("PPPppp") }}">{{ event.datum |> date('dd MMMM yyyy - HH:mm') }}</time></li>
+      <li><i class="fa-solid fa-calendar-days"></i> <time datetime="{{ event.datum |> date("PPPppp") }}">{{ event.datum |> date('dd MMMM yyyy - HH:mm') }}</time></li>
       {{ if event.location }}
-      <li><span class="icofont-location-pin"></span> {{ event.location }}</li>
+      <li><i class="fa-solid fa-location-dot"></i> {{ event.location }}</li>
       {{ /if }}
       {{ if event.prijs }}
-      <li><span class="icofont-ticket"></span> {{ event.prijs }}</li>
+      <li><i class="fa-solid fa-ticket"></i> {{ event.prijs }}</li>
       {{ /if }}
     </ul>
   </div>
