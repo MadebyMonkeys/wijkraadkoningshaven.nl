@@ -8,7 +8,7 @@
       <h4 class="fs-400 fw-bold">Externe Links</h4>
       <ul class="" role="list">
       {{ for link of site.links }}
-        <li class="fs-300"><a class="link" href="{{ link.url }}" target="_blank"><i class="fa-solid fa-angle-right"></i> {{ link.title }}</a></li>
+        <li class="fs-300"><a class="link" href="{{ link.url }}" target="_blank"><i class="icofont-rounded-right"></i> {{ link.title }}</a></li>
       {{ /for }}
       </ul>
     </div>
@@ -16,7 +16,7 @@
       <h4 class="fs-400 fw-bold">Socialmedia</h4>
       <div class="flex-group">
       {{ for social of site.socials }}
-        <a class="social__link" href="{{ social.link }}"><i class="fa-brands {{ social.icon }}"></i></a>
+        <a class="social__link" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a>
       {{ /for }}
       </div>
     </div>

@@ -7,9 +7,9 @@
     <div class="card__content [ flow ]">
       <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ event.data.title }}</h3>
       <ul class="icofont-ul meta-info">
-        <li><i class="fa-solid fa-calendar-days"></i> <time datetime="{{ event.data.event.datum |> date("PPP") }}">{{ event.data.event.datum |> date("PPP HH:mm") }}</time></li>
+        <li><i class="icofont-calendar"></i> <time datetime="{{ event.data.event.datum |> date("PPP") }}">{{ event.data.event.datum |> date("PPP HH:mm") }}</time></li>
         {{ if event.data.event.prijs }}
-          <li><i class="fa-solid fa-ticket"></i> {{ event.data.event.prijs }}</li>
+          <li><i class="icofont-ticket"></i> {{ event.data.event.prijs }}</li>
         {{ /if }}
       </ul>
     </div>

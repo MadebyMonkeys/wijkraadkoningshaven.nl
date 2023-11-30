@@ -7,7 +7,7 @@ sort_by: =sort_by
     <img src="{{ image |> url }}" alt="thumbnail" />
   </header>
   <h1 class="title">{{ title }}</h1>
-  <span class="fs-300"><i class="fa-solid fa-calendar-days"></i> <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
+  <span class="fs-300"><i class="icofont-calendar"></i> <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
   <div class="content [ flow ]">
     {{ content |> md }}
   </div>
