@@ -50,8 +50,11 @@
 .meta-info {
   color: var(--theme-text);
   font-size: var(--fs-300);
+
   li {
+    font-family: var(--ff-base);
     display: flex;
+    align-items: center;
     gap: var(--size-2xs);
 
     & > svg {
@@ -169,6 +172,10 @@
 
   .grid {
     --grid-gutter: var(--size-xl);
+  }
+
+  .link {
+    text-decoration: none;
   }
 }
 

@@ -14,17 +14,16 @@ hasAdmin: false
   </div>
 </section>
 <section class="[ team ] [ content-grid ] [ region bg-secondary-500 ]">
-  <h1 class="title">Het Team</h1>
+  <h1 class="title mb-l">Het Team</h1>
   <div class="grid" data-layout="thirds"> 
    {{ for member of members }} 
     <div class="profile">
-      <div class="profile__image">
-        {{ if member.photo }}
-          <img src="{{ member.photo |> url }}" />
-        {{ else }}
-          <img src="/icons/no-avatar.svg" inline />
-        {{ /if }}
+      <div
+      {{ if member.image }}
+      <div class="profile__image text-center">
+        <img src="{{ member.image |> url }}" />
       </div>
+      {{ /if }}
       <div class="profile__content">
         <h4 class="[ fs-500 fw-bold text-primary-500 ]">{{ member.name }}</h4>
         <small class="text-primary-300">{{ member.function }}</small>

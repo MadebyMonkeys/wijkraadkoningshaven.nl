@@ -23,7 +23,7 @@ collections:
     files:
       - name: "general"
         label: "Site Settings"
-        file: "_data/site.yml"
+        file: "_src/_data/site.yml"
         description: "General Site Settings"
         fields:
           - { label: "Global title", name: "title", widget: "string" }
@@ -52,7 +52,7 @@ collections:
     files:
       - name: "landing"
         label: "Landing"
-        file: "/index.yml"
+        file: "/_src/index.yml"
         editor:
           preview: false
         fields:
@@ -83,7 +83,7 @@ collections:
 
       - name: "over-ons"
         label: "Over ons"
-        file: "/over-ons.yml"
+        file: "/_src/over-ons.yml"
         editor:
           preview: false
         fields:
@@ -108,7 +108,7 @@ collections:
 
       - name: "verrijk-je-wijk"
         label: "Verrijk je wijk"
-        file: "/verrijk-je-wijk.yml"
+        file: "/_src/verrijk-je-wijk.yml"
         editor:
           preview: false
         fields:
@@ -125,7 +125,7 @@ collections:
 
   - name: "post"
     label: "Post"
-    folder: "/nieuws/"
+    folder: "/_src/nieuws/"
     public_folder: "/uploads/"
     description: "Create or edit news post"
     create: true
@@ -142,9 +142,9 @@ collections:
 
 
 
-  - name: "evenement"
+  - name: "event"
     label: "Event"
-    folder: "/events/"
+    folder: "/_src/events/"
     public_folder: "/uploads/"
     description: "Create or edit an event"
     create: true
@@ -161,9 +161,7 @@ collections:
         label: "Event Data"
         widget: "object"
         fields:
-          - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MM.YYYY", time_format: false }
-          - { name: "start_time", label: "Start tijd", widget: "datetime", date_format: false, time_format: "HH:mm" }
-          - { name: "end_time", label: "Eind tijd", widget: "datetime", date_format: false, time_format: "HH:mm", required: false }
-          - { name: "price", label: "Entree prijs", widget: "string", required: false }
+          - { name: "datum", label: "Datum", widget: "datetime", date_format: "DD.MMMM.YYYY HH:mm", time_format: "HH:mm", format: "LLL" }
+          - { name: "prijs", label: "Entree prijs", widget: "string", required: false }
           - { label: "Lokatie", name: "location", widget: "string", required: false }
 

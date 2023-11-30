@@ -17,13 +17,18 @@ members:
   - name: Joost
     function: Voorzitter
     photo: null
+    image: /uploads/img_avatar_male.png
   - name: Anja
     function: Secretaris
     photo: null
+    image: /uploads/img_avatar_female.png
   - name: Ruud
     function: Penningmeester
     photo: null
+    image: /uploads/img_avatar_male.png
   - function: Commissielid
     name: Paul
+    image: /uploads/img_avatar_male.png
   - function: Commissielid
     name: Carola
+    image: /uploads/img_avatar_female.png

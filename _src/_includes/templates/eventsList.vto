@@ -6,10 +6,10 @@
     </div>
     <div class="card__content [ flow ]">
       <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ event.data.title }}</h3>
-      <ul class="meta-info">
-        <li><img src="/icons/post-calendar.svg" inline /><time datetime="{{ event.data.event_date |> date }}">{{ event.data.event_date |> date('PPP', "nl") }}</time></li>
-        {{ if event.data.price }}
-          <li><img src="/icons/tickets.svg" inline /> {{ event.data.price }}</li>
+      <ul class="icofont-ul meta-info">
+        <li><span class="icofont-calendar"></span> <time datetime="{{ event.data.event.datum |> date("PPP") }}">{{ event.data.event.datum |> date("PPP HH:mm") }}</time></li>
+        {{ if event.data.event.prijs }}
+          <li><span class="icofont-ticket"></span> {{ event.data.event.prijs }}</li>
         {{ /if }}
       </ul>
     </div>
