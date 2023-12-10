@@ -14,7 +14,7 @@ hasAdmin: false
   </div>
 </section>
 <section class="[ team ] [ content-grid ] [ region bg-secondary-500 ]">
-  <h1 class="title mb-l">Het Team</h1>
+  <h2 class="title mb-l">Het Team</h2>
   <div class="grid" data-layout="thirds"> 
    {{ for member of members }} 
     <div class="profile">
@@ -30,5 +30,19 @@ hasAdmin: false
       </div>
     </div>
    {{ /for  }}
+  </div>
+</section>
+<section id="vergadering" class="[ vergadering ] [ content-grid ] [ region flow ]">
+  <h2 class="[ title ] [] []">{{ vergadering.title }}</h2>
+  {{ vergadering.description |> md }}
+  <div class="grid [ mt-s-l ]" data-layout="thirds">
+  {{ for item of vergadering.items }}
+    <div class="card">
+      <div class="card__content">
+      <p class="fw-medium">{{ item.datum |> date("PPP - HH:mm") }}</p>
+      <span class="[ block ] [ fs-300 ] [ text-secondary-700 ]">{{ item.lokatie }}</span>
+      </div>
+    </div>
+  {{ /for }}
   </div>
 </section>

@@ -106,6 +106,20 @@ collections:
               - { name: "function", label: "Function", widget: "string" }
 
 
+          - name: "vergadering"
+            label: "Vergadering"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - name: "datums"
+                label: "vergadering Data"
+                widget: "list"
+                fields:
+                  - { name: "datum", label: "Datum", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm" }
+                  - { name: "lokatie", label: "Lokatie", widget: "string", default: "Wijkraad Koningshaven" }
+
+
       - name: "verrijk-je-wijk"
         label: "Verrijk je wijk"
         file: "/_src/verrijk-je-wijk.yml"
