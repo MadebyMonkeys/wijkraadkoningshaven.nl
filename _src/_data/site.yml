@@ -1,14 +1,15 @@
-title: Wijkraad Koningshaven
+title: Stichting Wijkraad Koningshaven
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  De stichting wijkraad Koningshaven is op 1 januari 1995 opgericht en
+  ingeschreven in de Kamer van Koophandel.
+
+  De wijkraad is een stichting zonder winstbejag en ontvangt een subsidie om de verbinding tussen wijkbewoners te bevorderen.
 logo: /uploads/logo.svg
 image: /img/main-img.jpg
 email: info@wijkraadkoningshaven.nl
 links:
   - title: Wijkkrant Koningshaven
     url: https://wijkkrant.koningshaven.eu/
-
 socials:
   - title: whatsapp
     icon: icofont-whatsapp
