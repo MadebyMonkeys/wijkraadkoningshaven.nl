@@ -2,12 +2,7 @@ layout: layouts/landing.vto
 about:
   title: Wat doen wij als wijkraad?
   image: /img/city-life.svg
-  content: >
-    Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de
-    achtergrond ons werk doen.  We proberen een fijne en veilige “wijk” te maken
-    waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren
-    naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam
-    voelen.
+  content: .
 hasAdmin: true
 title: Welkom op Wijkraad Koningshaven
 sort_by: date
@@ -31,6 +26,12 @@ features:
 
 
       Alle aanvragen worden door het bestuur van Stichting Wijkraad Koningshaven besproken. Het gehele bestuur beslist of de aanvraag wordt toegekend en welk bedrag zij subsidiëren.
+
+
+      W﻿il je een aanvraag indienen in het kader van deze regeling stuur dan een mail naar:
+
+
+      [VJW@wijkraadkoningshaven.nl](mailto:VJW@wijkraadkoningshaven.nl)
     url: /verrijk-je-wijk
   - title: Evenementen
     icon: /icons/events.svg
