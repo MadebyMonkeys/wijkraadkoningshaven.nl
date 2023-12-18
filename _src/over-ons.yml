@@ -8,11 +8,11 @@ menu:
 about:
   title: Over Wijkraad Koningshaven
   image: /img/logo.svg
-  content: Donec auctor erat id eros cursus, id cursus dui lacinia. Nam ultricies
-    enim ligula, in volutpat lorem tempus et. Vivamus placerat dolor at tempor
-    tempus. Proin vulputate at turpis sit amet accumsan. Morbi lacus nisi,
-    mollis non nulla in, sagittis porttitor ex. Integer porttitor lacinia quam,
-    sed mattis eros rhoncus at. Curabitur iaculis ante non efficitur accumsan.
+  content: >-
+    De stichting wijkraad Koningshaven is op 1 januari 1995 opgericht en
+    ingeschreven in de Kamer van Koophandel.
+
+    De wijkraad is een stichting zonder winstbejag en ontvangt een subsidie van de gemeente Tilburg om de verbinding tussen wijkbewoners te bevorderen. Daarnaast is de wijkraad ook een spreekbuis tussen de gemeente Tilburg en de wijkbewoners Broekhoven 1 - Fatima en Hoogvenne.
 members:
   - name: Joost
     function: Voorzitter
