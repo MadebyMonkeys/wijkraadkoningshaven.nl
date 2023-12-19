@@ -1,11 +1,9 @@
-@use "font-faces" as *;
-
 //
 // Font Family
 //
 
-$-ff-sans: sans-serif;
-$-ff-serif: serif;
+$-ff-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$-ff-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
 $font-family-base: $-ff-sans;
 $font-family-accent: $-ff-serif;

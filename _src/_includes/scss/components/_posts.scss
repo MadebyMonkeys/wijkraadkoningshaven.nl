@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Posts List
+// -----------------------------------------------------------------------------
+
+.postsList {
+  .card {
+    background-color: white;
+    box-shadow: $box-shadow-small;
+    overflow: clip;
+
+    &__image {
+      overflow: clip;
+      max-height: 50dvh;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow-large;
+    }
+  }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Post
+// -----------------------------------------------------------------------------
+
+.post {
+  --content-max-width: 54rem !important;
+  --region-space: 3.3vmax;
+
+  &__image {
+    border-radius: var(--size-s-l);
+    
+    img {
+      max-height: 60dvh;
+      width: 100%;
+      border-radius: var(--size-s);
+      object-fit: cover;
+    }
+  }
+}

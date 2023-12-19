@@ -2,107 +2,107 @@
 layout: layouts/base.vto
 hasAdmin: false
 ---
-<section class="[ verrijkwijk ] [ content-grid ] [ region ]">
-  <div class="[ grid ] [ ai-center ]" data-layout="50-50">
-    <div class="flow">
-      <h1 class="title">{{ vjw.title }}</h1>
-      {{ vjw.content |> md }} 
-    </div>
-    <div>
-      <img src="{{ vjw.image |> url }}" />
-    </div>
-  </div>
-</section>
-<section class="[ aanvraag-form ] [ content-grid ] [ region flow ]">
-  <h2 class="title">Aanvraag formulier</h2>
 
-  <form target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST" class="[ flow ]">
-    <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_template" value="basic">
-
-    <div class="">
-      <label for="naam" class="[ fs-300 fw-semibold ]">Naam:</label>
-      <input type="text" id="naam" name="naam" class="form-control" placeholder="Volledige naam" required>
-    </div>
-
-    <div class="">
-      <label for="telefoon" class="[ fs-300 fw-semibold ]">Telefoon:</label>
-      <input type="text" id="telefoon" name="telefoon" class="form-control" placeholder="Telefoon nummer" required>
-    </div>
-
-    <div class=" [  ]">
-      <label class="[ fs-300 fw-semibold ]">Adress:</label>
-      <input type="text" name="street" class="form-control" placeholder="Straatnaam + huisnummer" required>
-      <div class="grid" data-layout="50-50">
-        <input type="text" name="postcode" placeholder="Postcode">
-        <input type="text" name="woonplaats" placeholder="Woonplaats">
+<main>
+  <section class="[ verrijkwijk ] [ content-grid ] [ region ]">
+    <div class="[ grid ] [ ai-center ]" data-layout="50-50">
+      <div class="flow">
+        <h1 class="title">{{ vjw.title }}</h1>
+        {{ vjw.content |> md }} 
+      </div>
+      <div>
+        <img src="{{ vjw.image |> url }}" />
       </div>
     </div>
+  </section>
+  <section class="[ aanvraag-form ] [ content-grid ] [ region flow ]">
+    <h2 class="title">Aanvraag formulier</h2>
+
+    <form target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST" class="[ flow ]">
+      <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_template" value="basic">
+
+      <div class="">
+        <label for="naam" class="[ fs-300 fw-semibold ]">Naam:</label>
+        <input type="text" id="naam" name="naam" class="form-control" placeholder="Volledige naam" required>
+      </div>
+
+      <div class="">
+        <label for="telefoon" class="[ fs-300 fw-semibold ]">Telefoon:</label>
+        <input type="text" id="telefoon" name="telefoon" class="form-control" placeholder="Telefoon nummer" required>
+      </div>
+
+      <div class=" [  ]">
+        <label class="[ fs-300 fw-semibold ]">Adress:</label>
+        <input type="text" name="street" class="form-control" placeholder="Straatnaam + huisnummer" required>
+        <div class="grid" data-layout="50-50">
+          <input type="text" name="postcode" placeholder="Postcode">
+          <input type="text" name="woonplaats" placeholder="Woonplaats">
+        </div>
+      </div>
 
 
-    <div class="">
-      <label for="email" class="[ fs-300 fw-semibold ]">Email:</label>
-      <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+      <div class="">
+        <label for="email" class="[ fs-300 fw-semibold ]">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+      </div>
+
+      <div>
+        <label for="aanvrager" class="[ fs-300 fw-semibold ]">Namens wie vraagt u het aan?</label>
+        <input type="text" id="aanvrager" name="aanvrager" placeholder="bijv. straat, buurt of vereniging" />
+      </div>
+
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Wat wil u organiseren?</label>
+        <textarea name="event description" rows="5" placeholder="Typ in het kort wat u zou willen organiseren"></textarea>
+      </div>
+      
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Wat is de datum voor uw plan?</label>
+        <input type="date" name="datum" class="form-control" placeholder="datum" required>
+      </div>
+
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Waar vind het plaats?</label>
+        <input type="text" name="lokatie" class="form-control" placeholder="Lokatie" required>
+      </div>
+
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Welke doelgroep wil u uitnodigen?</label>
+        <input type="text" name="name" class="form-control" placeholder="Bijv. buurtbewoners, kinderen of bejaarden" required>
+      </div>
+
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Hoeveel deelnemers verwacht u?</label>
+        <input type="text" name="deelnemers" class="form-control" placeholder="Aantal deelnemers" required>
+      </div>
+  
+      <div class="">
+        <label class="[ fs-300 fw-semibold ]">Hoeveel wil u bij de wijkraad aanvragen?</label>
+        <input type="text" name="bedrag" class="form-control" placeholder="Het bedrag wat u wil aanvragen" required>
+      </div>
+
+      <div>
+        <label class="[ fs-300 fw-semibold ]">Heb je nog aan andere instanties of bedrijven een bijdrage gevraagd en zo ja aan wie?</label>
+        <textarea placeholder="" name="" rows="5" required></textarea>
+      </div>
+
+      <div>
+        <label class="[ fs-300 fw-semibold ]">Hoeveel heb je gevraagd en wat is toegezegd?</label>
+        <textarea placeholder="Alleen invullen als je de vorige vraag met JA hebt beantwoord" name="" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label class="[ fs-300 fw-semibold ]">Noteer hier een berekening (begroting) zoals beschreven onder de spelregels van Verrijk je Wijk</label>
+        <textarea placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten." name="" rows="5"></textarea>
+      </div>
+
+      <button class="button" type="submit">Verzend</button>
+
+    </form>
+    <div class="remarks [ fs-300 ] [ flow ]">
+      {{ vjw.foot_notes |> md }}
     </div>
-
-    <div>
-      <label for="aanvrager" class="[ fs-300 fw-semibold ]">Namens wie vraagt u het aan?</label>
-      <input type="text" id="aanvrager" name="aanvrager" placeholder="bijv. straat, buurt of vereniging" />
-    </div>
-
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Wat wil u organiseren?</label>
-      <textarea name="event description" rows="5" placeholder="Typ in het kort wat u zou willen organiseren"></textarea>
-    </div>
-    
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Wat is de datum voor uw plan?</label>
-      <input type="date" name="datum" class="form-control" placeholder="datum" required>
-    </div>
-
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Waar vind het plaats?</label>
-      <input type="text" name="lokatie" class="form-control" placeholder="Lokatie" required>
-    </div>
-
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Welke doelgroep wil u uitnodigen?</label>
-      <input type="text" name="name" class="form-control" placeholder="Bijv. buurtbewoners, kinderen of bejaarden" required>
-    </div>
-
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Hoeveel deelnemers verwacht u?</label>
-      <input type="text" name="deelnemers" class="form-control" placeholder="Aantal deelnemers" required>
-    </div>
- 
-    <div class="">
-      <label class="[ fs-300 fw-semibold ]">Hoeveel wil u bij de wijkraad aanvragen?</label>
-      <input type="text" name="bedrag" class="form-control" placeholder="Het bedrag wat u wil aanvragen" required>
-    </div>
-
-    <div>
-      <label class="[ fs-300 fw-semibold ]">Heb je nog aan andere instanties of bedrijven een bijdrage gevraagd en zo ja aan wie?</label>
-      <textarea placeholder="" name="" rows="5" required></textarea>
-    </div>
-
-    <div>
-      <label class="[ fs-300 fw-semibold ]">Hoeveel heb je gevraagd en wat is toegezegd?</label>
-      <textarea placeholder="Alleen invullen als je de vorige vraag met JA hebt beantwoord" name="" rows="5"></textarea>
-    </div>
-
-    <div>
-      <label class="[ fs-300 fw-semibold ]">Noteer hier een berekening (begroting) zoals beschreven onder de spelregels van Verrijk je Wijk</label>
-      <textarea placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten." name="" rows="5"></textarea>
-    </div>
-
-    <button class="button" type="submit">Verzend</button>
-
-  </form>
-  <div class="flow">
-    <small>Het bestuur vergadert elke laatste maandag van de maand (m.u.v. juli en december). Wij streven er naar om u binnen 6 weken na datum aanvraag uitsluitsel te geven.</small>
-  </div>
-  <div>
-    <small>Hebt u nog bijzondere ideeën die misschien nog uitgewerkt moeten worden neem dan contact op met het bestuur van Stichting Wijkraad Koningshaven via bovenstaand mail adres. In dringende gevallen kunt u ook de WhatsApp {{ site.whatsapp }} gebruiken.</small>
-  </div>
-</section>
+  </section>
+</main>

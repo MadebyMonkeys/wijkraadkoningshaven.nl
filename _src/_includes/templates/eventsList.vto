@@ -1,15 +1,15 @@
 {{ for event of events }}
 <div class="card">
-  <a class="" href="{{ event.data.url |> url }}" style="text-decoration: none;">
+  <a class="" href="{{ event.url |> url }}" style="text-decoration: none;">
     <div class="card__image">
-      <img src="{{ event.data.image }}"/>
+      <img src="{{ event.image }}"/>
     </div>
     <div class="card__content [ flow ]">
-      <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ event.data.title }}</h3>
+      <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ event.title }}</h3>
       <ul class="icofont-ul meta-info">
-        <li><i class="icofont-calendar"></i> <time datetime="{{ event.data.event.datum |> date("PPP") }}">{{ event.data.event.datum |> date("PPP HH:mm") }}</time></li>
-        {{ if event.data.event.prijs }}
-          <li><i class="icofont-ticket"></i> {{ event.data.event.prijs }}</li>
+        <li><i class="icofont-calendar"></i> <time datetime="{{ event.event.datum |> date("PPP") }}">{{ event.event.datum |> date("PPP HH:mm") }}</time></li>
+        {{ if event.event.prijs }}
+          <li><i class="icofont-ticket"></i> {{ event.event.prijs }}</li>
         {{ /if }}
       </ul>
     </div>

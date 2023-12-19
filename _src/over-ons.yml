@@ -1,13 +1,14 @@
 layout: layouts/about.vto
 title: Over ons
 description: Some text
+hasAdmin: false
 menu:
   visible: true
   title: Over ons
   order: 2
 about:
   title: Over Wijkraad Koningshaven
-  image: /img/logo.svg
+  image: /images/logo.svg
   content: Donec auctor erat id eros cursus, id cursus dui lacinia. Nam ultricies
     enim ligula, in volutpat lorem tempus et. Vivamus placerat dolor at tempor
     tempus. Proin vulputate at turpis sit amet accumsan. Morbi lacus nisi,
@@ -16,19 +17,19 @@ about:
 members:
   - name: Joost
     function: Voorzitter
-    image: /uploads/img_avatar_male.png
+    image: /images/avatar_male.png
   - name: Anja
     function: Secretaris
-    image: /uploads/img_avatar_female.png
+    image: /images/avatar_female.png
   - name: Ruud
     function: Penningmeester
-    image: /uploads/img_avatar_male.png
+    image: /images/avatar_male.png
   - function: Commissielid
     name: Paul
-    image: /uploads/img_avatar_male.png
+    image: /images/avatar_male.png
   - function: Commissielid
     name: Carola
-    image: /uploads/img_avatar_female.png
+    image: /images/avatar_female.png
 vergadering:
   title: vergadering
   description: |

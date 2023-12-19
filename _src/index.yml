@@ -1,42 +1,30 @@
 layout: layouts/landing.vto
-hasAdmin: true
-title: Welkom op Wijkraad Koningshaven
-description: Een goede beschrijving
-menu:
-  visible: true
-  title: Home
-  order: 0
-sort_by: date
+title: Homepage
+description: |
+  Een beschrijving
 
 hero:
   title: Wijkraad Koningshaven
-  subtitle: >
-    Sinds vele jaren is Stichting Wijkraad Koningshaven al actief in de wijken Fatima, Hoogvenne en Broekhoven 1.
-  image: /img/hero-img.svg
+  subtitle: |
+    Sinds velen jaren is Stichting Wijkraad Koningshaven al actief in de wijken Fatima, Hoogvenne en Broekhoven 1.
+  image: /images/hero-img.svg
 
 features:
-  - title: Verrijk je wijk
-    icon: /icons/vjw.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
-      erat, sed fermentum metus ultricies ac.
-    url: /verrijk-je-wijk
+  - title: Verijk je wijk
+    icon: /images/icons/vjw.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /verrijk-je-wijk/
   - title: Evenementen
-    icon: /icons/events.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
-      erat, sed fermentum metus ultricies ac.
-    url: /events
+    icon: /images/icons/events.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /events/
   - title: Vergaderingen
-    icon: /icons/calendar.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
-      erat, sed fermentum metus ultricies ac.
-    url: /over-ons/#vergadering
+    icon: /images/icons/calendar.svg
+    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor erat, sed fermentum metus ultricies ac.
+    url: /over-ons/#vergaderingen
 
 about:
   title: Wat doen wij als wijkraad?
-  image: /img/city-life.svg
-  content: >
-    Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de
-    achtergrond ons werk doen.  We proberen een fijne en veilige “wijk” te maken
-    waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren
-    naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam
-    voelen.
+  image: /images/city-life.svg
+  content: |
+    Misschien niet voor iedereen erg zichtbaar omdat wij vooral op de achtergrond ons werk doen. We proberen een fijne en veilige “wijk” te maken waar het goed wonen is voor iedereen. We doen dit vooral door te luisteren naar alle bewoners, vooral naar degenen die zich achtergesteld en/of eenzaam voelen.

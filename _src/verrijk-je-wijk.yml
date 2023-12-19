@@ -1,14 +1,14 @@
 layout: layouts/vjw.vto
 title: Verrijk je wijk
 description: Some text
-image: null
+hasAdmin: false
 menu:
   visible: true
   title: Verrijk je wijk
   order: 3
 vjw:
   title: Verrijk je wijk
-  image: /img/coffee.svg
+  image: /images/coffee.svg
   content: >-
     Met verrijk je wijk financiert de Gemeente Tilburg ideeën van bewoners om
     in  hun straat, buurt of wijk de sociale cohesie groter te maken, de
@@ -16,3 +16,10 @@ vjw:
 
 
     Alle aanvragen worden door het bestuur van Stichting Wijkraad Koningshaven besproken. Het gehele bestuur beslist of de aanvraag wordt toegekend en welk bedrag zij subsidiëren.
+  foot_notes: >-
+    _Het bestuur vergadert elke laatste maandag van de maand (m.u.v. juli en
+    december). Wij streven er naar om u binnen 6 weken na datum aanvraag
+    uitsluitsel te geven._
+
+
+    _Hebt u nog bijzondere ideeën die misschien nog uitgewerkt moeten worden neem dan contact op met het bestuur van Stichting Wijkraad Koningshaven via bovenstaand mail adres. In dringende gevallen kunt u ook de WhatsApp gebruiken._

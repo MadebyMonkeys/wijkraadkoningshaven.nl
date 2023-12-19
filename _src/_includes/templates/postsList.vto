@@ -1,13 +1,13 @@
 {{ for post of posts }}
 <div class="card">
-  <a class="card__link" href="{{ post.data.url |> url }}" style="text-decoration: none;">
-  {{ if post.data.image }}
-  <div class="card__image"><img src="{{ post.data.image }}" alt="" /></div>
+  <a class="card__link" href="{{ post.url |> url }}" style="text-decoration: none;">
+  {{ if post.image }}
+  <div class="card__image"><img src="{{ post.image }}" alt="" /></div>
   {{ /if }}
   <div class="card__content">
-    <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ post.data.title }}</h3>
+    <h3 class="[ fs-400 fw-bold text-primary-500 ]">{{ post.title }}</h3>
     <ul class="meta-info icofont-ul" role="list">
-      <li><i class="icofont-calendar"></i> <time class="fs-300" datetime="{{ post.data.date |> date }}">{{ post.data.date |> date('PPP') }}</time></li>
+      <li><i class="icofont-calendar"></i> <time class="fs-300" datetime="{{ post.date |> date }}">{{ post.date |> date('PPP') }}</time></li>
     </ul>
   </div>
   </a>

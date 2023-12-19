@@ -1,0 +1,12 @@
+<section class="[ event__info ] [ p-s mt-xl ] [ flow bg-secondary-500 ]">
+    <h4 class="fw-semibold">Evenement informatie:</h4>
+    <ul class="icofont-ul fs-300" role="list"> 
+      <li><i class="icofont-calendar"></i> <time datetime="{{ event.datum |> date("PPPppp") }}">{{ event.datum |> date('dd MMMM yyyy - HH:mm') }}</time></li>
+      {{ if event.location }}
+      <li><i class="icofont-location-pin"></i> {{ event.location }}</li>
+      {{ /if }}
+      {{ if event.prijs }}
+      <li><i class="icofont-ticket"></i> {{ event.prijs }}</li>
+      {{ /if }}
+    </ul>
+</section>

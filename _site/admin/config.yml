@@ -179,6 +179,9 @@ collections:
               - name: content
                 label: Content
                 widget: markdown
+              - name: foot_notes
+                label: Foot notes
+                widget: markdown
   - name: post
     label: Post
     folder: /_src/nieuws/
