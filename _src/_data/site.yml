@@ -1,14 +1,16 @@
 title: Wijkraad Koningshaven
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  De stichting wijkraad Koningshaven heft als doel het bevorderen van het
+  welzijn van wijkbewoners van Broekhoven 1 Fatima en Hoogvenne.
 logo: /images/logo.svg
 image: /images/main-img.jpg
 email: info@wijkraadkoningshaven.nl
 links:
   - title: Wijkkrant Koningshaven
     url: https://wijkkrant.koningshaven.eu/
-
 socials:
   - title: whatsapp
     icon: icofont-whatsapp
