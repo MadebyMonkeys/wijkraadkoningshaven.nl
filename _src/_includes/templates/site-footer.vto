@@ -30,8 +30,8 @@
 </footer>
 
 <script type="module" src="/js/main.js"></script>
-
 {{ if hasAdmin }}
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 <script>
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on("init", user => {
