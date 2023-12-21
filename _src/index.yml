@@ -70,8 +70,17 @@ features:
     url: /verrijk-je-wijk/
   - title: Evenementen
     icon: /images/icons/events.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
-      erat, sed fermentum metus ultricies ac.
+    description: >-
+      De wijkraad heeft in 2024 de volgende evenementen gepland:
+
+
+      1. Paasbrunch.
+
+      2. Midzomerfeest
+
+      3. Mosselavond
+
+       Op 12 mei bestaat de wijkraad 30 jaar en hiervoor is een groots feest in de planning.
     url: /events/
   - title: Vergaderingen
     icon: /images/icons/calendar.svg
