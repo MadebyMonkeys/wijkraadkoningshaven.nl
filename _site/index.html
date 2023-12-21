@@ -14,7 +14,6 @@
 
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <link rel="stylesheet" type="text/css" href="/css/icofont.min.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://localhost:3000/">
 <meta name="twitter:card" content="summary">
@@ -175,6 +174,18 @@
     </div>
   </section>
 </main>
+
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
     <div class="[ site-subfooter ] [ content-grid ] [ region ]">
   <div class="grid" data-layout="thirds">
     <div class="flow">
@@ -210,20 +221,6 @@
 </footer>
 
 <script type="module" src="/js/main.js"></script>
-
-
-<script>
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
-</script>
-
 
   
 
