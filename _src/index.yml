@@ -21,11 +21,8 @@ features:
     url: /events/
   - title: Vergaderingen
     icon: /images/icons/calendar.svg
-    description: Alle aanvragen worden door het bestuur van de stichting wijkraad
-      Koningshaven in de vergadering besproken. Het gehele bestuur beslist of de
-      aanvraag wordt toegekend en welk bedrag zij subsidiëren. Nadat de wijkraad
-      over de aanvraag van Verrijk je wijk een beslissing heeft genomen wordt
-      aan de aanvra(a)g(st)er uitsluitsel gegeven per mail.
+    description: In de vergadering van de wijkraad worden zaken/projecten aangaande
+      de wijken Broekhoven 1, Fatima en Hoogvenne besproken.
     url: /over-ons/#vergaderingen
 about:
   title: Wat doen wij als Stichting Wijkraad Koningshaven?
