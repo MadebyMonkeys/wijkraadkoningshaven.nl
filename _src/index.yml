@@ -11,16 +11,9 @@ hero:
 features:
   - title: Verrijk je wijk
     icon: /images/icons/vjw.svg
-    description: >-
-      Met verrijk je wijk financiert de gemeente Tilburg ideeën van bewoners om
-      in hun straat, buurt of wijk cohesie groter te maken, de samenhang en
-      onderlinge verhoudingen te verbeteren en/of te stimuleren.
-
-
-      Wil jij een aanvraag indienen in het kader van deze regeling stuur dan een mail naar:
-
-
-      VJW@wijkraadkoningshaven.nl
+    description: Met verrijk je wijk financiert de gemeente Tilburg ideeën van
+      bewoners om in hun straat, buurt of wijk cohesie groter te maken, de
+      samenhang en onderlinge verhoudingen te verbeteren en/of te stimuleren.
     url: /verrijk-je-wijk/
   - title: Evenementen
     icon: /images/icons/events.svg
