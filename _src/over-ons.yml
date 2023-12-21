@@ -70,7 +70,10 @@ members:
     image: /images/avatar_female.png
 vergadering:
   title: vergadering
-  description: "\n"
+  description: >
+    In de vergadering worden alle Verrijk je wijk aanvragen besproken en
+    behandeld. Nadat de beslissing is gevallen wordt de aanvrager van Verrijk je
+    wijk direct over geïnformeerd per mail. 
   datums:
     - lokatie: Wijkraad Koningshaven
       datum: 2024-01-29T18:30:07.236Z
