@@ -75,8 +75,11 @@ features:
     url: /events/
   - title: Vergaderingen
     icon: /images/icons/calendar.svg
-    description: Nunc eget dapibus erat, quis vulputate dolor. Etiam commodo tempor
-      erat, sed fermentum metus ultricies ac.
+    description: Alle aanvragen worden door het bestuur van de stichting wijkraad
+      Koningshaven in de vergadering besproken. Het gehele bestuur beslist of de
+      aanvraag wordt toegekend en welk bedrag zij subsidiëren. Nadat de
+      beslissing door de wijkraad is gevallen wordt de aanvrag(st)er hiervan
+      onmiddelijk in kennis gesteld per mail
     url: /over-ons/#vergaderingen
 about:
   title: Wat doen wij als Stichting Wijkraad Koningshaven?
