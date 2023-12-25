@@ -29,8 +29,8 @@ export default function (options: Options = {}) {
       .use(inline())
       .use(metas())
       .use(decapCMS({
-      //  identity: "netlify",
-      //}))
+        identity: "netlify",
+      }))
       .use(postcss())
       .use(sass())
       .use(svgo())
