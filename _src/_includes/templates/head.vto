@@ -1,15 +1,15 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ title }} - {{ site.title }}</title>
-  <meta name="description" content="{{ description | site.description }}" />
+  <meta name="description" content="{{ description || site.description }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@wijkraadkoningshaven" />
   <meta name="twitter:creator" content="@wijkraadkoningshaven" />
-  <meta property="og:url" content="{{ url | url }}" />
+  <meta property="og:url" content="{{ url > url }}" />
   <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description | site.description }}" />
-  <meta property="og:image" content="{{ site.root }}{{ site.image | site.default_image }}" />
+  <meta property="og:description" content="{{ description || site.description }}" />
+  <meta property="og:image" content="{{ site.root }}{{ site.image || site.default_image }}" />
 
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <link rel="stylesheet" type="text/css" href="/css/icofont.min.css">
