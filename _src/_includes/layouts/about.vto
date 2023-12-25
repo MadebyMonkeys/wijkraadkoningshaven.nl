@@ -35,7 +35,7 @@ layout: layouts/base.vto
     {{ for item of vergadering.datums }}
       <div class="card">
         <div class="card__content">
-        <p class="fw-medium">{{ item.datum |> date("PPP - HH:mm") }}</p>
+        <p class="fw-medium"><i class="icofont-calendar"></i> {{ item.datum |> date("PPP") }}</p>
         <span class="[ block ] [ fs-300 ] [ text-secondary-700 ]">{{ item.lokatie }}</span>
         </div>
       </div>

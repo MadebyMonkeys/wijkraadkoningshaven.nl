@@ -28,7 +28,7 @@ export default function (options: Options = {}) {
       .use(transformImages())
       .use(inline())
       .use(metas())
-      //.use(decapCMS({
+      .use(decapCMS({
       //  identity: "netlify",
       //}))
       .use(postcss())
@@ -38,7 +38,7 @@ export default function (options: Options = {}) {
         locales: { nl },
       }))
       
-      .copy("admin")
+      //.copy("admin")
       .copy("fonts")
       .copy("js")
       .copy("static", ".");
