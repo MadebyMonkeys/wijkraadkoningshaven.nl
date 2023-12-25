@@ -140,7 +140,7 @@ collections:
 
   - name: "post"
     label: "Post"
-    folder: "/_src/nieuws/"
+    folder: "/_src/posts/"
     public_folder: "/uploads/"
     description: "Create or edit news post"
     create: true
