@@ -16,9 +16,9 @@ features:
     url: /verrijk-je-wijk/
   - title: Evenementen
     icon: /images/icons/events.svg
-    description: Als wijkraad mogen wij de wijk(en) verwennen met leuke evenementen
-      zoals de paasbrunch-midzomerfeest-mosselavond en het decemberevent, wij
-      zouden het leuk vinden als u ook zou komen.
+    description: " Als wijkraad mogen wij de wijk(en) verwennen met leuke
+      evenementen zoals de paasbrunch-midzomerfeest-mosselavond en het
+      decemberevent. Wij zouden het leuk vinden als u ook zou komen."
     url: /events/
   - title: Vergaderingen
     icon: /images/icons/calendar.svg
