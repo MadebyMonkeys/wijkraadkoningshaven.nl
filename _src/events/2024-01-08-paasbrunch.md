@@ -1,9 +1,9 @@
 ---
 layout: layouts/event-post.vto
 draft: true
-title: Paasbrunch
+title: Activiteiten 2024
 date: 2024-01-08T14:59:26.669Z
 event:
   datum: January 8, 2024 3:59 PM
 ---
-30 m
+30 maart 2024 Paasbrunch
