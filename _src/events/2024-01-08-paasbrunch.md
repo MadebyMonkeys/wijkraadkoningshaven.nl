@@ -8,5 +8,3 @@ event:
 ---
 30 maart 2024 Paasbrunch
 22 juni 2024  Mizomerfeest Carïbean
-
-\
