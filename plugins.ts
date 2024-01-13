@@ -38,7 +38,6 @@ export default function (options: Options = {}) {
         locales: { nl },
       }))
       
-      //.copy("admin")
       .copy("fonts")
       .copy("js")
       .copy("static", ".");
