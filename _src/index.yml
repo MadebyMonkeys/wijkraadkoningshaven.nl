@@ -4,9 +4,10 @@ description: |
   Een beschrijving
 hero:
   title: Wijkraad Koningshaven
-  subtitle: "De Stichting Wijkraad Koningshaven heeft o.a. als doel het bevorderen
-    van het welzijn van de bewoners van de wijken Broekhoven 1, Fatima en
-    Hoogvenne. De Stichting Wijkraad Koningshaven heeft geen winstoogmerk. "
+  subtitle: De Stichting Wijkraad Koningshaven wordt vaak verward met het
+    Wijkcentrum Koningshaven. De Wijkraad heeft haar zetel in het Wijkcentrum
+    Koningshaven en is partner in het Wijkcentrum. Het Wijkcentrum wordt beheerd
+    door Contour deTwern.
   image: /images/hero-img.svg
 features:
   - title: Verrijk je wijk
@@ -16,8 +17,9 @@ features:
     url: /verrijk-je-wijk/
   - title: Evenementen
     icon: /images/icons/events.svg
-    description: Als wijkraad mogen wij de wijk(en) soms wel eens verwennen met
-      leuke evenementen, wij zouden het leuk vinden als u ook eens zou komen.
+    description: " Als wijkraad mogen wij de wijk(en) verwennen met leuke
+      evenementen zoals de paasbrunch-midzomerfeest-mosselavond en het
+      decemberevent. Wij zouden het leuk vinden als u ook zou komen."
     url: /events/
   - title: Vergaderingen
     icon: /images/icons/calendar.svg
