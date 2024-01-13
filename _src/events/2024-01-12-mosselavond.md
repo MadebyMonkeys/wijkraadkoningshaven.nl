@@ -3,6 +3,7 @@ layout: layouts/event.vto
 draft: false
 title: Mosselavond
 date: 2024-01-12T15:49:07.513Z
+image:
 event:
   datum: October 19, 2024 5:31 PM
   location: Café Bet Kolen
