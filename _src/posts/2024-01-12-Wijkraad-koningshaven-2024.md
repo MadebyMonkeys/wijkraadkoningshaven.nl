@@ -1,5 +1,5 @@
 ---
-layout: layouts/nieuws-post.vto
+layout: layouts/post.vto
 draft: false
 title: "Wijkraad Koningshaven 2024"
 date: 2024-01-12T15:58:32.699Z
