@@ -4,11 +4,9 @@ sort_by: date
 ---
 <main>
   <article class="[ content-grid ] [ post ] [ flow ]">
-    {{ if image }}
-      <header class="[ post__image ] [ mv-l ] [ fullwidth ]">
-        <img src="{{ image |> url }}" alt="thumbnail" />
-      </header>
-    {{ endif }}
+    <header class="[ post__image ] [ mv-l ] [ fullwidth ]">
+      <img src="{{ image |> url }}" alt="thumbnail" />
+    </header>
     <h1 class="title">{{ title }}</h1>
     <span class="fs-300"><i class="icofont-calendar"></i> <time datetime="{{ date |> date }}">{{ date |> date('PPP') }}</time></span>
     <div class="content [ flow ]">
