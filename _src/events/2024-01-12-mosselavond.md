@@ -1,5 +1,5 @@
 ---
-layout: layouts/event-post.vto
+layout: layouts/event.vto
 draft: false
 title: Mosselavond
 date: 2024-01-12T15:49:07.513Z

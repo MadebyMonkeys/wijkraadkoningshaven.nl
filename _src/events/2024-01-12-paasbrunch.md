@@ -1,5 +1,5 @@
 ---
-layout: layouts/event-post.vto
+layout: layouts/event.vto
 draft: false
 title: "Paasbrunch "
 date: 2024-03-30T09:30:08.350Z
