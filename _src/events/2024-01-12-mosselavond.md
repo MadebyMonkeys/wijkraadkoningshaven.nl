@@ -7,7 +7,7 @@ image: /uploads/mosselen.jpg
 event:
   datum: October 19, 2024 5:30 PM
   location: Café Bet Kolen
-  prijs: 3,50
+  prijs: 15,00 pp
 ---
 Natuurlijk bent u welkom op onze jaarlijkse mosselavond 
 
