@@ -3,7 +3,7 @@ layout: layouts/event.vto
 draft: false
 title: Midzomerfeest
 date: 2024-01-12T15:44:20.119Z
-image:
+image: /uploads/caribisch.jpg
 event:
   datum: June 22, 2024 8:00 PM
   prijs: 3,50 euro p.p.
