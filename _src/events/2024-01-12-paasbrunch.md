@@ -2,11 +2,13 @@
 layout: layouts/event.vto
 draft: false
 title: "Paasbrunch "
-date: 2024-03-30T09:30:08.350Z
-image:
+date: 2024-01-14T12:44:12.449Z
+image: /uploads/pbrunch.jpg
 event:
-  datum: January 12, 2024 4:34 PM
+  datum: March 30, 2024 10:30 AM
   prijs: 3.00 pp
   location: onder voorbehoud
 ---
-Dit is een test opmaak
+onder voorbehoud
+
+meer informatie volgt op deze site en/of facebookpagina
