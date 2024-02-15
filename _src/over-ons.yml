@@ -65,9 +65,6 @@ members:
   - function: Commissielid
     name: Paul
     image: /images/avatar_male.png
-  - function: Commissielid
-    name: Carola
-    image: /images/avatar_female.png
 vergadering:
   title: vergadering
   description: >
@@ -88,7 +85,7 @@ vergadering:
     - lokatie: Wijkraad Koningshaven
       datum: 2024-04-29T17:30:10.294Z
     - lokatie: Wijkraad Koningshaven
-      datum: 2024-05-20T17:30:14.047Z
+      datum: 2024-06-03T17:30:14.047Z
     - lokatie: Wijkraad Koningshaven
       datum: 2024-06-24T17:30:10.656Z
     - lokatie: Wijkraad Koningshaven
