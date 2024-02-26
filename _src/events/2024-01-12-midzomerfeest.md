@@ -9,8 +9,14 @@ event:
   prijs: 3,50 euro p.p.
   location: Wijkcentrum Koningshaven
 ---
-Dit jaar organiseren wij een Caribisch feest met dansers en limbo dansers in Wijkcentrum Koningshaven.
+Dit jaar organiseren wij een Caribisch midzomerfeest met dansers  in Wijkcentrum Koningshaven.  Alleen via inschrijving kunt u toegang krijgen tot dit feest. 
 
-kijk ook eens in de Wijkkrant voor meer informatie.
+Inschrijving is mogelijk **vanaf 1 mei 2024** via info@wijkraadkoningshaven.nl.  Wij beantwoorden uw mail met een **aanmeldnumme**r (toegangsnummer) en **bankrekeningnummer.** Na ontvangst van uw betaling is de inschrijving definitief.
+
+Bij binnenkomst **meld u zich met het aanmeldnummer (toegangsnummer)** dat u van ons  hebt gekregen.
+
+Kijk ook eens in de Wijkkrant van maart 2024 voor meer informatie.
+
+**wij geven geen geld retour!**
 
 ![](/uploads/midzomerfeest-2024.docx)
