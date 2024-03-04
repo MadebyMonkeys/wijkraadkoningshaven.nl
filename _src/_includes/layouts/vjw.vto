@@ -17,11 +17,7 @@ layout: layouts/base.vto
   <section class="[ aanvraag-form ] [ content-grid ] [ region flow ]">
     <h2 class="title">Aanvraag formulier</h2>
 
-    <form target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST" class="[ flow ]">
-      <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
-      <input type="text" name="_honey" style="display:none">
-      <input type="hidden" name="_template" value="basic">
-
+    <form name="Verrijk je wijk" method="POST" class="[ flow ]" data-netlify="true">
       <div class="">
         <label for="naam" class="[ fs-300 fw-semibold ]">Naam:</label>
         <input type="text" id="naam" name="naam" class="form-control" placeholder="Volledige naam" required>
