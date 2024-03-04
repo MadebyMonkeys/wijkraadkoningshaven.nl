@@ -17,7 +17,10 @@ layout: layouts/base.vto
   <section class="[ aanvraag-form ] [ content-grid ] [ region flow ]">
     <h2 class="title">Aanvraag formulier</h2>
 
-    <form name="Verrijk je wijk" method="POST" class="[ flow ]" netlify>
+    <form target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST" class="[ flow ]">
+      <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_template" value="basic">
       <div class="">
         <label for="naam" class="[ fs-300 fw-semibold ]">Naam:</label>
         <input type="text" id="naam" name="naam" class="form-control" placeholder="Volledige naam" required>
@@ -80,17 +83,17 @@ layout: layouts/base.vto
 
       <div>
         <label class="[ fs-300 fw-semibold ]">Heb je nog aan andere instanties of bedrijven een bijdrage gevraagd en zo ja aan wie?</label>
-        <textarea placeholder="" name="" rows="5" required></textarea>
+        <textarea placeholder="" name="bijdragen" rows="5" required></textarea>
       </div>
 
       <div>
         <label class="[ fs-300 fw-semibold ]">Hoeveel heb je gevraagd en wat is toegezegd?</label>
-        <textarea placeholder="Alleen invullen als je de vorige vraag met JA hebt beantwoord" name="" rows="5"></textarea>
+        <textarea placeholder="Alleen invullen als je de vorige vraag met JA hebt beantwoord" name="bijdragen toegezegd" rows="5"></textarea>
       </div>
 
       <div>
         <label class="[ fs-300 fw-semibold ]">Noteer hier een berekening (begroting) zoals beschreven onder de spelregels van Verrijk je Wijk</label>
-        <textarea placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten." name="" rows="5"></textarea>
+        <textarea placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten." name="berekening" rows="5"></textarea>
       </div>
 
       <button class="button" type="submit">Verzend</button>
