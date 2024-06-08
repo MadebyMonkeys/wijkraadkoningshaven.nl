@@ -1,7 +1,8 @@
 ---
 layout: layouts/post.vto
 draft: false
-title: opgeven midzomerfeest 2024
+title: opgeven midzomerfeest 2024 mogelijk tot 15 juni 2024   enkel via mail of
+  tel.nr. 0643933867
 date: 2024-04-07T14:31:28.122Z
 image: /uploads/screenshot.jpg
 ---
