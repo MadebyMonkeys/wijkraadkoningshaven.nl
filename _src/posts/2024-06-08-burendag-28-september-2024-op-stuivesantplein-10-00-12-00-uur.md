@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.vto
 draft: false
-title: BURENDAG 28 SEPTEMBER 2024  op STUIVESANTPLEIN   10.00-12.00 UUR
+title: BURENDAG 28 SEPTEMBER 2024  op STUIVESANTPLEIN   10.30-12.30 UUR
 date: 2024-06-08T11:20:55.934Z
 image: /uploads/burendag-2024.jpg
 ---
