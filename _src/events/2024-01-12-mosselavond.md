@@ -3,7 +3,7 @@ layout: layouts/event.vto
 draft: false
 title: Mosselavond (klik en lees meer)
 date: 2024-02-22T13:59:52.330Z
-image: https://images.unsplash.com/photo-1545447890-4d8dc17c2a88?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: /uploads/screenshot.jpg-mosselen.jpg
 event:
   datum: October 12, 2024 5:30 PM
   location: Café Bet Kolen
