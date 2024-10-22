@@ -9,8 +9,4 @@
 *.log.*
 *.sig
 
-pkg/
-src/
-_site/
-_src_old/
-netlify.toml
+public/
