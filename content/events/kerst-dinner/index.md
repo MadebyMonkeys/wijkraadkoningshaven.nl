@@ -4,7 +4,7 @@ draft: true
 price: gratis
 title: Kerst Event
 date: 2024-12-21T17:00:00.000Z
-featured_image: christmass-dinner.jpg
+featured_image: /events/kerst-event/christmas-tree-5534769_960_720.webp
 event_date: 2024-12-25
 location: Wijkcentrum Koningshaven Kruisvaardersstraat 32C
 ---
