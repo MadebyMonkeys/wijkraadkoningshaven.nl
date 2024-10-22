@@ -9,6 +9,7 @@
 *.log.*
 *.sig
 
+public/
 pkg/
 src/
 _site/
