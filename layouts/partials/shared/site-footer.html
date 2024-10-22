@@ -1,0 +1,51 @@
+{{ $footer := .Site.Params.footer }}
+{{ $aboutus := index $footer "aboutus" }}
+{{ $quickLinks := index $footer "quicklinks" }}
+{{ $socials := index $footer "socials" }}
+
+<div class="subfooter [ full-width ] [ region | bgcolor-primary-50 ]">
+    <div class="grid-auto-fit" data-cols="three">
+        {{ with $aboutus }}
+        <div class="aboutus flow">
+            <h3>{{ .title }}</h3>
+            <p class="fs-300">{{ .body }}</p>
+        </div>
+        {{ end }}
+        <div class="links flow">
+            <h3>Links</h3>
+            <ul class="quicklinks" role="list">
+                {{ range $quickLinks }}
+                <li>
+                    <a href="{{ .url }}">{{ .name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="socials flow">
+            <h3>Volg ons</h3>
+            <ul class="social-list list--horizontal" role="list">
+                {{ range $socials }}
+                <li>
+                    <a class="color-neutral-50" href="{{ .link }}">
+                        <ion-button class="button radius-full" aria-label="{{ .icon }}">
+                            <ion-icon size="large" name="logo-{{ .icon }}" aria-hidden="true"></ion-icon>
+                        </ion-button>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer [ full-width ] [ region ]">
+    <div class="site-footer__inner text--center">
+        <p>&copy; Copyright 2024 {{ .Site.Title }}</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/js/main.js" defer></script>
+<script type="module" src="/js/lightbox.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

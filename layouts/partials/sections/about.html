@@ -1,0 +1,11 @@
+{{ if .enabled }}
+<section class="[ {{.id}} ] [ full-width ] [ region ]">
+    <div class="">
+        <h2>{{ .title }}</h2>
+        {{ .description | markdownify }}
+    </div>
+    {{ with .image }}
+        <img src="{{ .url }}" alt="{{ .alt }}">
+    {{ end }}
+</section>
+{{ end }}

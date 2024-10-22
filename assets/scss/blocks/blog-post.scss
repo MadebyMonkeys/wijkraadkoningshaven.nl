@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+.blog-card {
+
+    &__header {
+
+    }
+
+    &__body {
+        margin: 0 auto;
+        width: 80%;
+
+    }
+
+    &__footer {}
+}
+
+
+.blog-card--title a {
+    color: #333;
+    font-weight: 100;
+}

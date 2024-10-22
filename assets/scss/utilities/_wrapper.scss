@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Article grid for easy beautifying articles and posts
+// -----------------------------------------------------------------------------
+
+.wrapper {
+    --_wrapper-content-width: var(--wrapper-content-width, #{$wrapper-content-width});
+
+    --_wrapper-padding-inline: var(--wrapper-padding-inline, #{$wrapper-padding-inline});
+    --_wrapper-full: var(--wrapper-full, minmax(var(--_wrapper-padding-inline), 1fr));
+    --_wrapper-content: var(--wrapper-content, min(var(--_wrapper-content-width), 100% - var(--_wrapper-padding-inline) * 2));
+    --_wrapper-popout: var(--wrapper-popout, minmax(0, 2rem));
+    --_wrapper-feature: var(--wrapper-feature, minmax(0, 5rem));
+
+    display: grid;
+    grid-template-columns:
+        [full-start] var(--_wrapper-full)
+        [feature-start] var(--_wrapper-feature)
+        [popout-start] var(--_wrapper-popout)
+        [wrapper-start] var(--_wrapper-content) [wrapper-end]
+        var(--_wrapper-popout) [popout-end]
+        var(--_wrapper-feature) [feature-end]
+        var(--_wrapper-full) [full-end];
+}
+
+.wrapper > * {
+    grid-column: wrapper;
+}
+
+.popout {
+    grid-column: popout;
+}
+
+.feature {
+    grid-column: feature;
+}
+
+.full {
+    grid-column: full;
+}

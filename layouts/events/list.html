@@ -1,0 +1,45 @@
+{{ define "main" }}
+<section class="events-list [ full-width ] [ flow region ]">
+    <h2 class="h1 mt-0">{{ .Title }}</h1>
+    
+    <div class="grid-auto-fit" data-cols="three">
+        {{ range .Pages.ByParam "event_date" }}
+        <article class="card event-card">
+            {{ with .Resources.GetMatch .Params.featured_image }}
+                <figure class="card__image">
+                    <a href="{{ .Permalink }}">
+                        <img src="{{ .RelPermalink }}" alt="Featured image for {{ $.Title }}">
+                    </a>
+                </figure>
+            {{ end }}
+            <div class="card__body flow">
+                <h2 class="mt-0"><a class="color-primary-800" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <ul class="event-list [ fs-300 color-neutral-500 ]" role="list">
+                    {{ with .Params.event_date }}
+                    <li class="p-s">
+                        <ion-icon name="calendar" aria-hidden="true"></ion-icon> <time datetime="{{ . }}">{{ . | dateFormat "2 January, 2006" }}</time>
+                    </li>
+                    {{ end }}
+                    {{ with .Params.location }}
+                    <li class="p-s">
+                        <ion-icon name="location" aria-hidden="true"></ion-icon> {{ . }}
+                    </li>
+                    {{ end }}
+                    {{ with .Params.price }}
+                    <li class="ph-xs pv-2xs">
+                        <ion-icon name="ticket" aria-hidden="true"></ion-icon> {{ . }}
+                    </li>
+                    {{ end }}
+                </ul>
+                
+                <a class="button" href="{{ .Permalink }}">Meer informatie</a>
+            </div>
+        </article>
+        {{ end }}
+    </div>
+
+    <div class="pagination">
+        {{ template "_internal/pagination.html" . }}
+    </div>
+</section>
+{{ end }}

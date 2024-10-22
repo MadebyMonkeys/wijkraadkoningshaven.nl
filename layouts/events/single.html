@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="[ with-sidebar ] [ region ]">
+
+    <article class="event">
+        <figure>
+            <img class="featured-image" src="{{ .Params.featured_image }}" alt="{{ .Title }}">
+        </figure>
+        <header>
+            <h2 class="h1">{{ .Title }}</h2>
+            <time class="fs-300" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date.Format "2 January, 2006" }}
+            </time>
+        </header>
+        {{ .Content }}
+    </article>
+    
+    <aside>
+        {{ if eq .Type "events" }}
+            <div class="[ event-meta ] [ flow bgcolor-neutral-100 radius-s ]">
+            <h4 class="mt-0 color-primary-800">Evenement informatie:</h4>
+            {{ with .Params.event_date }}
+            <p><strong>Datum</strong>: {{ . | dateFormat "January 2, 2006" }}</p>
+            {{ end }}
+            {{ with .Params.location }}
+            <p><strong>Lokatie</strong>: {{ . }}</p>
+            {{ end }}
+            {{ with .Params.price }}
+            <p><strong>Prijs</strong>: {{ . }}</p>
+            {{ end }}
+            {{ with .Params.registration_link }}
+            <a class="button" href="{{ . }}" target="_blank">Inschrijven</a>
+            {{ end }}
+            </div>
+        {{ end }}
+
+        {{ if .Params.tags }}
+            <div class="tags">
+                Tags:
+                {{ range .Params.tags }}
+                    <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+        {{ end }}
+    </aside>
+
+</div>
+{{ end }}
