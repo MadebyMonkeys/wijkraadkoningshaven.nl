@@ -1,14 +1,23 @@
 ---
-title: "Kerst Dinner"
-featured_image: "christmass-dinner.jpg"
-date: "2024-10-19"
+registration_link: /contact
 draft: true
-event_date: "2024-12-25"
-location: "Bet Kolen"
-price: "gratis"
-registration_link: "/contact"
+price: gratis
+title: Kerst Event
+date: 2024-12-21T17:00:00.000Z
+featured_image: christmass-dinner.jpg
+event_date: 2024-12-25
+location: Wijkcentrum Koningshaven Kruisvaardersstraat 32C
 ---
+**Op zaterdag organiseren wij weer ons jaarlijks kerstevent.   de inloop is vanaf 17.00 uur**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non semper purus. Nulla at enim ut ex dapibus elementum. Aenean eu luctus metus. Vivamus tincidunt risus a efficitur rhoncus. Pellentesque facilisis leo at magna interdum fringilla. Morbi faucibus lacus aliquam aliquet egestas. Nulla molestie elit id congue laoreet. Suspendisse ut neque id magna elementum semper.
+**Om 18.00 steken wij samen met u de verlichting in de boom aan onder het genot van :**
 
-Fusce non lobortis massa. Praesent viverra dictum ante finibus efficitur. Curabitur sollicitudin, nisi a mattis mattis, lacus dolor blandit diam, in blandit neque ex non quam. Aliquam pretium venenatis arcu at posuere. Praesent a fringilla ex. Nulla egestas, urna in porta pharetra, massa leo mollis dui, vitae aliquet velit mauris nec mauris. 
+**een kopje thee of koffie**
+
+**een beker erwtensoep                                              GRATIS**
+
+**een lekker  warm worstenbroodje**
+
+**een heerlijk bekertje Glühwein.**
+
+**Natuurlijk is er een knutsel frutsel tafel waar jong en oud leuke kerstcreaties kan maken.**
