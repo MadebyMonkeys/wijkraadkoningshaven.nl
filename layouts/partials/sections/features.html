@@ -1,0 +1,22 @@
+{{ if .enabled }}
+<section class="[ features ] [ full-width flow ] [ region bg-circle-scatter ]">
+    <div class="grid-auto-fit">
+        {{ range .list }}
+        <div class="card [ bgcolor-neutral-50 ]">
+            <div class="card__body flow">
+                {{ with .image }}
+                <div class="icon">
+                    <img width="96px" src="{{ . | absURL }}" />
+                </div>
+                {{ end }}
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+                {{ with .link }}
+                    <a href="{{ .url }}" class="button">{{ .title }}</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

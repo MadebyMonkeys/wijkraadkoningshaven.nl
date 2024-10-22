@@ -1,0 +1,243 @@
+@use "abstracts" as *;
+
+@forward "base";
+@forward "compositions";
+@forward "utilities";
+@forward "blocks";
+
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+h1, .h1 {
+    --heading-font-size: var(--fs-900);
+}
+
+h2, .h2 {
+    --heading-font-size: var(--fs-700);
+}
+
+h3, .h3 {
+    --heading-font-size: var(--fs-500);
+}
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.region {
+    padding-block: var(--region-space, #{$global-region-spacer});
+}
+
+.mt-0 {
+    margin-block-start: 0;
+}
+
+.aspect-1-1 {
+    aspect-ratio: 1;
+}
+
+.aspect-16-9 {
+    aspect-ratio: 16/9;
+}
+
+
+// -----------------------------------------------------------------------------
+// Blocks
+// -----------------------------------------------------------------------------
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    --region-space: 6.6vmax;
+    position: relative;
+
+    &__inner {
+        --heading-foreground: var(--primary-800);
+        color: var(--heading-foreground);
+    }
+
+    @media (width > 778px) {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            background: var(--primary-50);
+            z-index: -1;
+            right: 0;
+        }
+    }
+}
+
+.features,
+.team,
+.vjw-form {
+    background-color: #ebe9fb;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23d7d4f7' fill-opacity='0.28' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+.team {
+    --grid-auto-fit-min-col-size: clamp(16em, 33dvw, 20em);
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-list > * + * {
+    margin-top: 3rem;
+}
+
+.content-single,
+.post,
+.event {
+
+    figure,
+    .featured-image {
+        margin: 0;
+        border-radius: .5em;
+        max-height: 45dvh;
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+.event {
+    &-meta {
+        padding: var(--size-l);
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        
+        & > * + * {
+            margin-left: var(--size-xs);
+        }
+    }
+}
+
+
+
+.gallery {
+    &__item {
+        
+        img {
+            border-radius: .5em;
+        }
+    }
+}
+
+.album-card {
+    position: relative;
+
+    figure {
+        position: relative;
+        border-radius: 1em;
+        overflow: clip;
+        margin: 0;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    div {
+        padding: 0 1em 1em;
+    }
+}
+
+
+
+.subfooter {
+
+    .aboutus {
+        h3 {
+            --text-max-width: 100%;
+        }
+    }
+
+    .links {
+        ul.quicklinks {
+            margin-top: 1em; 
+        }
+    }
+
+    .socials .social-list {
+        margin-top: 1em;
+
+        & > * + * {
+            margin-left: var(--size-xs);
+        }
+
+        ion-button {
+            --_button-border-radius: var(--radius-100);
+        }
+
+        .ion-icon {
+            color: red;
+        }
+    }
+}
+
+
+
+
+
+// -----------------------------------------------------------------------------
+// Exeptions
+// -----------------------------------------------------------------------------
+
+.text--center {
+    text-align: center;
+
+    & > :is(h1, h2, h3, p) {
+        margin-inline: auto;
+    }
+}
+
+
+.list {
+    &--horizontal {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+.brand {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+
+    &--name {
+        --heading-font-size: var(--fs-300);
+        --heading-font-weight: var(--fw-bold);
+        color: var(--primary-700);
+        font-family: var(--ff-base);
+
+        margin: 0 0 0 var(--size-xs);
+    }
+}

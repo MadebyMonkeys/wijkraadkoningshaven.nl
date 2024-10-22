@@ -1,0 +1,17 @@
+<div class="card">
+    {{ with .image }}
+    <figure class="card__image">
+        <img src="{{ . | absURL }}" alt="">
+
+    </figure>
+    {{ end }}
+    <div class="card__body">
+        {{ with .name }}
+        <h3 class="mt-0">{{ . }}</h3>
+        {{ end }}
+        <p class="mt-0">{{ .position }}</p>
+        {{ with .link }}
+            <a href="{{ .url }}" class="button">{{ .title }}</a>
+        {{ end }}
+    </div>
+</div>

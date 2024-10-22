@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.columns {
+    --min-column-size: 200px;
+    --column-count: 2;
+    --gap: 2rem;
+
+    --breakpoint-calc: calc( var(--min-column-size) * var(--column-count) + ( var(--gap) * (var(--column-count) - 1) ) );
+    --column-size-calc: calc((100% / var(--column-count)) - var(--gap));
+
+    display: grid;
+    gap: var(--gap);
+
+    grid-template-columns: repeat(auto-fit, minmax(min(max(var(--column-size-calc), (100% - var(--breakpoint-calc)) * -999), 100%), 1fr));
+}

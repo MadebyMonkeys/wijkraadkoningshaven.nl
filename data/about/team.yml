@@ -1,0 +1,19 @@
+enabled: true
+id: "team"
+
+
+title: Team
+description: description
+list:
+  - name: Joost
+    position: Voorzitter
+    image: images/avatar-male.png
+  - name: Anja
+    position: Secretaris
+    image: images/avatar-female.png
+  - name: Ruud
+    position: Penningmeester
+    image: images/avatar-male.png
+  - name: Paul
+    position: Commissielid
+    image: images/avatar-male.png

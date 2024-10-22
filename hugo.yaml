@@ -1,0 +1,40 @@
+baseURL: https://wijkraadkoningshaven.nl/
+title: Wijkraad Koningshaven
+languageCode: en-us
+timeZone: "Europe/Amsterdam"
+
+permalinks:
+  posts: "/posts/:year/:slug/"
+  gallery: "gallery/:year/:slug/"
+
+params:
+
+  sitenav:
+    - title: Home
+      url: "/"
+    - title: Over ons
+      url: "/about"
+    - title: Nieuws
+      url: "/posts/"
+    - title: Evenementen
+      url: "/events/"
+    - title: Media
+      url: "/gallery/"
+    - title: Contact
+      url: "/contact"
+    - title: Verrijk je wijk
+      url: "/verrijk-je-wijk"
+      button: true
+
+  footer:
+    aboutus:
+      title: Stichting Wijkraad Koningshaven
+      body: De Stichting Wijkraad Koningshaven heeft o.a. als doel het bevorderen van het welzijn van de bewoners van de wijken Broekhoven 1, Fatima en Hoogvenne. De Stichting Wijkraad Koningshaven heeft geen winstoogmerk.
+    quicklinks:
+      - name: Wijkkrant Koningshaven
+        url: https://wijkkrantkoningshaven.nl/
+    socials:
+      - link: https://www.facebook.com/profile.php?id=100086683593910
+        icon: facebook
+      - link: whatsapp://0643933867
+        icon: whatsapp

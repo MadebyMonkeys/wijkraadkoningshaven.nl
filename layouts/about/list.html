@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="[ about ] [ full-width ] [ region ]">
+    <div class="narrow">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}
+    </div>
+</section>
+{{ with .Site.Data.about.team }}
+    {{ partial "sections/team.html" . }}
+{{ end }}
+{{ end }}

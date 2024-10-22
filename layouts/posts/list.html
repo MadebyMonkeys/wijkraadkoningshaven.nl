@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="posts-list [ full-width ] [ flow region ]">
+  <div class="narrow text--center">
+    <h2 class="h1 mt-0">{{ .Title }}</h2>
+    {{ with .Description }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+  <div class="post-list narrow">
+    {{ range .Pages }}
+    <article class="card">
+      {{ with .Resources.GetMatch .Params.featured_image }}
+        <figure class="[ card__image feature-image ]">
+          <img class="aspect-16-9" src="{{ .RelPermalink }}" alt="Featured image for {{ $.Title }}">
+        </figure>
+      {{ end }}
+      <div class="card__body flow">
+        <h2 class="mt-0"><a class="color-primary-800" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <time class="color-neutral-500 [ fs-300 ]" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+
+        <p>{{ .Summary }}</p>
+
+        <a class="button" href="{{ .Permalink }}">Lees verder</a>
+      </div>
+    </article>
+  {{ end }}
+  </div>
+
+  <div class="pagination">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+:root {
+    @each $color, $shade-map in $active-theme {
+        @each $shade, $value in $shade-map {
+            --#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    @each $prop, $value in $font-families {
+        --ff-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $font-sizes {
+        --fs-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $font-weights {
+        --fw-#{$prop}: #{$value};
+    }
+
+
+
+    @each $prop, $value in $sizes {
+        --size-#{$prop}: #{$value};
+    }
+
+
+    @each $prop, $value in $border-radius-map {
+        --radius-#{$prop}: #{$value};
+    }
+
+
+    @each $prop, $value in $shadows-map {
+        --shadow-#{$prop}: #{$value};
+    }
+}

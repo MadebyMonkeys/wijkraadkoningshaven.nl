@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+
+input:not([type="button"], [type="submit"], [type="reset"]),
+select,
+textarea {
+    --_input-padding: var(--input-padding, var(--size-2xs));
+    --_input-border: var(--input-border, #{$input-border});
+    --_input-border-radius: var(--input-border-radius, #{$input-border-radius});
+
+    width: 100%;
+    max-width: 100%;
+    padding: var(--_input-padding);
+    border: var(--_input-border);
+    border-radius: var(--_input-border-radius);
+}

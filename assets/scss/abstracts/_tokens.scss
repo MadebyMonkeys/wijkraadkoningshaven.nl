@@ -1,0 +1,117 @@
+@use "colors" as *;
+
+$active-theme: $light;
+
+
+$global-gap-size: var(--size-s-l);
+$global-region-spacer: var(--size-l-2xl);
+
+// -----------------------------------------------------------------------------
+// Body
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--neutral-600);
+$body-background: var(--neutral-50);
+$body-font-family: var(--ff-base);
+$body-font-size: var(--fs-400);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.618;
+
+
+$heading-foreground: var(--primary-700);
+$heading-font-family: var(--ff-accent);
+$heading-font-weight: var(--fw-bold);
+$heading-line-height: 1.1;
+
+
+// -----------------------------------------------------------------------------
+// Page layout
+// -----------------------------------------------------------------------------
+
+$page-layout-padding-inline: clamp(1rem, 6dvw, 3rem);
+$page-layout-popout-width: 1400px;
+$page-layout-content-width: 1120px;
+$page-layout-narrow-width: 840px;
+
+
+$wrapper-padding-inline: $page-layout-padding-inline;
+$wrapper-content-width: 50ch;
+
+
+$split-screen-content-width: $page-layout-content-width;
+$split-screen-content-padding: clamp(1em, 6dvw, 3em);
+$split-screen-padding-block: 3.3vmax;
+$split-screen-padding-inline: $page-layout-padding-inline;
+
+
+// -----------------------------------------------------------------------------
+// Site Header
+// -----------------------------------------------------------------------------
+
+$site-header-block-padding: var(--size-s);
+$site-header-background: var(--neutral-50);
+
+
+// -----------------------------------------------------------------------------
+// Site navigation
+// -----------------------------------------------------------------------------
+
+$nav-link-foreground: var(--neutral-500);
+$nav-link-hover-foreground: var(--neutral-700);
+$nav-link-active-foreground: var(--neutral-900);
+
+$nav-link-background: transparent;
+$nav-link-hover-background: transparent;
+$nav-link-active-background: transparent;
+
+$nav-link-font-size: var(--fs-300);
+$nav-link-line-height: 1.1;
+$nav-link-padding: var(--size-m) var(--size-s);
+$nav-link-padding-desktop: var(--size-xs) var(--size-s);
+$nav-link-border-radius: .25em;
+
+
+$hamburger-icon-width: 48px;
+$hamburger-icon-foreground: var(--neutral-900);
+$hamburger-icon-animation-timing: 600ms;
+$hamburger-line-stroke-width: 6px;
+
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+$card-foreground: inherit;
+$card-background: white;
+$card-padding: 1em 1.5em;
+$card-border-radius: .75rem;
+
+$card-shadow: var(--shadow-xs);
+$card-shadow-hover: var(--shadow-m);
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+$button-foreground: var(--neutral-100);
+$button-hover-foreground: $button-foreground;
+$button-active-foreground: $button-foreground;
+
+$button-background: var(--primary-700);
+$button-hover-background: var(--neutral-700);
+$button-active-background: var(--neutral-800);
+
+$button-font-size: var(--fs-300);
+$button-font-weight: var(--fw-medium);
+
+$button-padding: var(--size-xs) var(--size-s);
+$button-border-radius: .25em;
+
+
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+$input-border: 1px solid var(--neutral-400);
+$input-border-radius: .25em;

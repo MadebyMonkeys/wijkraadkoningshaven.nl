@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+.with-sidebar {
+    --main-min-width: 50ch;
+    --sidebar-size: 250px;
+    --gap: 2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+    & > * {
+        flex-grow: 1;
+    }
+
+    &:first-child {
+        flex-grow: 999;
+        flex-basis: calc( ( (var(--main-min-width) - ( 100% - var(--sidebar-size) - var(--gap) ) ) * 9999) );
+    }
+    
+    &:last-child {
+        flex-basis: var(--sidebar-size);
+    }
+}

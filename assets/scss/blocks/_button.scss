@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+button {
+    border: 0;
+}
+
+.button {
+    --_button-foreground: var(--button-foreground, #{$button-foreground});
+    --_button-background: var(--button-background, #{$button-background});
+    --_button-font-size: var(--button-font-size, #{$button-font-size});
+    --_button-font-weight: var(--button-font-weight, #{$button-font-weight});
+    --_button-padding: var(--button-padding, #{$button-padding});
+    --_button-border-radius: var(--button-border-radius, #{$button-border-radius});
+
+    background: var(--_button-background);
+    color: var(--_button-foreground);
+    display: inline-flex;
+    font-size: var(--_button-font-size);
+    font-weight: var(--_button-font-weight);
+    line-height: 1;
+    padding: var(--_button-padding);
+    border: 2px solid transparent;
+    border-radius: var(--_button-border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: scale 300ms ease-in-out, background 300ms ease-in;
+
+    &:is(:hover, :focus-visible) {
+        --button-foreground: #{$button-hover-foreground};
+        --button-background: #{$button-hover-background};
+        scale: 1.1;
+    }
+
+    &:is(:active) {
+        --button-foreground: #{$button-active-foreground};
+        --button-background: #{$button-active-background};
+        scale: 1;
+    }
+}

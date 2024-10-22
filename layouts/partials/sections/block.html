@@ -1,0 +1,12 @@
+{{ if .enabled }}
+<section class="[ {{.id}} ] [ narrow text--center ] [ flow region ]">
+    <h2>{{ .title }}</h2>
+    <p class="mt-0">{{ .description }}</p>
+
+    <p>{{ .body }}</p>
+
+    {{ with .link }}
+        <a href="{{ .url }}" class="button">{{ .title }}</a>
+    {{ end }}
+</section>
+{{ end }}

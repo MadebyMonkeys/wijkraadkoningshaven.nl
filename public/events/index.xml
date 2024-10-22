@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Wijkraad Koningshaven</title>
+    <link>http://localhost:1313/events/</link>
+    <description>Recent content in Events on Wijkraad Koningshaven</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kerst Dinner</title>
+      <link>http://localhost:1313/events/kerst-dinner/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/events/kerst-dinner/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non semper purus. Nulla at enim ut ex dapibus elementum. Aenean eu luctus metus. Vivamus tincidunt risus a efficitur rhoncus. Pellentesque facilisis leo at magna interdum fringilla. Morbi faucibus lacus aliquam aliquet egestas. Nulla molestie elit id congue laoreet. Suspendisse ut neque id magna elementum semper.&#xA;Fusce non lobortis massa. Praesent viverra dictum ante finibus efficitur. Curabitur sollicitudin, nisi a mattis mattis, lacus dolor blandit diam, in blandit neque ex non quam.</description>
+    </item>
+    <item>
+      <title>Second Event</title>
+      <link>http://localhost:1313/events/second-event/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/events/second-event/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non semper purus. Nulla at enim ut ex dapibus elementum. Aenean eu luctus metus. Vivamus tincidunt risus a efficitur rhoncus. Pellentesque facilisis leo at magna interdum fringilla. Morbi faucibus lacus aliquam aliquet egestas. Nulla molestie elit id congue laoreet. Suspendisse ut neque id magna elementum semper.&#xA;Fusce non lobortis massa. Praesent viverra dictum ante finibus efficitur. Curabitur sollicitudin, nisi a mattis mattis, lacus dolor blandit diam, in blandit neque ex non quam.</description>
+    </item>
+  </channel>
+</rss>

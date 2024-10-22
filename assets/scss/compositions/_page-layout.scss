@@ -1,0 +1,86 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Page layout
+// -----------------------------------------------------------------------------
+
+.page-layout,
+.full-width {
+    --_page-layout-padding-inline: var(--page-layout-padding-inline, #{$page-layout-padding-inline});
+
+    --_page-layout-popout-width: var(--page-layout-popout-width, #{$page-layout-popout-width});
+    --_page-layout-content-width: var(--page-layout-content-width, #{$page-layout-content-width});
+    --_page-layout-narrow-width: var(--page-layout-narrow-width, #{$page-layout-narrow-width});
+
+    --page-layout-full: minmax(var(--_page-layout-padding-inline), 1fr);
+    --page-layout-popout: minmax(0, calc(var(--_page-layout-popout-width) - var(--_page-layout-content-width) * 0.5));
+    --page-layout-content: minmax(0, calc(var(--_page-layout-content-width) - var(--_page-layout-narrow-width) * 0.5));
+    --page-layout-narrow: min(var(--_page-layout-narrow-width), 100% - var(--_page-layout-padding-inline) * 2);
+
+    display: grid;
+    grid-template-columns:
+        [full-start] var(--page-layout-full)
+        [popout-start] var(--page-layout-popout)
+        [content-start] var(--page-layout-content)
+        [narrow-start] var(--page-layout-narrow) [narrow-end]
+        var(--page-layout-content) [content-end]
+        var(--page-layout-popout) [popout-end]
+        var(--page-layout-full) [full-end];
+}
+
+.page-layout,
+.full-width {
+    & > *:not(.full-width, .full, .popout, .narrow) {
+        grid-column: content;
+    }
+}
+
+.popout {
+    grid-column: popout;
+
+    &--start {
+        grid-column: popout-start;
+    }
+
+    &--start {
+        grid-column: popout-end;
+    }
+}
+
+.content {
+    &--start {
+        grid-column: content-start;
+    }
+
+    &--start {
+        grid-column: content-end;
+    }
+}
+
+.narrow {
+    grid-column: narrow;
+
+    &--start {
+        grid-column: narrow-start;
+    }
+
+    &--end {
+        grid-column: narrow-end;
+    }
+}
+
+.full {
+    grid-column: full;
+
+    &--start {
+        grid-column: full-start;
+    }
+
+    &--start {
+        grid-column: full-end;
+    }
+}
+
+.full-width {
+    grid-column: full;
+}

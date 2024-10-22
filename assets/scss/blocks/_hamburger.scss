@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.hamburger {
+    --_hamburger-icon-width: var(--hamburger-icon-width, #{$hamburger-icon-width});
+    --_hamburger-icon-foreground: var(--hamburger-icon-foerground, #{$hamburger-icon-foreground});
+    --_hamburger-icon-animation-timing: var(--hamburger-icon-animation-timing, #{$hamburger-icon-animation-timing});
+
+    --_hamburger-line-stroke-width: var(--hamburger-line-stroke-width, #{$hamburger-line-stroke-width});
+
+    width: var(--_hamburger-icon-width);
+    height: var(--_hamburger-icon-width);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &__icon {
+        g {
+            stroke-width: var(--_hamburger-line-stroke-width);
+        }
+
+        .line {
+            stroke: var(--_hamburger-icon-foreground);
+            transform-origin: center;
+            transition: var(--_hamburger-icon-animation-timing);
+        }
+    }
+}
+
+
+.hamburger[aria-expanded="true"] > .hamburger__icon {
+    .line--1 {
+        transform-origin: 80% 35%;
+        transform: rotate(-45deg);
+    }
+
+    .line--2 {
+        transform: scaleX(0);
+    }
+
+    .line--3 {
+        transform-origin: 80% 65%;
+        transform: rotate(45deg);
+    }
+}
+
+
+@media (width > 840px){
+    .hamburger {
+        display: none;
+    }
+}
