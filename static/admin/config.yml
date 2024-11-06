@@ -65,7 +65,7 @@ collections:
       - { label: "Register link", name: "registration_link", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  
+
   - name: "home"
     label: "Home Page Settings"
     create: false  # No new files, only editing existing ones
