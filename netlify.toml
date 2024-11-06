@@ -16,7 +16,3 @@
 
 [context.production.environment]
   HUGO_ENV = "production"
-
-# Cache npm dependencies between builds for faster builds
-[[plugins]]
-  package = "@netlify/plugin-cache"
