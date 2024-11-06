@@ -7,21 +7,21 @@ description: Features description
 features_list:
   - title: "Verrijk je wijk"
     image: "images/vjw.svg"
-    body: Met verrijk je wijk financiert de gemeente Tilburg ideeën van bewoners om onderlinge verhoudingen te verbeteren en/of te stimuleren.
+    description: Met verrijk je wijk financiert de gemeente Tilburg ideeën van bewoners om onderlinge verhoudingen te verbeteren en/of te stimuleren.
     link:
       title: ga naar formulier
       url: "/verrijk-je-wijk"
 
   - title: "Evenementen"
     image: "images/events.svg"
-    body: Als wijkraad mogen wij de wijk(en) verwennen met leuke evenementen. Wij zouden het leuk vinden als u ook zou komen.
+    description: Als wijkraad mogen wij de wijk(en) verwennen met leuke evenementen. Wij zouden het leuk vinden als u ook zou komen.
     link:
       title: Kijk onze events
       url: "/events"
 
   - title: Vergaderingen
     image: "images/agenda.svg"
-    body: In de vergadering van de wijkraad worden zaken/projecten aangaande de wijken Broekhoven 1, Fatima en Hoogvenne besproken.
+    description: In de vergadering van de wijkraad worden zaken/projecten aangaande de wijken Broekhoven 1, Fatima en Hoogvenne besproken.
     link:
       title: Vergader data
       url: "/about#vergaderingen"
