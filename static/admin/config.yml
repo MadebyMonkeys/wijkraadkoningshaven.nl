@@ -68,13 +68,11 @@ collections:
   
   - name: "home"
     label: "Home Page Settings"
-    folder: "data/home"
-    format: "yml"
     create: false  # No new files, only editing existing ones
     files:
       - label: "Hero Section"
         name: "hero"
-        file: "hero.yml"  # Path to the hero.yml file
+        file: "data/home/hero.yml"  # Path to the hero.yml file
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -82,14 +80,14 @@ collections:
 
       - label: "About Section"
         name: "about"
-        file: "about.yml"  # Path to the about.yml file
+        file: "data/home/about.yml"  # Path to the about.yml file
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
 
       - label: "Features Section"
         name: "features"
-        file: "features.yml"  # Path to the features.yml file
+        file: "data/home/features.yml"  # Path to the features.yml file
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - {
