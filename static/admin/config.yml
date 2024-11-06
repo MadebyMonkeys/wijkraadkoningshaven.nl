@@ -58,11 +58,15 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Datum", name: "date", widget: "datetime" }
       - { label: "Featured image", name: "featured_image", widget: "image", required: false }
-      - { label: "Event Date", name: "event_date", widget: "datetime" }
-      - { label: "Location", name: "location", widget: "string" }
-      - { label: "Register link", name: "registration_link", widget: "string", required: false }
+      - label: "Event information"
+        name: "event"
+        widget: "object"
+        fields:
+          - { label: "Datum", name: "event_date", widget: "datetime" }
+          - { label: "Lokatie", name: "location", widget: "string" }
+          - { label: "Register link", name: "registration_link", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
 
