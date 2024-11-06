@@ -12,3 +12,5 @@ worstenbroodjes\
 kerstmuziek\
 mini kerstmarkt\
 knutseltafel voor groot en klein jong en oud
+
+![Kerst dinner flyer](/events/kerst-event/kerstflyer-2024.jpg "Kerst Dinner")
