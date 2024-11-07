@@ -8,7 +8,7 @@
             {{ with .Resources.GetMatch .Params.featured_image }}
                 <figure class="card__image">
                     <a href="{{ .Permalink }}">
-                        <img src="{{ .RelPermalink }}" alt="Featured image for {{ $.Title }}">
+                        <img src="{{ . }}" alt="Featured image for {{ $.Title }}">
                     </a>
                 </figure>
             {{ end }}
