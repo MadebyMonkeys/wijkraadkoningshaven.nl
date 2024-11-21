@@ -19,9 +19,9 @@ features_list:
       title: Kijk onze events
       url: "/events"
 
-  - title: Vergaderingen
-    image: "images/agenda.svg"
-    description: In de vergadering van de wijkraad worden zaken/projecten aangaande de wijken Broekhoven 1, Fatima en Hoogvenne besproken.
-    link:
-      title: Vergader data
-      url: "/about#vergaderingen"
+  # - title: Vergaderingen
+  #   image: "images/agenda.svg"
+  #   description: In de vergadering van de wijkraad worden zaken/projecten aangaande de wijken Broekhoven 1, Fatima en Hoogvenne besproken.
+  #   link:
+  #     title: Vergader data
+  #     url: "/about#vergaderingen"
