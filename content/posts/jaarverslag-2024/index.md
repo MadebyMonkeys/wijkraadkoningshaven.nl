@@ -7,7 +7,8 @@ Januari:**
 Dit jaar is er geen nieuwjaarsreceptie georganiseerd. Penningmeester neemt deel in 
 planteam Hopliedekade.  Er zijn wat onduidelijkheden betreffende opruimen kerstboom. 
 Centrum-manager heeft met het hoveniersbedrijf afspraak gemaakt maar vergeten deze met 
-beheer wijkcentrum Koningshaven te delen.\
+beheer wijkcentrum Koningshaven te delen.
+
 **Februari:** 
 Er heeft een gesprek plaatsgevonden tussen Centrum-manager en een beheerder van 
 Wijkcentrum Koningshaven met Secretaris en een wijkraad lid van Stichting Wijkraad 
@@ -25,14 +26,17 @@ uiteraard onmogelijk om alle neuzen dezelfde kant op te krijgen ondanks dat wij 
 hetzelfde doel staan en dat willen. De afspraak is gemaakt hier gezamenlijk de schouders 
 onder te zetten om tot een goede werksfeer te komen. Terugkoppeling over 6 maanden. 
 Vanuit belang voor de wijk is afgesproken dat enkel en alleen voorzitter Stichting Wijkraad 
-Koningshaven en centrum coördinator Wijkcentrum contact hebben voorlopig.\
+Koningshaven en centrum coördinator Wijkcentrum contact hebben voorlopig.
+
 **Maart:** 
 Het jaarlijkse Paas evenement door de Stichting heeft geen doorgang gehad omdat er vanuit 
 het Wijkcentrum een brunch werd georganiseerd tegen eerder gemaakte afspraken in.  Dit is 
 een onderbreking van een jarenlange traditie.  Wij betreuren dit en hebben hierover contact 
 gehad met centrum coördinator.\
 In het eerste kwartaal zijn er al veel aanvragen Verrijk je wijk bij ons binnen gekomen.  Vaak 
-gaat het om 1ste aanvragen en grote bedragen. 
+gaat het om 1ste aanvragen en grote bedragen.
+
+
 **April:** 
 Deze maand is er een overeenkomst getekend met de Wijkkrant Koningshaven.  De inhoud is 
 dat zij een geheel zelfstandige organisatie zijn onder de paraplu van de Stichting. Wij 
@@ -45,6 +49,8 @@ Voorzitter heeft een gesprek gehad met Centrum coördinator. Hieruit is naar vor
 dat zij geen faciliterende rol gaan spelen bij evenementen Stichting Wijkraad Koningshaven. 
 Wij zouden ook geen huur betalen van de ruimtes die wij gebruiken. Dit is niet correct want 
 deze komen via de subsidie die Contour de Twern van de gemeente ontvangt. 
+
+
 **Mei:** 
 Planteam Hopliedenkade. Er is een definitief besluit genomen. Bewoners hadden inspraak. Er 
 komen 5 gebouwen die een eigen naam krijgen. Het hele proces is bijgewoond door onze 
@@ -53,14 +59,19 @@ Regels voor toekenning Verrijk je wijk bijdrage zijn opgevraagd bij oud-leden. D
 van 2015. De regels zijn besproken door de huidige wijkraad leden en opnieuw op papier 
 gezet. 
 Voorbereidingen voor het Midzomerfeest zijn in volle gang. Dit jaar heeft het een thema nl: 
-Caribisch festijn. Inschrijving is gestart en zonder inschrijving is er geen toegang. 
+Caribisch festijn. Inschrijving is gestart en zonder inschrijving is er geen toegang.
+
+
 **Juni:** 
 Het Midzomerfeest was een zeer geslaagd festijn. De opkomst was zeer hoog en iedereen 
 heeft een superfijne avond gehad.  Het draaiboek was duidelijk en de taken goed verdeeld.\
 De eerste 6 maanden van het jaar 2024 zijn voorbij en er zijn 14 aanvragen gedaan voor 
-Verrijk je Wijk. 
+Verrijk je Wijk.
+
+
 **Juli:** 
-Vakantiemaand\
+Vakantiemaand
+
 **Augustus:** 
 Na een vakantieperiode weer fris aan de slag. Er staan een paar grote activiteiten in het 
 vooruitzicht namelijk Burendag, mosselavond en het kerstfestijn. Onze voorzitter heeft een 
@@ -68,7 +79,8 @@ medische ingreep ondergaan en helaas wat complicaties daarom is de vergadering t
 naar zijn woning verplaatst. Aanwezig was ook de wijk regisseur. Duidelijk is geworden dat 
 alle verrijk je wijk aanvragen die betrekking hebben op openbare ruimten (speeltuinen, 
 parken, buitenverlichting etc.) niet door ons gehonoreerd mogen worden. Dit is echt een 
-stukje van Gemeente Tilburg.\
+stukje van Gemeente Tilburg.
+
 **September:** 
 Voorbereidingen voor burendag zijn erg goed gegaan. De burendag was enerzijds geslaagd 
 alleen de opkomst was verschrikkelijk teleurstellend. Het slechte weer heeft hier een grote 
@@ -79,7 +91,8 @@ wijkraad gezamenlijk naar de burendag op Wijkcentrum Koningshaven gegaan.\
 De samenwerking met de vrouwenraad Zuid was weer voortreffelijk.  Dames hadden deze 
 ochtend geregeld dat je op de foto kon in Indonesische klederdracht en er werden ter plekke 
 Balinese lekkernijen gemaakt en geserveerd. Wij hebben uiteraard deze dames bedankt met 
-een aardigheidje voor hun inzet/inbreng.\
+een aardigheidje voor hun inzet/inbreng.
+
 **Oktober:** 
 De maand oktober was een heftige maand voor Stichting Wijkraad Koningshaven. Via 
 facebook hebben wij moeten vernemen dat er plotseling, de dag voor ons jaarlijks 
@@ -97,6 +110,8 @@ onze 4-jaarlijkse evenementen waarvan 3 in het wijkcentrum niet meer ruim vooraf
 desktop kunnen worden vastgelegd. Dit houdt in dat wij beperkt gaan worden in onze 
 planning wat onze activiteiten betreft.  Toch gaan wij, stichting wijkraad Koningshaven, 
 proberen of er een vreedzame samenwerking mogelijk kan zijn. 
+
+
 **November:** 
 Het omzetten van het kerst event naar 15 december heeft de nodige problemen opgeleverd.\
 Marktkramen zijn in heel Brabant niet meer verkrijgbaar. Wij gaan hiervoor 5 grote tafels 
@@ -108,7 +123,8 @@ helpende handen ter beschikking te stellen en van draaiboek te voorzien.  Tijden
 penningmeester aanwezig met pinautomaat van de wijkraad voor de kerst verkoop 
 kraampjes.\
 Voorzitter zal ook doorgeven dat tijdens het plaatsen van de kerstboom 6 december, 
-secretaris aanwezig zal zijn.\
+secretaris aanwezig zal zijn.
+
 **December:** 
 De door Stichting Wijkraad Koningshaven aangekochte kerstboom wordt zoals afgesproken 
 geplaatst door hoveniersbedrijf Pieter de Bruijn. Centrummanager is korte tijd aanwezig 
@@ -123,7 +139,8 @@ dankbaar voor alle hulp deze avond.
 Achter de schermen liep het echter niet soepel. Secretaris werd geblokkeerd in het uitvoeren 
 van haar taak als organisator/coördinator. Het draaiboek, vastgelegd door Wijkraad 
 Koningshaven, werd niet nageleefd en is zelfs niet verspreid door centrummanager aan zijn 
-vrijwilligers.\
+vrijwilligers.
+
 **Samenvatting:** 
 Het jaar 2024 is een jaar van vele tegenstrijdigheden. Conclusie is of er samenwerking 
 gewenst is vanuit beheergroep wijkcentrum Koningshaven. Door de gemaakte afspraken met 
