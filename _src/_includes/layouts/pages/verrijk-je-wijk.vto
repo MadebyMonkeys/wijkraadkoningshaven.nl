@@ -18,7 +18,7 @@ layout: layouts/page.vto
     <div class="flow">
         <h2 class="block__title">{{ section_faq.title }}</h2>
         <div class="flow">
-        {{ for item of faq.vjw }}
+        {{ for item of faqs.vjw }}
             <details class="accordion">
             <summary>{{ item.question }}</summary>
             {{ item.answer |> md }}

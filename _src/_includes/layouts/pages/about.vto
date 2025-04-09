@@ -24,7 +24,7 @@ layout: layouts/page.vto
 <section class="[ faq ] [ full-width ] [ region ]">
     <h2 class="block__title">{{ section_faq.title }}</h2>
     <div class="wrapper flow">
-    {{ for item of faq.about }}
+    {{ for item of faqs.stichting }}
         <details class="accordion">
         <summary>{{ item.question }}</summary>
         {{ item.answer |> md }}
