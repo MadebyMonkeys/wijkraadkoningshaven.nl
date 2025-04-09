@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    --nav-list-gap: #{$site-nav-list-gap};
+
+    width: 100%;
+    display: none;
+    margin-block-start: var(--space-s);
+    order: 3;
+
+    .nav__list {
+        width: 100%;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .nav__item {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .nav__link {
+        --nav-link-font-family: #{$site-nav-link-font-family};
+        --nav-link-font-size: #{$site-nav-link-font-size};
+        --nav-link-font-weight: #{$site-nav-link-font-weight};
+        --nav-link-line-height: #{$site-nav-link-line-height};
+        --nav-link-padding: #{$site-nav-link-padding};
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// THEME STYLES (Kleuren, achtergrond, padding, etc.)
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    .nav__link {
+        --nav-link-foreground: #{$site-nav-link-foreground};
+        --nav-link-foreground-hover: #{$site-nav-link-foreground-hover};
+        --nav-link-foreground-active: #{$site-nav-link-foreground-active};
+
+        --nav-link-background: #{$site-nav-link-background};
+        --nav-link-background-hover: #{$site-nav-link-background-hover};
+        --nav-link-background-active:#{$site-nav-link-background-active};
+
+        --nav-link-font-size: #{$site-nav-link-font-size};
+        --nav-link-border-radius: #{$site-nav-link-border-radius};
+
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            --nav-link-foreground: var(--nav-link-foreground-hover);
+            --nav-link-background: var(--nav-link-background-hover);
+        }
+
+
+        &[aria-current="page"] {
+            --nav-link-foreground: var(--nav-link-foreground-active);
+            --nav-link-background: var(--nav-link-background-active);
+        }
+    }
+}
+
+
+.site-header:has([aria-expanded="true"]) .site-nav {
+    display: flex;
+}
+
+
+// -----------------------------------------------------------------------------
+// Breakpoint
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    @include mq(md) {
+        display: flex;
+        margin-block-start: 0;
+
+        .nav__list {
+            flex-direction: row;
+        }
+    
+        &,
+        .nav__item {
+            width: auto;
+        }
+    }
+}

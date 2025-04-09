@@ -1,0 +1,10 @@
+name: "Wijkraad Koningshaven"
+logo: "/images/logo.svg"
+
+phone: "+31 123 456 78"
+email: "hallo@wijkraadkoningshaven.nl"
+
+address:
+  street: "Kruisvaardersstraat 32D"
+  zipcode: "5021 BE"
+  city: "Tilburg"

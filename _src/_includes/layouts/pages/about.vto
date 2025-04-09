@@ -1,0 +1,34 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ aboutus ] [ full full-width-split-screen ] [ ]">
+    <div class="region flow">
+        <h1 class="fs-700 block__title">{{ section_about.title }}</h1>
+        {{- content -}}
+    </div>
+    <img loading="lazy" src="{{ section_about.image }}" alt="foto van stichting wijkraad koningshaven">
+</section>
+<section class="[ team ] [ full-width ] [ region flow bg-primary-100 ]">
+    <h2 class="block__title">{{ section_team.title }}</h2>
+    <div class="grid-auto-fit popout" data-cols="quarters">
+    {{ for profile of members }}
+        <div class="card profile flow">
+            <img src="{{ profile.image }}" alt="{{ profile.name }}">
+            <h4 class="profile__name">{{ profile.name }}</h4>
+            <small>{{ profile.function }}</small>
+        </div>
+    {{ /for }}
+    </div>
+</section>
+<section class="[ faq ] [ full-width ] [ region ]">
+    <h2 class="block__title">{{ section_faq.title }}</h2>
+    <div class="wrapper flow">
+    {{ for item of faq.about }}
+        <details class="accordion">
+        <summary>{{ item.question }}</summary>
+        {{ item.answer |> md }}
+        </details>
+    {{ /for }}
+    </div>
+</section>

@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Pile - used for stacking elements ontop of eachother
+// -----------------------------------------------------------------------------
+
+.pile {
+    display: grid;
+    grid-template-areas: "pile";
+    place-content: center;
+
+    & > * {
+        grid-area: pile;
+    }
+}

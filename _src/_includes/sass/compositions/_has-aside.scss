@@ -1,0 +1,24 @@
+//
+//
+//
+
+.has-aside {
+    --_with-aside-content-width: var(--with-aside-content-width, 50ch);
+    --_with-aside-sidebar-width: var(--with-aside-sidebar-width, 430px);
+    --_with-aside-gap: var(--with-aside-gap, clamp(1rem, 6dvw, 3rem));
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: var(--_with-aside-gap);
+
+    & > :not(aside) {
+        flex-basis: var(--_with-aside-content-width);
+        flex-grow: 9999;
+    }
+
+    & > aside {
+        flex-basis: var(--_with-aside-sidebar-width);
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,20 @@
+---
+layout: layouts/base.vto
+templateEngine: [md,vto]
+---
+
+<div class="[ posts-list ] [ full-width ] [ region ]">
+    <h1 class="block__title fs-700">{{ section_news.title }}</h1>
+    {{ set posts = search.pages("type=post", "order=desc") }}
+    <ul class="grid-auto-fit" data-cols="halfs" role="list">
+    {{ for post of posts }}
+        <li class="card flow">
+            <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}">
+            <h3 class="fs-500 fw-semibold">{{ post.title }}</h3>
+            <small class="color-neutral-400">{{ post.date |> date('dd MMMM yyyy') }}</small>
+            {{ post.summery |> md }}
+            <a href="{{ post.url }}" class="button" data-button-variant="primary">Lees verder</a>
+        </li>
+    {{ /for }}
+    </ul>
+</div>

@@ -1,0 +1,338 @@
+@use "sass/abstracts" as *;
+
+@forward "sass/base";
+@forward "sass/compositions";
+@forward "sass/utilities";
+@forward "sass/blocks";
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4 {
+    --heading-font-weight: var(--fw-bold);
+}
+
+h1 {
+    --heading-font-size: var(--fs-800);
+}
+
+h2 {
+    --heading-font-size: var(--fs-700);
+}
+
+h3 {
+    --heading-font-size: var(--fs-600);
+}
+
+h4 {
+    --heading-font-size: var(--fs-500);
+}
+
+hr {
+    background: var(--neutral-200);
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin-block: 1rem;
+}
+
+.widget {
+    background: var(--primary-50);
+    padding: var(--space-m);
+    border-radius: #{$global-border-radius};
+
+    :is(h1, h2, h3, h4) {
+        margin-block-start: 0;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Branding
+// -----------------------------------------------------------------------------
+
+.brand {
+    --brand-color: var(--primary-800);
+
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    text-decoration: none;
+
+    &__logo {
+        height: 6ex;
+        fill: none;
+        stroke: var( --brand-color);
+        stroke-width: 2px;
+    }
+
+    &__name {
+        color: var(--brand-color);
+        font-family: var(--ff-sans);
+        font-size: var(--fs-300);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Block title & subtitle
+// -----------------------------------------------------------------------------
+
+.block {
+    &__title {
+        --heading-font-weight: var(--fw-bold);
+        color: var(--primary-900);
+        margin-block-start: 0;
+        letter-spacing: .05ch;
+        margin-block-end: var(--space-s);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// BLOCK: Hero
+// -----------------------------------------------------------------------------
+
+.hero {
+    background-image: linear-gradient(var(--primary-200), var(--primary-500));
+
+    &__image {
+        opacity: .25;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__inner {
+        --region-space: 12.12vmax;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        :is(h1) {
+            color: white;
+            margin-block-start: 0;
+            text-align: center;
+        }
+    }
+}
+
+
+
+//
+//
+//
+
+.social {
+    --flex-group-gap: var(--space-m);
+    --icon-size: var(--fs-700);
+    &__link {
+        color: var(--primary-700);
+
+        &:hover {
+            color: var(--primary-400);
+        }
+
+        ion-icon {
+            width: var(--icon-size);
+            height: var(--icon-size);
+        }
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// BLOCK: Section ONE
+// -----------------------------------------------------------------------------
+
+.section-one {
+    --content-max-width: 65ch;
+    text-align: center;
+
+    & > :is(h2) {
+        margin-block-start: 0;
+    }
+
+    & > :is(h1, h2, h3, p) {
+        max-width: unset;
+    }
+}
+
+// -----------------------------------------------------------------------------
+// BLOCK: FAQ
+// -----------------------------------------------------------------------------
+
+.faq {
+    --content-max-width: 65ch;
+
+    .block {
+        margin-block-end: var(--space-s-l);
+    }
+
+    .accordion {
+        > :not(summary) {
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Page: About
+// -----------------------------------------------------------------------------
+
+
+// 
+// Block: Team
+// 
+
+.team {
+    .profile {
+        --card-image-aspect-ratio: 1;
+
+        &__name {
+            color: var(--primary-800);
+            font-size: var(--fs-500);
+            font-weight: var(--fw-semibold);
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Page: Verrijk je wijk
+// -----------------------------------------------------------------------------
+
+.vjw-content,
+.vjw-rules,
+.vjw-faq {
+    --content-max-width: 65ch;
+
+    & > :is(p, h1, h2, h3) {
+        max-width: unset;
+    }
+}
+
+.vjw-form {
+    --content-max-width: 85ch;
+}
+
+
+// -----------------------------------------------------------------------------
+// Page: Post(s)
+// -----------------------------------------------------------------------------
+
+.posts-list {
+    .card {
+        --flow-space: 1rem;
+
+        *:is(h1, h2, h3, h4) {
+            max-width: unset;
+        }
+    }
+}
+
+
+//
+// Single Post
+//
+.post {
+    --content-max-width: 65ch;
+
+    &__image {
+        aspect-ratio: 16/9;
+        width: 100%;
+        object-fit: cover;
+        border-radius: #{$global-border-radius};
+    }
+
+    & > *:is(p, h1, h2, h3) {
+        max-width: unset;
+    }
+}
+
+
+//
+//
+//
+
+article {
+    & > *:is(p, h1, h2, h3) {
+        max-width: unset;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// PAGE: Gallery
+// -----------------------------------------------------------------------------
+
+.album-list {
+    .album {
+        &:after {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, transparent, var(--primary-800));
+            z-index: 1;
+        }
+    
+        &__info {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: var(--space-m);
+            z-index: 2;
+    
+            :is(h1, h2, h3) {
+                --heading-foreground: var(--neutral-50);
+                text-decoration: none;
+                margin-block-start: 0;
+            }
+        }
+    }
+}
+
+
+.album {
+    position: relative;
+    overflow: clip;
+    border-radius: var(--space-s);
+
+    &__image {
+        aspect-ratio: 1;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Page: 404
+// -----------------------------------------------------------------------------
+
+.page-404 {
+    --content-max-width: 65ch;
+
+    h1 {
+        font-size: var(--fs-700);
+    }
+
+    :is(p) {
+        max-width: unset;
+    }
+}

@@ -1,0 +1,53 @@
+---
+layout: layouts/base.vto
+---
+
+<section class="[ hero ] [ full-width ] [ pile ]">
+    <img loading="lazy" class="hero__image full" src="{{ section_hero.image }}" alt="">
+    <div class="hero__inner region flow">
+        <h1 class="block__title">{{ section_hero.title }}</h1>
+        {{ if section_hero.button }}
+        <div>
+            {{ for item of section_hero.button }}
+            <a href="{{ item.url }}" class="button" data-button-variant="primary">{{ item.title }}</a>
+            {{ /for }}
+        </div>
+        {{ /if }}
+    </div>
+</section>
+
+<section class="[ section-one ] [ full-width ] [ region bg-primary-50 ]">
+    <h2 class="block__title">{{ section_one.title }}</h2>
+    {{ section_one.body |> md }}
+</section>
+
+<section class="[ posts-list ] [ full-width ] [ region bg-white ]">
+    <div class="block">
+        <h2 class="block__title">{{ section_posts.title }}</h2>
+    </div>
+    {{ set posts = search.pages("type=post", "order=desc", 3) }}
+    <ul class="grid-auto-fit popout" data-cols="thirds" role="list">
+    {{ for post of posts }}
+        <li class="card flow">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <h3 class="fs-500 fw-semibold">{{ post.title }}</h3>
+            <small class="color-neutral-500">{{ post.date |> date('dd MMMM yyyy') }}</small>
+            {{ post.summery |> md }}
+            <a href="{{ post.url }}" class="button" data-button-variant="primary">Lees verder</a>
+        </li>
+    {{ /for }}
+    </ul>
+</section>
+
+<section class="[ cta ] [ full full-width-split-screen ] []">
+    <div class="[] [] [ flow region bg-primary-100 ]">
+        <h2 class="block__title">{{ section_cta.content_one.title }}</h2>
+        {{ section_cta.content_one.body |> md }}
+        <a class="button" data-button-variant="primary" href="{{ section_cta.content_one.button.url }}">{{ section_cta.content_one.button.title }}</a>
+    </div>
+    <div class="[] [] [ flow region bg-primary-200 ]">
+        <h2 class="block__title">{{ section_cta.content_two.title }}</h2>
+        {{ section_cta.content_two.body |> md }}
+        <a class="button" data-button-variant="primary" href="{{ section_cta.content_two.button.url }}">{{ section_cta.content_two.button.title }}</a>
+    </div>
+</section>

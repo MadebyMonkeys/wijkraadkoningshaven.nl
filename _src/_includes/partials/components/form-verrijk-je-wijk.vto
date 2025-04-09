@@ -1,0 +1,89 @@
+<form class="flow" target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST">
+    <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_template" value="basic">
+    
+    <div>
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" placeholder="Volledige naam" required>
+    </div>
+    
+    <div>
+        <label for="telefoon">Telefoon:</label>
+        <input type="text" id="telefoon" name="telefoon" placeholder="Telefoon nummer" required>
+    </div>
+
+    <div>
+        <label for="adress">Adres:</label>
+        <input type="text" id="adress" name="street" placeholder="Straatnaam + huisnummer" required>
+    </div>
+
+    <div class="grid-auto-fit" data-cols="halfs">
+        <div>
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" placeholder="Postcode">
+        </div>
+
+        <div>
+            <label for="woonplaats">Woonplaats:</label>
+            <input type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats">
+        </div>
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+    </div>
+
+    <div>
+        <label for="aanvrager">Namens wie vraagt u het aan?</label>
+        <input type="text" id="aanvrager" name="aanvrager" placeholder="bijv. straat, buurt of vereniging">
+    </div>
+
+    <div>
+        <label for="event">Wat wil u organiseren?</label>
+        <textarea id="event" name="event_description" rows="5" placeholder="Typ in het kort wat u zou willen organiseren"></textarea>
+    </div>
+
+    <div>
+        <label for="date">Wat is de datum voor uw plan?</label>
+        <input id="date" type="date" name="datum" placeholder="datum" required>
+    </div>
+
+    <div>
+        <label for="lokatie">Waar vindt het plaats?</label>
+        <input type="text" id="lokatie" name="lokatie" placeholder="Lokatie" required>
+    </div>
+
+    <div>
+        <label for="doelgroep">Welke doelgroep wil u uitnodigen?</label>
+        <input type="text" id="doelgroep" name="name" placeholder="Bijv. buurtbewoners, kinderen of bejaarden" required>
+    </div>
+
+    <div>
+        <label for="deelnemers">Hoeveel deelnemers verwacht u?</label>
+        <input type="text" id="deelnemers" name="deelnemers" placeholder="Aantal deelnemers" required>
+    </div>
+
+    <div>
+        <label for="bedrag">Hoeveel wil u bij de wijkraad aanvragen?</label>
+        <input type="text" id="bedrag" name="bedrag" placeholder="Het bedrag wat u wil aanvragen" required>
+    </div>
+
+    <div>
+        <label for="bijdragen">Heb je nog aan andere instanties of bedrijven een bijdrage gevraagd en zo ja aan wie?</label>
+        <textarea id="bijdragen" name="bijdragen" rows="5" required></textarea>
+    </div>
+
+    <div>
+        <label for="bijdragen-toegezegd">Hoeveel heb je gevraagd en wat is toegezegd?</label>
+        <textarea id="bijdragen-toegezegd" name="bijdragen_toegezegd" rows="5" placeholder="Alleen invullen als je de vorige vraag met JA hebt beantwoord"></textarea>
+    </div>
+
+    <div>
+        <label for="berekening">Noteer hier een berekening (begroting) zoals beschreven onder de spelregels van Verrijk je Wijk</label>
+        <textarea id="berekening" name="berekening" rows="5" placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten."></textarea>
+    </div>
+
+    <button class="button" data-button-variant="primary" type="submit">Verzend</button>
+</form>

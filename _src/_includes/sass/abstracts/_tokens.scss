@@ -1,0 +1,210 @@
+@use "./colors" as *;
+
+// -----------------------------------------------------------------------------
+// Global settings
+// -----------------------------------------------------------------------------
+
+$active-theme: $light;
+$enable-media-prefers-dark-mode: false;
+
+$focus-outline: 2px solid var(--primary-500);
+
+$global-border-radius: var(--radius-m);
+
+$region-spacing: 3.3vmax;
+
+$input-select-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+
+// -----------------------------------------------------------------------------
+// Body
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--primary-950);
+$body-background: #fff;
+$body-font-family: var(--ff-sans);
+$body-font-size: var(--fs-400);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.618;
+
+
+// -----------------------------------------------------------------------------
+// Heading
+// -----------------------------------------------------------------------------
+
+$heading-foreground: var(--primary-900);
+$heading-font-family: var(--ff-sans);
+$heading-font-size: inherit;
+$heading-font-weight: var(--fw-bold);
+$heading-line-height: 1.1;
+
+
+// -----------------------------------------------------------------------------
+// Anchor
+// -----------------------------------------------------------------------------
+
+$link-foreground: var(--primary-400);
+$link-foreground-hover: var(--primary-900);
+
+$link-text-decoration: none;
+$link-text-decoration-hover: underlined;
+
+$link-transition: 200ms ease-in-out;
+
+
+// -----------------------------------------------------------------------------
+// Layout/Wapper
+// -----------------------------------------------------------------------------
+
+$page-layout-padding-inline: 5dvw;
+
+$page-layout-feature-max-width: 1440px;
+$page-layout-popout-max-width: 1350px;
+$page-layout-content-max-width: 1200px;
+
+$full-width-split-screen-content-padding: clamp(2rem, 6dvw, 8rem);
+
+
+// -----------------------------------------------------------------------------
+// Site header
+// -----------------------------------------------------------------------------
+
+$site-header-background: transparent;
+$site-header-padding: var(--space-xs) 0;
+
+$site-header-justify-content-small-screen: center;
+$site-header-justify-content-large-screen: space-between;
+
+
+// -----------------------------------------------------------------------------
+// Site navigation
+// -----------------------------------------------------------------------------
+
+$site-nav-list-gap: var(--space-3xs);
+
+$site-nav-link-foreground: var(--primary-900);
+$site-nav-link-foreground-hover: var(--primary-800);
+$site-nav-link-foreground-active: var(--primary-50);
+
+$site-nav-link-background: transparent;
+$site-nav-link-background-hover: var(--primary-100);
+$site-nav-link-background-active: var(--primary-800);
+
+$site-nav-link-font-family: inherit;
+$site-nav-link-font-size: 1rem;
+$site-nav-link-font-weight: inherit;
+$site-nav-link-line-height: 1.1;
+
+$site-nav-link-padding: 1rem 1.5rem;
+$site-nav-link-padding-mobile: var(--space-m);
+$site-nav-link-border-radius: $global-border-radius;
+
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+
+$nav-list-gap: var(--space-3xs);
+
+$nav-link-foreground: var(--neutral-400);
+$nav-link-foreground-hover: var(--neutral-700);
+$nav-link-foreground-active: var(--neutral-50);
+
+$nav-link-background: transparent;
+$nav-link-background-hover: var(--primary-50);
+$nav-link-background-active: var(--primary-800);
+
+$nav-link-font-family: inherit;
+$nav-link-font-size: 16px;
+$nav-link-font-weight: inherit;
+$nav-link-line-height: 1.1;
+
+$nav-link-padding: 1rem 1.5rem;
+$nav-link-border-radius: $global-border-radius;
+
+
+// -----------------------------------------------------------------------------
+// Hamburger
+// -----------------------------------------------------------------------------
+
+$hamburger-bar-color: var(--neutral-50);
+$hamburger-bar-width: 36px;
+$hamburger-bar-height: 6px;
+$hamburger-bar-gap: 4px;
+
+$hamburger-background: var(--primary-900);
+$hamburger-padding: var(--space-2xs);
+$hamburger-animation-timing: 200ms ease-in-out;
+$hamburger-border: none;
+$hamburger-border-radius: $global-border-radius;
+
+
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+
+// default
+$button-foreground: var(--neutral-500);
+$button-foreground-hover: var(--neutral-900);
+
+$button-background: var(--neutral-50);
+$button-background-hover: var(--neutral-50);
+
+$button-primary-foreground: var(--primary-50);
+$button-primary-foreground-hover: white;
+
+$button-primary-background: var(--primary-800);
+$button-primary-background-hover: var(--primary-950);
+
+$button-accent-foreground: var(--neutral-50);
+$button-accent-foreground-hover: var(--neutral-50);
+
+$button-accent-background: var(--accent-500);
+$button-accent-background-hover: var(--accent-600);
+
+$button-font-family: var(--ff-sans);
+$button-font-size: 1rem;
+$button-font-weight: var(--fw-medium);
+$button-line-height: 1;
+
+$button-border-width: 2px;
+$button-border-style: solid;
+$button-border-color: var(--_button-background);
+$button-border-radius: $global-border-radius;
+
+$button-padding: 1rem 1.5rem;
+$button-gap: .5rem;
+$button-text-transform: none;
+$button-letter-spacing: 0.05ch;
+$button-transition: all 0.2s ease;
+
+
+// -----------------------------------------------------------------------------
+// Card
+// -----------------------------------------------------------------------------
+
+$card-background: white;
+$card-padding: var(--space-m);
+$card-flow: .125rem;
+$card-border-radius: $global-border-radius;
+$card-image-aspect-ratio: "16/9";
+$card-shadow: var(--shadow-xs);
+
+
+// -----------------------------------------------------------------------------
+// Form
+// -----------------------------------------------------------------------------
+
+$label-foreground: var(--primary-950);
+$label-font-size: inherit;
+$label-font-weight: var(--fw-semibold);
+
+// Input
+$input-foreground: inherit;
+$input-background: white;
+$input-padding: var(--space-xs);
+
+$input-border-width: 1px;
+$input-border-style: solid;
+$input-border-color: var(--neutral-300);
+
+$input-border-radius: $global-border-radius;

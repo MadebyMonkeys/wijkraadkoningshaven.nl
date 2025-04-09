@@ -1,0 +1,20 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ album-list ] [ full-width ] [ region ]">
+    <h1 class="block__title fs-700">{{ title }}</h1>
+    {{ set albums = search.pages("type=album", "order=desc") }}
+    <ul role="list" class="grid-auto-fit" data-cols="thirds" data-rows="masonary">
+        {{ for album of albums }}
+        <li class="album">
+            <a href="{{ album.url }}" class="">
+                <img loading="lazy" class="album__image" src="{{ album.cover_image }}" alt="{{ album.title }}">
+                <div class="album__info flow">
+                    <h3>{{ album.title }}</h3>
+                </div>
+            </a>
+        </li>
+        {{ /for }}
+    </ul>
+</section>

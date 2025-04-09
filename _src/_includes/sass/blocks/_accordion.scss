@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------
+
+details.accordion {
+    --_accordion-summary-foreground: var(--accordion-summary-foreground, var(--neutral-800));
+
+    --_accordion-foreground: var(--accordion-foreground, var(--neutal-500));
+    --_accordion-font-weight: var(--accordion-font-weight, var(--fw-bold));
+    --_accordion-padding: var(--accordion-padding, var(--space-m));
+
+    position: relative;
+    color: var(--_accordion-foreground);
+
+    summary {
+        font-weight: var(--_accordion-font-weight);
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        &::after {
+            rotate: -90deg;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            height: calc(1rem* var(--_dropdown-line-height, 1.5));
+            margin-inline-start: .25rem;
+            transform: rotate(0) translate(.2rem);
+            background-image: #{$input-select-icon};
+            background-position: right center;
+            background-size: 1rem auto;
+            background-repeat: no-repeat;
+            content: "";
+            transition: rotate 3ms ease-in-out;
+        }
+
+        &:not([role]) {
+            color: var(--_accordion-summary-foreground);
+        }
+    }
+}
+
+details.accordion {
+    &[open] > summary {
+        &::after {
+            rotate: 0deg;
+        }
+    }
+}

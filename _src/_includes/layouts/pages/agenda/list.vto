@@ -1,0 +1,19 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[ posts-list ] [ full-width ] [ region ]">
+    <h1 class="block__title fs-700">{{ section_agenda.title }}</h1>
+    {{ set agenda = search.pages("type=event", "order=desc") }}
+    <ul class="grid-auto-fit" data-cols="thirds" role="list">
+    {{ for item of agenda }}
+        <li class="card flow">
+            <img loading="lazy" src="{{ item.image }}" alt="{{ item.title }}">
+            <h3 class="fs-500 fw-semibold">{{ item.title }}</h3>
+            <small class="color-neutral-500">Gepubliceerd op {{ item.createdAt|> date('dd MMMM yyyy') }}</small>
+            {{ item.description |> md }}
+            <a href="{{ item.url }}" class="button" data-button-variant="primary" data-button-ghost>Lees verder</a>
+        </li>
+    {{ /for }}
+    </ul>
+</section>

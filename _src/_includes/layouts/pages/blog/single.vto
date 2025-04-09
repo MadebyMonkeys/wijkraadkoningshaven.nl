@@ -1,0 +1,10 @@
+---
+layout: layouts/page.vto
+---
+
+<article class="[ post flow ] [ full-width ] [ region bg-white ]">
+    <h1 class="block__title">{{ title }}</h1>
+    <small>{{ date |> date('dd MMMM yyyy') }}</small>
+    <img loading="lazy" class="post__image" src="{{ image }}" alt="{{ title }}">
+    {{- content -}}
+</article>

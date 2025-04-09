@@ -1,0 +1,45 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+.card {
+    --_card-background: var(--card-background, #{$card-background});
+    --_card-padding: var(--card-padding, #{$card-padding});
+    --_card-flow: var(--card-flow, #{$card-flow});
+    --_card-border-radius: var(--card-border-radius, #{$card-border-radius});
+    --_card-image-aspect-ratio: var(--card-image-aspect-ratio, #{$card-image-aspect-ratio});
+    --_card-shadow: var(--card-shadow, #{$card-shadow});
+
+    display: grid;
+    overflow: clip;
+    position: relative;
+    gap: var(--_card-flow);
+    background: var(--_card-background);
+    justify-items: start;
+    align-items: start;
+    border-radius: var(--_card-border-radius);
+    box-shadow: var(--_card-shadow);
+
+    :is(img) {
+        aspect-ratio: var(--_card-image-aspect-ratio);
+        object-fit: cover;
+    }
+
+    :not(img) {
+        margin-inline: var(--_card-padding);
+
+        &:first-child {
+            margin-block-start: var(--_card-padding);
+        }
+
+        &:last-child {
+            margin-block-end: var(--_card-padding);
+        }
+    }
+}
+
+li:is(.card) {
+    max-width: auto;
+}

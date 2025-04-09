@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Monsterrat";
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format(ttf);
+    font-weight: 100 900;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monsterrat italic";
+    src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format(ttf);
+    font-weight: 100 900;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+// -----------------------------------------------------------------------------
+// Font Familie(s)
+// -----------------------------------------------------------------------------
+
+$-ff-sans: "Monsterrat", sans-serif ;//ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$-ff-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$-ff-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+$font-families: (
+    "sans": $-ff-sans,
+    "serif": $-ff-serif,
+    "mono": $-ff-mono,
+);
+
+
+
+// -----------------------------------------------------------------------------
+// Font size(s)
+// -----------------------------------------------------------------------------
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1350,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|l-2xl&g=s,l,xl,12 */
+
+$font-sizes: (
+    "200": clamp(0.6252rem, 0.716rem + -0.1076vw, 0.6944rem),
+    "300": clamp(0.8333rem, 0.8176rem + 0.0787vw, 0.884rem),
+    "400": clamp(1rem, 0.9223rem + 0.3883vw, 1.25rem),
+    "500": clamp(1.2rem, 1.0237rem + 0.8816vw, 1.7675rem),
+    "600": clamp(1.44rem, 1.1109rem + 1.6454vw, 2.4992rem),
+    "700": clamp(1.728rem, 1.1669rem + 2.8053vw, 3.5339rem),
+    "800": clamp(2.0736rem, 1.1654rem + 4.5412vw, 4.997rem),
+    "900": clamp(2.4883rem, 1.0662rem + 7.1105vw, 7.0657rem),
+);
+
+
+// -----------------------------------------------------------------------------
+// Font weight(s)
+// -----------------------------------------------------------------------------
+
+$font-weights: (
+    "thin": 100,
+    "extralight": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800,
+    "black": 900,
+);

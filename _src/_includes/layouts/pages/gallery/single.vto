@@ -1,0 +1,17 @@
+---
+layout: layouts/page.vto
+hasLightbox: true
+---
+
+<section class="[ album ] [] [ region ]">
+    <h1 class="block__title">{{ title }}</h1>
+    <ul role="list" class="grid-auto-fit" data-rows="masonry">
+        {{ for image of album_images }}
+        <li class="album">
+            <a href="{{ image.path }}" data-fslightbox="gallery">
+                <img loading="lazy" class="album__image" src="{{ image.path }}" alt="{{ image.title }}">
+            </a>
+        </li>
+        {{ /for }}
+    </ul>
+</section>

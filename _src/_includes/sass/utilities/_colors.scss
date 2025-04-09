@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+.bg-white {
+    background: white;
+}
+
+
+.bg-black {
+    background: black;
+}
+
+
+// Color(s) default theme
+@each $color, $shade-map in $active-theme {
+    @each $shade, $value in $shade-map {
+        .color-#{$color}-#{$shade} {
+            --heading-foreground: #{$value};
+            color: var(--heading-foreground);
+        }
+
+        .bg-#{$color}-#{$shade} {
+            background: #{$value};
+        }
+    }
+}
+
+// Color(s) theme dark mode
+@if ($enable-media-prefers-dark-mode) {
+    @media (prefers-color-scheme: dark) {
+        @each $color, $shade-map in $dark {
+            @each $shade, $value in $shade-map {
+                .color-#{$color}-#{$shade} {
+                    --heading-foreground: #{$value};
+                    color: var(--heading-foreground);
+                }
+
+                .bg-#{$color}-#{$shade} {
+                    background: #{$value};
+                }
+            }
+        }
+    }
+}

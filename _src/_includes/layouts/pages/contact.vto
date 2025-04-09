@@ -1,0 +1,19 @@
+---
+layout: layouts/page.vto
+---
+
+<section class="[] [] [ region ]">
+    <div class="grid-auto-fit" data-cols="halfs">
+        <div class="flow">
+            {{ content |> md }}
+
+            <h3>Onze socials</h3>
+            <div class="social flex-group">
+                {{ for social of site.socials }}
+                    <a href="{{ social.url }}" class="social__link"><ion-icon size="xlarge" name="{{ social.icon }}"></ion-icon></a>
+                {{ /for }}
+            </div>
+        </div>
+        {{ include "partials/components/form-contact.vto" }}
+    </div>
+</section>

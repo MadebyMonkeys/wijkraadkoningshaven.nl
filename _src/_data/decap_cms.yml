@@ -1,0 +1,313 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "_src/static/uploads"
+public_folder: "/uploads/"
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "_src/_data/site.yml"
+        fields:
+          - { name: "logo", label: "Logo", widget: "image", default: "/images/logo.svg" }
+          - { name: "name", label: "Naam", widget: "string" }
+
+          - name: "metas"
+            label: "Metas"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "image" }
+              - { name: "lang", label: "Language", widget: "string" }
+              - { name: "generator", label: "Generator", widget: "boolean" }
+
+          - name: "analytics"
+            label: "Analytics"
+            widget: "object"
+            fields:
+              - { name: "umami_id", label: "Umami analytics key", widget: "string" }
+
+
+
+  - name: "pages"
+    label: "Paginas"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "_src/index.md"
+        fields:
+          - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/home.vto" }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+          - name: "section_hero"
+            label: "Hero section"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "button"
+                label: "Button"
+                widget: "list"
+                fields:
+                    - { name: "title", label: "Title", widget: "string" }
+                    - { name: "url", label: "Url", widget: "string" }
+
+          - name: "section_one"
+            label: "Feature Section"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "body", label: "Content", widget: "markdown" }
+
+          - name: "section_posts"
+            label: "Nieuws section"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+
+          - name: "section_cta"
+            label: "Split section"
+            widget: "object"
+            fields:
+              - name: "content_one"
+                label: "Verrijk je wijk block"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Content", widget: "markdown" }
+                  - name: "button"
+                    label: "Button"
+                    widget: "object"
+                    fields:
+                    - { name: "title", label: "Title", widget: "string" }
+                    - { name: "url", label: "Path", widget: "string" }
+
+              - name: "content_two"
+                label: "Contact block"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "body", label: "Content", widget: "markdown" }
+                  - name: "button"
+                    label: "Button"
+                    widget: "object"
+                    fields:
+                    - { name: "title", label: "Title", widget: "string" }
+                    - { name: "url", label: "Path", widget: "string" }
+
+
+
+      - name: "About"
+        label: "About page"
+        file: "_src/over-ons.md"
+        fields:
+          - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/about.vto" }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+          - name: "section_about"
+            label: "About us"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image", default: "/images/about.jpg" }
+          
+          - { name: "body", label: "body", widget: "markdown" }
+
+      
+
+      - name: "nieuws"
+        label: "News page"
+        file: "_src/nieuws.md"
+        fields:
+          - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/blog/list.vto" }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+          - name: "section_news"
+            label: "Nieuws list title"
+            widget: "object" 
+            fields:
+              - { name: "title", label: "title", widget: "string" }
+
+      
+
+      - name: "agenda"
+        label: "Agenda page"
+        file: "_src/agenda.md"
+        fields:
+          - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/agenda/list.vto" }
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+          - name: "section_agenda"
+            label: "Agenda list title"
+            widget: "object" 
+            fields:
+              - { name: "title", label: "title", widget: "string" }
+
+
+
+      - name: "contact"
+        label: "Contact page"
+        file: "_src/contact.md"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+          
+          - { name: "body", label: "body", widget: "markdown" }
+
+
+
+
+      - name: "vjw"
+        label: "Verrijk je wijk page"
+        file: "_src/verrijk-je-wijk.md"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "text" }
+
+          - name: "metas"
+            label: "Meta data"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+          - { name: "body", label: "Content", widget: "markdown" }
+  
+
+
+  - name: "faq"
+    label: "FAQ"
+    editor:
+      preview: false
+    files:
+      - name: "stichting"
+        label: "Stichting"
+        file: "_src/_data/faq/stichting.yml"
+        fields:
+          - name: "list"
+            label: "faq"
+            widget: "list"
+            fields:
+              - { name: "question", label: "Vraag", widget: "string" }
+              - { name: "answer", label: "Antwoord", widget: "markdown" }
+
+      - name: "verrijk-je-wijk"
+        label: "Verrijk je wijk"
+        file: "_src/_data/faq/vjw.yml"
+        fields:
+          - name: "list"
+            label: "faq"
+            widget: "list"
+            fields:
+              - { name: "question", label: "Vraag", widget: "string" }
+              - { name: "answer", label: "Antwoord", widget: "markdown" }
+
+
+  - name: "nieuws"
+    label: "Nieuws"
+    label_singular: "Post"
+    folder: "_src/nieuws"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/blog/single.vto" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "draft", label: "Publisched", widget: "boolean" }
+      - { name: "body", label: "body", widget: "markdown" }
+
+
+  - name: "agenda"
+    label: "Agenda"
+    folder: "_src/agenda"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - { name: "layout", label: "layouts", widget: "hidden", default: "layouts/pages/agenda/single.vto" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "draft", label: "Publisched", widget: "boolean" }
+      - name: "event"
+        label: "Event information"
+        widget: "object"
+        fields:
+          - { name: "date", label: "date", widget: "datetime" }
+          - { name: "time", label: "time", widget: "string" }
+          - { name: "location", label: "Location", widget: "string" }
+          - { name: "price", label: "Prijs", widget: "string" }
+      - { name: "body", label: "body", widget: "markdown" }
+
+
+  - name: "gallery"
+    label: "Gallery"
+    label_singular: "Post"
+    folder: "_src/albums"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Description", widget: "text" }
+      - { name: "cover_image", label: "Cover image", widget: "image" }
+      - { name: "draft", label: "Publisched", widget: "boolean" }
+      - name: "album_images"
+        label: "Images"
+        label_singular: "Image"
+        widget: "list"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "path", label: "Image path", widget: "image" }

@@ -1,0 +1,29 @@
+---
+layout: layouts/page.vto
+---
+<article class="[ vjw-content ] [ full-width ] [ region ]">
+    <h2 class="block__title">{{ section_vjw.title }}</h2>
+    {{- content -}}
+</article>
+<section id="form" class="[ vjw-form ] [ full-width ] [ region bg-primary-50 ]">
+    <h2 class="block__title">{{ section_vjwForm.title }}</h2>
+    {{ include "partials/components/form-verrijk-je-wijk.vto" }}
+</section>
+<section id="regels" class="[ vjw-rules ] [ full-width ] [ region flow ]">
+    <h2 class="block__title">{{ section_rules.title }}</h2>
+    {{ section_rules.body |> md }}
+    <a href="#form">terug naar formulier</a>
+</section>
+<section id="faq" class="[ vjw-faq ] [ full-width ] [ region bg-primary-50 ]">
+    <div class="flow">
+        <h2 class="block__title">{{ section_faq.title }}</h2>
+        <div class="flow">
+        {{ for item of faq.vjw }}
+            <details class="accordion">
+            <summary>{{ item.question }}</summary>
+            {{ item.answer |> md }}
+            </details>
+        {{ /for }}
+        </div>
+    </div>
+</section>

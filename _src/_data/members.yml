@@ -1,0 +1,19 @@
+- name: Joost
+  image: "/images/avatar-male.png"
+  function: "Voorzitter"
+  bio: "Lorem ipsum"
+
+- name: Anja
+  image: "/images/avatar-female.png"
+  function: "Secretaris"
+  bio: "Lorem ipsum"
+
+- name: Ruud
+  image: "/images/avatar-male.png"
+  function: "Penningmeester"
+  bio: "Lorem ipsum"
+
+- name: Paul
+  image: "/images/avatar-male.png"
+  function: "Commissielid"
+  bio: "Lorem ipsum"

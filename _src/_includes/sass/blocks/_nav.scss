@@ -1,0 +1,93 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------------------
+
+.nav {
+    --_nav-list-gap: var(--nav-list-gap);
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--_nav-list-gap);
+    }
+
+    &__item {
+        max-width: unset;
+        width: auto;
+    }
+
+    &__link {
+        --_nav-link-font-family: var(--nav-link-font-family, #{$nav-link-font-family});
+        --_nav-link-font-size: var(--nav-link-font-size, #{$nav-link-font-size});
+        --_nav-link-font-weight: var(--nav-link-font-weight, #{$nav-link-font-weight});
+        --_nav-link-line-height: var(--nav-link-line-height, #{$nav-link-line-height});
+        --_nav-link-padding: var(--nav-link-padding, #{$nav-link-padding});
+
+        display: block;
+        font-family: var(--_nav-link-font-family);
+        font-size: var(--_nav-link-font-size);
+        font-weight: var(--_nav-link-font-weight);
+        line-height: var(--_nav-link-line-height);
+        padding: var(--_nav-link-padding);
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// 
+// -----------------------------------------------------------------------------
+
+.nav {
+    &__link {
+        --_nav-link-foreground: var(--nav-link-foreground, #{$nav-link-foreground});
+        --_nav-link-foreground-hover: var(--nav-link-foreground-hover, #{$nav-link-foreground-hover});
+        --_nav-link-foreground-active: var(--nav-link-foreground-active, #{$nav-link-foreground-active});
+
+        --_nav-link-background: var(--nav-link-background, #{$nav-link-background});
+        --_nav-link-background-hover: var(--nav-link-background-hover, #{$nav-link-background-hover});
+        --_nav-link-background-active: var(--nav-link-background-active, #{$nav-link-background-active});
+
+        --_nav-link-border-radius: var(--nav-link-border-radius, #{$nav-link-border-radius});
+
+        color: var(--_nav-link-foreground);
+        background: var(--_nav-link-background);
+        border-radius: var(--_nav-link-border-radius);
+        text-decoration: none;
+
+        &:hover {
+            --nav-link-foreground: var(--_nav-link-foreground-hover);
+            --nav-link-background: var(--_nav-link-background-hover);
+        }
+
+        &.active {
+            --nav-link-foreground: var(--_nav-link-foreground-active);
+            --nav-link-background: var(--_nav-link-background-active);
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// Exception
+// -----------------------------------------------------------------------------
+
+.nav {
+    &--inline {
+        .nav__list {
+            flex-direction: row;
+        }
+    }
+
+    &--block {
+        .nav__list {
+            flex-direction: column;
+        }
+
+        .nav__item {
+            width: 100%;
+        }
+    }
+}

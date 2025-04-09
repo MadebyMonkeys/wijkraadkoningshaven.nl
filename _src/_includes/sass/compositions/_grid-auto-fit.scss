@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16rem), 1fr));
+    gap: var(--grid-gap, var(--space-s-l));
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Exception
+// -----------------------------------------------------------------------------
+
+.grid-auto-fit {
+    &[data-cols="halfs"] {
+        --grid-min-col-size: clamp(16rem, 50%, 26rem);
+    }
+
+    &[data-cols="thirds"] {
+        --grid-min-col-size: clamp(16rem, 33%, 22rem);
+    }
+
+    &[data-cols="quarters"] {
+        --grid-min-col-size: clamp(16rem, 50%, 18rem);
+    }
+
+    &[data-rows="masonry"] {
+        grid-template-rows: masonry;
+        align-items: start;
+    }
+}

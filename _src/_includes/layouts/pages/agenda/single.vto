@@ -1,0 +1,28 @@
+---
+layout: layouts/base.vto
+---
+
+<div id="service" class="has-aside region">
+    <main>
+        <article class="post flow">
+            <img loading="lazy" class="post__image" src="{{ image }}" alt="{{ title }}">
+            {{- content |> md -}}
+        </article>
+    </main>
+    <aside>
+        <div class="widget flow">
+            <h4>Event informatie</h4>
+            <ul class="event-list" role="list">
+                <li><strong>Datum:</strong> {{ event.date }}</li>
+                <li><strong>Tijd:</strong> {{ event.time }}</li>
+                <li><strong>Locatie:</strong> {{ event.locatie }}</li>
+                {{ if event.price }}
+                    <li><strong>Prijs:</strong> {{ event.price }}</li>
+                {{ /if }}
+            </ul>
+            {{ if event.button }}
+                <a href="{{ event.button.url }}" class="button" data-button-variant="primary">{{ event.button.title }}</a>
+            {{ /if }}
+        </div>
+    </aside>
+</div>
