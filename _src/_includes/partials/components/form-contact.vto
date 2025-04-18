@@ -1,4 +1,5 @@
-<form class="flow" action="https://formsubmit.co/info@wijkraadkoningshaven.nl" method="POST" name="contact">
+<form class="flow" action="/send-mail.php" method="POST">
+    <input type="hidden" name="_form" value="contact">
     <div class="field-group">
         <label for="naam">Naam</label>
         <input type="text" id="naam" name="naam" />
@@ -19,6 +20,7 @@
         <textarea id="bericht" name="bericht" rows="10"></textarea>
     </div>
     
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
     
     <button class="button" data-button-variant="primary" type="submit">Verzend</button>
 </form>

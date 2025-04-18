@@ -336,3 +336,12 @@ article {
         max-width: unset;
     }
 }
+
+
+
+.bedankt {
+    text-align: center;
+    *:is(h1, h2, h3, p) {
+        max-width: unset;
+    }
+}

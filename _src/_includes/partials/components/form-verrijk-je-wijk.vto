@@ -1,7 +1,5 @@
-<form class="flow" target="_blank" action="https://formsubmit.co/vjw@wijkraadkoningshaven.nl" method="POST">
-    <input type="hidden" name="_subject" value="Aanvraag: Verrijk je wijk">
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_template" value="basic">
+<form class="flow" target="_blank" action="/send-mail.php" method="POST">
+    <input type="hidden" name="_form" value="verrijkjewijk">
     
     <div>
         <label for="naam">Naam:</label>
@@ -84,6 +82,8 @@
         <label for="berekening">Noteer hier een berekening (begroting) zoals beschreven onder de spelregels van Verrijk je Wijk</label>
         <textarea id="berekening" name="berekening" rows="5" placeholder="Noteer hier het bedrag en een duidelijke begroting van alle kosten."></textarea>
     </div>
+
+    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
 
     <button class="button" data-button-variant="primary" type="submit">Verzend</button>
 </form>
