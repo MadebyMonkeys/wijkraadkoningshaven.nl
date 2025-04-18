@@ -36,7 +36,7 @@ jobs:
           ssh-keyscan -p 4000 -H $CPANEL_HOST >> ~/.ssh/known_hosts
 
           # Test verbinding met SSH
-          ssh -p $CPANEL_POORT -v $CPANEL_USER@$CPANEL_HOST "echo ✅ Verbonden!"
+          ssh -i ~/.ssh/github_deploy_key -p $CPANEL_POORT -v $CPANEL_USER@$CPANEL_HOST "echo ✅ Verbonden!"
 
           # Synchroniseer bestanden met rsync
           rsync -avz -e "ssh -i ~/.ssh/github_deploy_key -p $CPANEL_POORT" --delete --exclude="send-mail.php" _site/ $CPANEL_USER@$CPANEL_HOST:$DEPLOY_PATH
