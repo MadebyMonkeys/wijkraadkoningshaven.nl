@@ -25,6 +25,7 @@
     :is(img) {
         aspect-ratio: var(--_card-image-aspect-ratio);
         object-fit: cover;
+        width: 100%;
     }
 
     :not(img) {
