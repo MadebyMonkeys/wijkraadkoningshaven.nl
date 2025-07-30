@@ -5,7 +5,7 @@ layout: layouts/page.vto
 <section class="[ album-list ] [ full-width ] [ region ]">
     <h1 class="block__title fs-700">{{ title }}</h1>
     {{ set albums = search.pages("type=album", "order=desc") }}
-    <ul role="list" class="grid-auto-fit" data-cols="thirds" data-rows="masonary">
+    <ul role="list" class="grid-auto-fit" data-cols="halfs" data-rows="masonary">
         {{ for album of albums }}
         <li class="album">
             <a href="{{ album.url }}" class="">
