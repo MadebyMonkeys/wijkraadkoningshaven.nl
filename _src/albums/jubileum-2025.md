@@ -1,5 +1,5 @@
 ---
-title: "Wijkraak Koningshaven 30 jarig Jubileum"
+title: "Wijkraad Koningshaven 30 jarig Jubileum"
 description: "30 jarig Jubileum fotos"
 
 cover_image: "/uploads/jubileum-2025/IMG-20250623-WA0000.jpg"
