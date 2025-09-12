@@ -1,6 +1,4 @@
-media:
-  input: "_src/static/uploads"
-  output: "_src/static/uploads"
+media: "_src/static/uploads"
 
 content:
   - name: "settings"
