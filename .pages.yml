@@ -45,6 +45,9 @@ content:
       - name: "createdAt"
         label: "Published date"
         type: "date"
+        options:
+          format: "dd-MM-yyyy"
+          min: "2023-12-24"
         
       - { name: "title", label: "Title", type: "string" }
       - { name: "description", label: "Description", type: "text" }
