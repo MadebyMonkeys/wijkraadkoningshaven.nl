@@ -19,4 +19,17 @@ content:
           - { name: "description", label: "Description", type: "string" }
           - { name: "icon", label: "Icon", type: "image" }
           - { name: "lang", label: "Language", type: "string" }
-          - { name: "generator", label: "Generator", type: "boolean" }    
+          - { name: "generator", label: "Generator", type: "boolean" }
+
+  - name: "posts"
+    label: "Nieuws posts"
+    path: "_src/nieuws"
+    type: collection
+    view: 
+      fields: [ image, title ]
+    fields:
+      - { name: "draft", label: "Published", type: "boolean", default: true }
+      - { name: "title", label: "Title", type: "string" }
+      - { name: "summery", label: "Summery", type: "text" }
+      - { name: "image", label: "Image", type: "image" }
+      - { name: "body", label: "Body", type: rich-text }
