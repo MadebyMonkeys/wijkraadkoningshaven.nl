@@ -8,7 +8,11 @@ content:
     path: "_src/_data/site.yml"
     type: file
     fields:
-      - { name: "logo", label: "Naam", type: "image" }
+      - name: "logo"
+        label: "Naam"
+        type: "image"
+        options:
+          extensions: [svg]
       - { name: "name", label: "Naam", type: "string" }
       - { name: "description", label: "Beschrijving", type: "string" }
       - name: "metas"
