@@ -62,3 +62,19 @@ content:
           - { name: "location", label: "Lokatie", type: "string" }
           - { name: "price", label: "Prijs", type: "string" }
           - { name: "date", label: "Datum", type: "date" }
+
+  - name: "albums"
+    label: "Albums"
+    path: "_src/albums"
+    type: collection
+    view: 
+      fields: [ title, image ]
+    fields:
+      - { name: "title", label: "Title", type: "string" }
+      - { name: "description", label: "Description", type: "string" }
+      - { name: "cover_image", label: "Cover image", type: "image" }
+      - name: "album_images"
+        label: "Images"
+        type: image
+        options:
+          multiple: true
