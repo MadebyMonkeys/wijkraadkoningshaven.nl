@@ -8,7 +8,7 @@ import robots from "lume/plugins/robots.ts";
 import sass from "lume/plugins/sass.ts";
 import svgo from "lume/plugins/svgo.ts";
 import transform_images from "lume/plugins/transform_images.ts";
-import decapCMS from "lume/plugins/decap_cms.ts";
+// import decapCMS from "lume/plugins/decap_cms.ts";
 
 import { nl } from "npm:date-fns/locale/nl";
 
@@ -39,7 +39,7 @@ export default function () {
             .use(purgecss())
             .use(metas())
             .use(robots())
-            .use(decapCMS());
+            //.use(decapCMS());
         
         
         /** 🔹 Copy files */
