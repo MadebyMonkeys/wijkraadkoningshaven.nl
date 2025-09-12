@@ -9,7 +9,7 @@ content:
     type: file
     fields:
       - name: "logo"
-        label: "Naam"
+        label: "Logo"
         type: "image"
         options:
           extensions: [svg]
