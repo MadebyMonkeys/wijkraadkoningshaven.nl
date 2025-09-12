@@ -50,8 +50,7 @@ content:
         label: "Published date"
         type: date
         options:
-          format: "MM-dd-yyyy"
-          min: "2023-12-24"
+          format: dd-MM-yyyy
         
       - { name: "title", label: "Title", type: string }
       - { name: "description", label: "Description", type: text }
@@ -69,6 +68,7 @@ content:
             label: "Datum"
             type: date
             options:
+              format: dd-MM-yyyy
               time: true
 
   - name: "albums"
