@@ -4,30 +4,19 @@ media:
 
 content:
   - name: "settings"
-    label: "Settings"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - name: "general"
-        label: "General Settings"
-        file: "_src/_data/site.yml"
+    label: "Website settings"
+    path: "_src/_data/site.yml"
+    type: file
+    fields:
+      - { name: "logo", label: "Naam", type: "image" }
+      - { name: "name", label: "Naam", type: "string" }
+      - { name: "description", label: "Beschrijving", type: "string" }
+      - name: "metas"
+        label: "metas"
+        type: "object"
         fields:
-          - { name: "logo", label: "Logo", widget: "image", default: "/images/logo.svg" }
-          - { name: "name", label: "Naam", widget: "string" }
-
-          - name: "metas"
-            label: "Metas"
-            widget: "object"
-            fields:
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "string" }
-              - { name: "icon", label: "Icon", widget: "image" }
-              - { name: "lang", label: "Language", widget: "string" }
-              - { name: "generator", label: "Generator", widget: "boolean" }
-
-          - name: "analytics"
-            label: "Analytics"
-            widget: "object"
-            fields:
-              - { name: "umami_id", label: "Umami analytics key", widget: "string" }
+          - { name: "title", label: "Title", type: "string" }
+          - { name: "description", label: "Description", type: "string" }
+          - { name: "icon", label: "Icon", type: "image" }
+          - { name: "lang", label: "Language", type: "string" }
+          - { name: "generator", label: "Generator", type: "boolean" }    
