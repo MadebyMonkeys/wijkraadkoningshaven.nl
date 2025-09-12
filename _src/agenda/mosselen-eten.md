@@ -8,6 +8,7 @@ event:
   time: aanvang 17.30 uur
   location: Cafe Bet Kolen
   price: 10.00 euro
+  date: 2025-10-18
 ---
 Het is weer tijd voor onze jaarlijkse mosselavond.
 
