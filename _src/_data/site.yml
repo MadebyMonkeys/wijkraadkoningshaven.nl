@@ -1,28 +1,8 @@
-root: "https://wijkraadkoningshaven.nl"
-
-logo_is_svg: true
-logo: "/images/logo.svg"
-name: "Stichting Wijkraad Koningshaven"
-description: ""
-
+logo: /uploads/logo.svg
+name: Stichting Wijkraad Koningshaven
 metas:
   title: =title
   description: =description
-  icon: "/images/logo.png"
+  icon: /images/logo.png
   lang: nl
   generator: true
-
-
-phone: "+31 6 123 456 78"
-email: "hallo@wijkraadkoningshaven.nl"
-
-socials:
-  - name: facebook
-    icon: logo-facebook
-    url: "https://www.facebook.com/people/Stichting-Wijkraad-Koningshaven/pfbid0ymMFirHZRXLRpaSuTT4Xafr7JnXHYbR9xUPxW4oBJtYCxyLAkGPWKSNbtQQGQLkGl/"
-    handle: "Wijkraad Koningshaven"
-
-  - name: whatsapp
-    icon: logo-whatsapp
-    url: "whatsapp:+31 6 123 456 78"
-    handle: "Wijkraad Koningshaven"
