@@ -28,7 +28,7 @@ content:
     view: 
       fields: [ image, title ]
     fields:
-      - { name: "draft", label: "Published", type: "boolean", default: true }
+      - { name: "draft", label: "Draft", type: "boolean", default: true }
       - { name: "title", label: "Title", type: "string" }
       - { name: "summery", label: "Summery", type: "text" }
       - { name: "image", label: "Image", type: "image" }
@@ -41,7 +41,7 @@ content:
     view: 
       fields: [ image, title ]
     fields:
-      - { name: "draft", label: "Published", type: "boolean", default: true }
+      - { name: "draft", label: "Draft", type: "boolean", default: true }
       - name: "createdAt"
         label: "Published date"
         type: "date"
