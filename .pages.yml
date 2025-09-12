@@ -10,14 +10,14 @@ content:
     fields:
       - name: "logo"
         label: "Logo"
-        type: "image"
+        type: image
         options:
           extensions: [svg]
       - { name: "name", label: "Naam", type: "string" }
       - { name: "description", label: "Beschrijving", type: "string" }
       - name: "metas"
         label: "metas"
-        type: "object"
+        type: object
         fields:
           - { name: "title", label: "Title", type: "string" }
           - { name: "description", label: "Description", type: "string" }
@@ -32,10 +32,10 @@ content:
     view: 
       fields: [ image, title ]
     fields:
-      - { name: "draft", label: "Draft", type: "boolean", default: true }
-      - { name: "title", label: "Title", type: "string" }
-      - { name: "summery", label: "Summery", type: "text" }
-      - { name: "image", label: "Image", type: "image" }
+      - { name: "draft", label: "Draft", type: boolean, default: true }
+      - { name: "title", label: "Title", type: string }
+      - { name: "summery", label: "Summery", type: text }
+      - { name: "image", label: "Image", type: image }
       - { name: "body", label: "Body", type: rich-text }
 
   - name: "events"
@@ -45,27 +45,31 @@ content:
     view: 
       fields: [ image, title ]
     fields:
-      - { name: "draft", label: "Draft", type: "boolean", default: true }
+      - { name: "draft", label: "Draft", type: boolean, default: true }
       - name: "createdAt"
         label: "Published date"
-        type: "date"
+        type: date
         options:
           format: "MM-dd-yyyy"
           min: "2023-12-24"
         
-      - { name: "title", label: "Title", type: "string" }
-      - { name: "description", label: "Description", type: "text" }
-      - { name: "image", label: "Image", type: "image" }
+      - { name: "title", label: "Title", type: string }
+      - { name: "description", label: "Description", type: text }
+      - { name: "image", label: "Image", type: image }
       - { name: "body", label: "Body", type: rich-text }
 
       - name: "event"
         label: "Event information"
         type: object
         fields:
-          - { name: "time", label: "Time", type: "string" }
-          - { name: "location", label: "Lokatie", type: "string" }
-          - { name: "price", label: "Prijs", type: "string" }
-          - { name: "date", label: "Datum", type: "date" }
+          - { name: "time", label: "Time", type: string }
+          - { name: "location", label: "Lokatie", type: string }
+          - { name: "price", label: "Prijs", type: string }
+          - name: "date"
+            label: "Datum"
+            type: date
+            options:
+              time: true
 
   - name: "albums"
     label: "Albums"
