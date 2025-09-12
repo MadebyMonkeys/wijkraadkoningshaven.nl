@@ -38,7 +38,7 @@ content:
       - { name: "image", label: "Image", type: image }
       - { name: "body", label: "Body", type: rich-text }
 
-  - name: "events"
+  - name: "agenda"
     label: "agenda"
     path: "_src/agenda"
     type: collection
