@@ -1,6 +1,6 @@
 ---
-draft: false
-createdAt: 01-09-2025
+draft: true
+createdAt: 2025-01-08
 title: Mosselen eten
 description: Wij gaan weer mosselen eten
 image: /uploads/mosselen-2025.jpg
