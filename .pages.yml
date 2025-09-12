@@ -1,6 +1,6 @@
 media:
   input: "_src/static/uploads"
-  output: "uploads"
+  output: "_src/static/uploads"
 
 content:
   - name: "settings"
