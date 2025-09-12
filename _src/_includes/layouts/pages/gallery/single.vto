@@ -8,8 +8,8 @@ hasLightbox: true
     <ul role="list" class="grid-auto-fit" data-rows="masonry">
         {{ for image of album_images }}
         <li class="album">
-            <a href="{{ image.path }}" data-fslightbox="gallery">
-                <img loading="lazy" class="album__image" src="{{ image.path }}" alt="{{ image.title }}">
+            <a href="{{ image }}" data-fslightbox="gallery">
+                <img loading="lazy" class="album__image" src="{{ image }}" alt="foto van - {{ title }}">
             </a>
         </li>
         {{ /for }}
