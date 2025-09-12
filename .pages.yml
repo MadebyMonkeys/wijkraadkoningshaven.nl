@@ -1,6 +1,6 @@
 media:
-  input: _src/static/uploads
-  output: uploads
+  input: "_src/static/uploads"
+  output: "uploads"
 
 content:
   - name: "settings"
@@ -46,7 +46,8 @@ content:
         label: "Published date"
         type: "date"
         options:
-          format: dd-MM-yyyy
+          step: true
+          format: "dd-MM-yyyy"
         
       - { name: "title", label: "Title", type: "string" }
       - { name: "description", label: "Description", type: "text" }
