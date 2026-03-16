@@ -43,10 +43,9 @@ section_rules:
     Waar moet u rekening mee houden?
     
       - Uw activiteit moet bijdragen aan de sociale cohesie en leefbaarheid in de wijk.
-      - U voert voor zover mogelijk de plannen zelf uit, samen met uw buurtbewoners. Behalve bij ingrepen in het openbaar gebied. Hiervoor is de gemeente verantwoordelijk.
+      - U voert voor zover mogelijk de plannen zelf uit, samen met uw buurtbewoners. Behalve bij ingrepen in het openbaar gebied. Hiervoor is de gemeente verantwoordelijk. (bijv. Straatverlichting en straat-tuinen)
       - Voor alle activiteiten op openbaar gebied, zoals het gebruik van de straat of een park, moet u een vergunning aanvragen.
       - Maak een begroting waaruit blijkt waar u het geld aan gaat uitgeven.
-      - Voor ingrepen in de openbare ruimte, zoals straatverlichting, straatmeubilair of straat- en geveltuinen, is de gemeente verantwoordelijk. Deze werkzaamheden kunnen daarom niet door bewoners zelf worden uitgevoerd.
 
 section_faq:
   title: "Veel gestelde vragen"
