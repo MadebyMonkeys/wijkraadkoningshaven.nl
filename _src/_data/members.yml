@@ -17,3 +17,8 @@
   image: "/images/avatar-male.png"
   function: "Commissielid"
   bio: "Lorem ipsum"
+
+- name: Nick
+  image: "/images/avatar-male.png"
+  function: "Commissielid"
+  bio: "Lorem ipsum"
